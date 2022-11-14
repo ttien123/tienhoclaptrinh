@@ -7,6 +7,7 @@
 /* common */
 html{
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 .clear{
     clear: both;
@@ -16,6 +17,25 @@ html{
 }
 .text-center{
     text-align: center !important;
+}
+
+.pull-right{
+    float: right;
+}
+
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    display: inline-block;
+    padding: 11px 16px;
+    margin-top: 15px;
+    border: none;
+}
+.btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
 }
 
 .row{
@@ -53,9 +73,7 @@ html{
 
 
 /* main */
-#main{
 
-}
 
 #header{
     height: 46.5px;
@@ -158,12 +176,10 @@ html{
 }
 
 
-#content{
- 
-}
+
 #content .content-section{
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -192,7 +208,7 @@ html{
 
 #content .members-list{
     margin-top: 48px;
-    margin-bottom: 50px;
+
 }
 
 #content .member-item{
@@ -284,18 +300,6 @@ html{
     line-height: 1.4;
 }
 
-.place-buy-btn{
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    display: inline-block;
-    padding: 11px 16px;
-    margin-top: 15px;
-}
-.place-buy-btn:hover{
-    color: #000;
-    background-color: #ccc;
-}
 /* conntact */
 .contact-content{
     margin-top: 48px;
@@ -318,20 +322,38 @@ html{
     width: 100%;
     outline: none;
 }
-
-.contact-form .form-submit-btn{
-    background-color: #000;
-    color: #fff;
-    border: none;
-    float: right;
-    padding: 10px 15px;
+.map-section img{
+    width: 100%;
 }
-
 
 
 #footer{
+    padding: 64px 16px;
+    text-align: center;
 
 }
+#footer .social-list{
+    font-size: 24px;
+}
+.copyright a:hover,
+#footer .social-list a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+}
+
+#footer .social-list a:hover{
+    color: rgba(0,0,0,0.4);
+}
+
+.copyright{
+    color: rgba(0,0,0,0.4);
+    margin-top: 15px;
+}
+.copyright a{
+    color: rgba(0,0,0,0.4);
+
+}
+
 /* modal  */
 .modal {
     position: fixed;
