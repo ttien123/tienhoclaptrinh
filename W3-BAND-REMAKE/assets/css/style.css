@@ -132,8 +132,6 @@ html{
 }
 
 
-
-
 #container .content-heading{
     padding-top: 100px;
 
@@ -274,7 +272,7 @@ html{
     padding-top: 32px;
 }
 .contact-place .place-icon{
-    padding-right: 16px ;
+    padding-right: 4px ;
 }
 
 .contact-place{

@@ -13,8 +13,10 @@ html{
 }
 
 #main{
-
+    overflow: hidden;
 }
+
+/* main  */
 
 #header{
     position: fixed;
@@ -24,7 +26,15 @@ html{
     height: 46.5px;
     background-color: #000;
     z-index: 1;
+    overflow: hidden;
 }
+
+#header .header-container{
+    position: relative;
+}
+
+
+
 #header div{
     width: auto;
     display: inline-block ;
@@ -77,10 +87,12 @@ html{
     font-size: 14px;
 }
 
+
 #header .search{
     float: right;
     padding: 0 23px;
     max-height: 46.5px;
+    
 }
 
 #header .search:hover{
@@ -92,6 +104,28 @@ html{
    color: #fff;
    line-height: 46.5px;
 }
+
+    /* begin-menu  */
+
+#header .mobile-menu-btn {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    width: 62px;
+    color: #fff;
+    text-align: center;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+
+
+
+    /* end-menu */
 
 #slider{
     position: relative;
@@ -125,9 +159,13 @@ html{
 
 #content .content-heading{
     width: 800px;
+    max-width: 100%;
+
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0 128px;
+    padding-left: 16px;
+    padding-right: 16px;
     
 }
 #content .content-heading1{
@@ -291,6 +329,13 @@ html{
     outline: none;
     border: 1px solid #ccc;
     width: 190px; 
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+    .contact-input1{
+    width: 176px; 
+
+    }
 }
 
 .contact-message {

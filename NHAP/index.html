@@ -7,46 +7,55 @@
     <title>The-band</title>
     <link rel="icon" href="https://img.icons8.com/ios/2x/home.png" type="image/x-icon" />
     <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
     <link rel="stylesheet" href="./asset/fonts/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 <body>
     <div id="main">
         <div id="header">
             <!-- begin header -->
-            <div>
-                <a href="">Home</a>
-            </div>
+            <div class="header-container">
 
-            <div>
-                <a href="#band">Band</a>
-            </div>
+                <div>
+                    <a href="">Home</a>
+                </div>
+                
+                <div>
+                    <a href="#band">Band</a>
+                </div>
+                
+                <div>
+                    <a href="#tour">Tour</a>
+                </div>
+                
+                <div>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="renhanh" >
+                    <a href="">
+                        More
+                        <i class="arrow-icon ti-download"></i>
+                    </a>
+                    <ul class="header1">
+                        <li><a href="#.">Merchandise</a></li>
+                        <li><a href="#.">Extras</a></li>
+                        <li><a href="#.">Media</a></li>
+                    </ul>
+                    
+                </div>
+                <!-- end header -->
+                <!-- begin search-menu -->
 
-            <div>
-                <a href="#tour">Tour</a>
-            </div>
+                <div id="mobile-menu" class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                </div>
 
-            <div>
-                <a href="#contact">Contact</a>
+                <div class="search">
+                    <i class="search-icon ti-search"></i>
+                </div>
+                <!-- end search -->
             </div>
-
-            <div class="renhanh" >
-                <a href="">
-                    More
-                    <i class="arrow-icon ti-download"></i>
-                </a>
-                <ul class="header1">
-                    <li><a href="#.">Merchandise</a></li>
-                    <li><a href="#.">Extras</a></li>
-                    <li><a href="#.">Media</a></li>
-                </ul>
-
-            </div>
-            <!-- end header -->
-            <!-- begin search -->
-            <div class="search">
-                <i class="search-icon ti-search"></i>
-            </div>
-            <!-- end search -->
             
         </div>
 
@@ -205,6 +214,43 @@
     </div>
     
 
+
+    <script>
+
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if(isClosed) {
+                header.style.height = 'auto';
+
+            } else{
+                header.style.height = null;
+
+            }
+        }
+        
+        var menuItems = document.querySelectorAll('#header div a[href*="#"]');
+        for(var i = 0; i < menuItems.length; i++){
+            var menuItem = menuItems[i];
+            menuItem.onclick = function(){
+                header.style.height = null;
+
+            }
+
+
+        }
+
+    </script>
+
+ 
+
+
+
+
     <script>
         const buytickets = document.querySelectorAll('.js-buy-ticket')
         const modal = document.querySelector('.js-modal')
@@ -231,15 +277,8 @@
             event.stopPropagation()
         })
 
-
-
-
-        
-
-
-
-
     </script>
+
 
 
 </body>

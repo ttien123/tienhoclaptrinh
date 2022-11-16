@@ -1,0 +1,35 @@
+        /* pc  */
+
+@media (min-width: 1024px){
+   
+}
+    
+        /* tablet  */
+    
+@media (min-width: 740px) and (max-width: 1023px){
+            .contact-input1{
+                width: 176px; 
+            
+            }
+
+            .contact-message{
+                width: 100%;
+            }
+
+
+}
+    
+        /* mobile / */
+    
+@media (max-width: 740px){
+    #header div{
+        width: auto;
+        display: block ;
+        line-height: 46.5px;
+        position: relative;
+    }
+
+    #header .search{
+        display: none;
+    }
+}
