@@ -1,12 +1,12 @@
         /* pc  */
 
-@media (min-width: 1024px){
+@media (min-width: 64em){
    
 }
     
         /* tablet  */
     
-@media (min-width: 740px) and (max-width: 1023px){
+@media (min-width: 46.25em) and (max-width: 63.9375em){
             .contact-input1{
                 width: 176px; 
             
@@ -21,7 +21,20 @@
     
         /* mobile / */
     
-@media (max-width: 740px){
+@media (max-width: 46.1875em){
+    
+
+    #header{
+        overflow: hidden;
+    }
+    #header div:hover .header1{
+        display: block;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        position: initial;
+    }
+ 
+
+
     #header div{
         width: auto;
         display: block ;

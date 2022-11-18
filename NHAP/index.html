@@ -33,14 +33,14 @@
                 </div>
                 
                 <div class="renhanh" >
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="arrow-icon ti-download"></i>
                     </a>
                     <ul class="header1">
-                        <li><a href="#.">Merchandise</a></li>
-                        <li><a href="#.">Extras</a></li>
-                        <li><a href="#.">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                     
                 </div>
@@ -236,13 +236,22 @@
         var menuItems = document.querySelectorAll('#header div a[href*="#"]');
         for(var i = 0; i < menuItems.length; i++){
             var menuItem = menuItems[i];
-            menuItem.onclick = function(){
-                header.style.height = null;
 
-            }
+menuItem.onclick = function(event){
+    var isPerentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('header1');
+    if(isPerentMenu){
+        event.preventDefault();
+    }else{
+        header.style.height = null;
+
+    }
+
+}
 
 
-        }
+
+
+}
 
     </script>
 
