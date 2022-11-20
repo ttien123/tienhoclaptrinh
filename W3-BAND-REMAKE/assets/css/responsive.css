@@ -1,0 +1,102 @@
+
+/* pc  */
+@media (min-width: 64em){
+    #mobile-menu{
+        display: none;
+    }
+}
+
+/* mobile-tablet */
+@media (max-width: 63.9375em){
+    .s-m-width-full{
+        width: 100%;
+    }
+    .s-m-padding-0-16{
+        padding: 0 16px;
+    }
+   
+    #footer{
+        font-size: 48px;
+    }
+    
+}
+
+/* tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .tour-place{
+        padding: 32px 16px 112px;
+    }
+    .input-info{
+        padding: 12px 3px;
+        width: 180px;
+    }
+    #mobile-menu{
+        display: none;
+    }
+  
+}
+
+/* mobile  */
+@media (max-width: 46.1875em){
+    .s-width-full{
+        width: 100%;
+    }
+   
+    .s-m-display-block{
+        display: block;
+    }
+
+
+    #header{
+        overflow: hidden;
+    }
+    #header .ul-header-second{
+        position: initial;
+    }
+
+
+
+    .header-search .search-icon{
+        display: none;
+    }
+
+    .header-menu{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 14px 20px;
+    }
+    #header .ul-header-once li{
+        display: block;
+    }
+    .ul-header-second a{
+    background: #ccc;
+    padding: 18px 36px;
+    }
+
+    .list-members{
+        margin-top: 36px;
+
+    }
+    .the-band-name{
+        padding-top: 32px;
+    }
+    .member-img{
+        width: auto;
+        height: auto;
+    }
+    .tour-place-info{
+    padding: 8px 24px;
+    }
+    .contact-info {
+    width: 100%;
+    padding-top: 16px;
+    }
+
+    .contact-input-info .email{
+        margin-top: 8px;
+    }
+
+
+}

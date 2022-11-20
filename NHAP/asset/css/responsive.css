@@ -22,14 +22,19 @@
         /* mobile / */
     
 @media (max-width: 46.1875em){
+    .s-display-block{
+        display: block;
+    }
+    .s-col-full{
+        width: 100%;
+    }
     
 
     #header{
         overflow: hidden;
     }
-    #header div:hover .header1{
-        display: block;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    #header .header1{
         position: initial;
     }
  
@@ -45,4 +50,46 @@
     #header .search{
         display: none;
     }
+    #content .content-about{
+        padding: 0 16px;
+    }
+    #content .content-team{
+        display: block;
+        text-align: center;
+    }
+    #content .member-name{
+        padding-top: 30px;
+    }
+
+    #content .content-heading{
+        padding: 64px 0 40px;
+    }
+
+    .tour-section .tickets-tour{
+        padding: 0 16px;
+    }
+    #content .member-img{
+        width: 224px;
+    }
+
+    .places-section{
+        display: block;
+        padding: 0 16px;
+    }
+    .place-item {
+        padding: 8px 8px;
+    }
+    .contact{
+        padding: 0 16px 112px;
+    }
+    .contact-place{
+        width: 100%;
+    }
+    .contact-input1{
+        margin-top: 8px;
+    }
+    .modal{
+        padding: 0 10px;
+    }
+    
 }
