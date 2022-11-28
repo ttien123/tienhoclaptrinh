@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-14px{
+    font-size: 1.4rem;
+}
+
+.font-16px{
+    font-size: 1.6rem;
+
+}
+.font-weight-600{
+    font-weight: 600;
+}
+
