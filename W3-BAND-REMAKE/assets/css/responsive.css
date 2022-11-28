@@ -74,6 +74,9 @@
     background: #ccc;
     padding: 18px 36px;
     }
+    .slider-content{
+        display: none;
+    }
 
     .list-members{
         margin-top: 36px;
