@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
 </head>
 <body>
@@ -20,14 +19,14 @@
 
                 <div class="navbar-logo">
                     <a href="" class="navbar-logo__link">
-                        <img src="./assets/img/pizza-hut-logo.png" alt="" class="navbar-logo__link--img">
+                        <img src="./assets/img/pizza-hut-logo.png" alt="Logo" class="navbar-logo__link--img">
                     </a>
 
                 </div>
 
                 <div class="navbar-info">
 
-                    <div class="navbar-info__user">
+                    <div class="navbar-info__user cursor-pointer">
                         <a href="" class="navbar-info__user--bell">
                             <svg  class="navbar-info__user--bell-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="font-size: 27px;">
                                 <path d="M19.29 17.29L18 16v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-1.29 1.29c-.63.63-.19 1.71.7 1.71h13.17c.9 0 1.34-1.08.71-1.71zM16 17H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6zm-4 5c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2z">
@@ -39,16 +38,18 @@
 
                         <div class="navbar-info__user--info">
                             <svg class="navbar-info__user--icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z">
+                                <path fill="#cb1c3b" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z">
                                 </path>
                             </svg>
                             <span class="navbar-info__user--info-name font-14px font-weight-600">Thành viên</span>
                         </div>
                     </div>
 
-                    <div class="navbar-info__order">
+                    <div class="navbar-info__order cursor-pointer">
 
-                        <div class="navbar-info__order-icon" style="background-image: url(./assets/img/icon2.jpg)";></div>
+          
+                            <img src="https://cdn.pizzahut.vn/images/Web_V3/OrderTracker/track_your_order.svg" alt="Logo" class="navbar-info__order-icon">
+        
                         <span class="navbar-info__fl font-14px font-weight-600 ">Theo Dõi Đơn Hàng</span>
                     </div>
 
@@ -61,18 +62,228 @@
 
         <!-- slider -->
 
-        <div class="pizzah-slider">
-
+        <div class="pizzah-slider cursor-pointer">
+            <img src="./assets/img/slider.jpg" alt="Slider" class="slider-img">
         </div>
 
         <!-- container  -->
 
         <div class="pizzah-container">
+            <div class="pizzah-box-order">
+                <div class="pizzah-order cursor-pointer">
+                    <div class="pizzah-order__label cursor-pointer">
+                        <lable class="pizzah-order__label--ship font-14px font-weight-600">
+                            <img src="data:image/gif;base64,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" alt="" class="pizzah-order__label--ship-icon">
+
+                            Giao hàng tận nơi
+
+                        </lable>
+                        <label for="" class="pizzah-order__label--take-away font-14px font-weight-600 cursor-pointer">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAYAAAA4TnrqAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAS6ADAAQAAAABAAAASwAAAACEC2e7AAASkUlEQVR4AeVcCVgUV7Y+1d2AAiIgKIjsIGBQMSYuoBCXMTpR45g8ncQkjtlm5omgcZLPSL5vyEvURB13nTfRmckzMRP1xS0mxiWRTVnEIJooCAiIC8qqAkLTXfX+U6YZaLqxu2mI5t3vg6q7nXvq73PvPcutEuhnSIsWJQZppKYISaIgIkWQJEkBAknOJAiOJEkOYMlOEoQGQaJ6EqgO9ZUKEopEhVCoIKlAIVH2+vXLb3Q360J3DLh4caJbU3PzTBKkcRgvBg/vaWxchUIhKpRKtaa5uYexNnK5IOQDzGQAfMxG0efg2rVv3O2wvRUquwysBRs22ElF5c9IJM0RSJgEgFTMryAI2gB/34sRQ8NvDvDyJHd3V3sHB/s+KpXKCXUsVT1/ei4R1wb0a1Crm2tu19VV37xZ0VRcUqY6k3POu/xGhe9P7UCU7ggC7REE5acb175/rKXcyjdWBysxMdGxqkb9e4losU6CevVyrJo4fuyPjz0W0bO3U68QPINTZ58DtG/crKgsSk3LFE6mZ0Wo1RoZZDxQLgmKFW4uNrvBCwNutWQ1sMCYCiDFA6SleBBXcChFRY7ImvLkOIWzc+9hyMuSZTXO2xK6c/Vaee7/fvGla0Fh8SCugpQWKBTCmxvWLtvftqnlOauAtWDR22MlUdgCkMKVSqVm4vgxGZOnTPSwUSqxgHdvwnT9/vOd+4SzZ8/zDwTQ6KBKsFuwbl1iSWc56RRYvC6JReVrsYP9kRkZMmRQzryXZve2sbEJ6Cxjne1/+/ad7A2btrnz2gbA7pKkeGPThmX/3Rm6FoPF23+ztmkXpt0wrEMVcbGvXuzXzz2qM8x0Qd/GnDPnMv7nk92RGo3GFlPzczcX29ewZNRZMpZFYM2Pf2eqIIk7sNM5RUCaXnl5jhcY6WsJA93Rp7Gx6fyHqzY6VVRWD8C8zFdKimkbNrxfYO7YZoO1YOHS30GZ3ApwFHNfmp0yfNjgaAyqMHfg7m6P9fTW5zv35p1Izx4JVeMmQJuyed3y783hQ2lO4wXxS98UJWkTdCJtwpKFWcFBfmPR32zAzRnTWm3x4/YYHB7m1cvRIeXH8/mPgO7zo6OiMzLTU0tMHcNksGLj3n4L69NKux529e/++c3zri7OI00d5AFqJ/j6DvDz9u6fdPr02RDs4LMjR0WnZmamlprCo0lgxca9Mw/r0yYAVbf8v5aUONjbR5hC/EFt06+vu19IaFByRkZ2kChIM0dFjTuUlZ5yX1vzvmDFxr8zXSLtDkw9DSTqAoAa+qCCYA5fmBl+/fv3S/o+51yoJIozxkRO3JuRkVTTEY0OwYqPfydElMTDMG5tE5bEnXJ1cRnREbGHrc7Do69fz549ky/kXQzXkjjuqSkTPk5KStIYew6jYC1atKanRqo7go7er8x7PjkwUF7MjdGxWjmUSSotvUJlV66TRqslGNmEH8tq9PUJ+ft5+1wrv5FTXn4zovGu6JGVmfqlfhtd3uhOFhufsE2SxFeGPzr49Ly5z7Hp0HUcg3hFRRUdOHiEcs/+SKL4b/vXyakXPRETSTDEuww0qBUVf05cqa2uveWBXfPFTeuXf6oDqPXVIFjz45f+CibMERjAN95LfEsBAu6tO1n7vqDwEn207VO6e7fRKGk/P2/6w2svkaMje3Gsn+rrG3KXJCwLB3C3FQ4UsnHFigr9UdpJC9t7AnQpbhgf91pxVwNVWVVNW/++o0OgmJeSkjL629ZP2kgdl1srYboPfWbm1DTQc5Hu0ipDdNuBJRWWsz418PHhQ7Pd+7iOMtTJmmV79x2ihgbTnJzFJZfpxMlT1hy+Da0nokdHOPV2uimJNJc9KW0qkWkD1pIlK1wkQXoTaoL6hTnPdunUY0bq6uvp3A8X9HnqMH8yvevAwsC9F8x/WbYZobCu0GekDVh1DXfiSKJeT02ekAG/lK9+Y2vnL5deNXtalV25Rlrskl2VPPv1jfQa4FmEtSsqPj6B7d6W1AIWu4Nh5cVhjdJOmDC2y4FiDuobGloYMeemrt6yfiaOIfzuhdnXua1WEhNa92kBq6qmaQ7QdB33RFQm9JpuAUsUsTpakMCnBb1M7+Lp2XeUu5vrFYwyiRVzXc8WsEQSXuDCSb+KsddV/j++qqZPm1zIz68VxDk6HGSwFi9O8IVeFeXq6nzd0cFhiK6yq69w91qULOxm1lhDBof5cwdIcVuw1BppFsqFKU+Oz8e1Rdq4cVcmhMjMJo81tcsU09bM8AYXEhzwIza8gNhFCY9xnQwMHHrjOTN0yCAXvnZX8vTsxyErs4aDe4XwIGb1sbRxdMzoe1q8VpTxUezatUuJXTBKZWPTaG9vH2opYUv6Ofd2oqBAWdpN7v7Y8O7zEAUH+svCIwkUwwwqUtJzh7FuFRYSnIe8nclcW9jwFrwKbDDv+NcemcJvZz1Ndna2JlHz6u9BEyeMpeZmDUyf7ZSZlSN7JkzqbEEjFh4blbIJXaOgWilUWMBkr2dExCO1FtAzuQt7EvZ/eZiSkk+2KJXDIsJpUNhAenHOs/Tx9l2EcJVRei7OvQmuIoJ1Qfv2H4Lmnyf/8f0zM5+iLpI4u8BA/x/y8gvDq+o1/goc35Gjxl6eHl22ENy5U0cbNv+dvv0utQUoRuXj7TsJfiTCIRF6I/73FBjg1w4sXp9GjXyU3vrTfOrb142yTuXQMdDRpTt1dTKdL/Z+ZbY1oKPR0dXX11sWIkFDwSooXjJYrq5YQLogMVCr1myh6ur2gssG9Jr1f6N5c39LYaHBtCj+daqqrqErcPwh1ke9ejkQTtxQjx52vIXTkaNJ9OVXRw1yeTzpBFVWVtHrr75o9qZhkOBPhd4D+sviLolSkApcBHA53KseHXWypI6nFbtVDAGlo8eAbf7rP4mnJKwH8vfzoT6u/96Um5ubZYfgocPHAeI1XTeDV56aezEtZ874tcF6Swo9PfracD8EbAJUUK+c+RZbOJ98sWo6CCkoKS0ziWbOmR+I/9iN7NbHVZamurp6qoC04HyWSTS40XfH02QpZUm1RoIQ/XSoTnIGWOQIW5C5kRG0xgBMo6bmFiWnpJtNDh5L4r/OpH0HvqHQkCCrTEdsKPJWLUmCA9Z3cujR066+M8wZ6ns8KY2aO9jdDPWxVtnVq9fpx/MXrUJOpVLe02sEyREavGRna2OrtgrlVkTOGnDqhT/SNTrv4PD2dM11KrZivc2tUqn4acYJdjgETA3qJrVVlVH2q1dWVrcZlDNjokaQvb3uyGi7aosK+Afw9OjXru+FvIJ2ZZYUaDTaewumRA04KU31TWq1gyWEjPWpqWmvJnBbjglOn/qksW5ml9va2tLs/5iOGGP7XbK29pasbphNVK+DVqthDR7rn1THklUHNy0v9HKhXluLsrdvGz4rxoFTlq4Afx+L6Op3QgSZXFyc6QrWKP3EFkNnNwqmiXVXXqIESahX4V8ldIggEK/EruilP6gleTc3V5o0UbY923R3d+8j55+eNhkLMHuDOpciRz8u24ajRw43SMgakey6ugY5mImNsEIFySrEVBwF5fAmAphWAcvXZwDxn7GEowDEf9ZK06dZb2rr81R+48Y9g1WQiqDBAyyk6uqaO+ZGe9n633fgkD79BzrP/rDosaaHQ0tLr8qqg6CgQpWA92Fg91BZ2XXRpwNpMIQAmzOWKJ6GaHVX2cDgQLPAKikuky0bycauQCGIQhYzejr3rFt3MfwQjXOnuPRyMLbCq5tWJl5T8Kld2IXXiwpLWLOzuib/EAHTjlWoOvnwdijxxloKV7LKgCSlQH2YjbcTcp0cHQ1vLfcatvnPHk52yD1MycmMIMmF/EJZB0KUIJmfUQYLknUECM4+lZVTPwHnoExNvDWza8XcxOF3Pl5k7oaiPw7rUtZQD/Tp6vLHj5+QFUKVwu4ol8lgKcl2j0RNW45+mxwOsFi9N8kDwbvhN4e/09E2esU5L44c0SG05dfm2NPJPq55c2fDlawlHLmGe+YclV6+apQGVwQG+NIjg0KouPgyweqAH/8LYnMnAOUN9XfpyUlP0N59X0ORNH4WwqOfO8VEj+5wHK5Uq9V5V65eC4Vqlbl2beIlLpPBwktAtbHxS7+GAvab2trbWc7OTiO48n6Jd8PD8F4aSzxNfz15AgUH+dOp7DOE193aNN32j8/kPJ/sY6dfalpGm3r9DAO17Z+fUX5+oex+Ye9p9ulc+Y/bhsAtw4oqG/FffX2sjQtbR4t3Q1PAOnU6txx9QjHrduj6wutwL8Ff8wnf7f/qMKaoddKsZ6cjcmNH/9q5j4oulRglykZ3i4/NaCuEohQC3YDPnhMDpZ+y8YPsgWT5QQUaP26MfrU5+QY4LgejQ3MPle1OXccWsGLGDD3A2jzWrcfhmey8LYIROCb49TffykCdPWfeOSwdg+Zck1PT6fyFi/QtvKV+vt7mdG3TtqCg+BRiB30Q//109erEe78OWsjTkFvOmjVLO3/h0g/xk209cPBw9bMzp7YhYCjD0+y1V14wVCWX8eFZ9qGbkhAY6JAW0+A2piQeMwjmVPyCV9s1t+95XxeR+pPPdg/E9BMlpe0HrQm0gMWF7s622ytq1IkpqRkjp0+ddAEukLDWjfXveSfihbuj5NGvL/HxRg5j3bxZSb0cHUkrauWjkXzPoSxedPncw/1o8Thubn2o9tZteXo3NTURR7U5cMvTkmOLNXDNIDgq+/KDgwI6Ys1gHdbDdGw+MQBr9+Y1iRdbN2q3PsUtTHhRK4rb+VDEgthXGayWqdq6o6n37Ca5XHaVQgYGEl7JlYHhLZ9DXt4DvKioqIQGhgSSysTzCwxMQcElCg0NwkJfREHYPGDXUlOTWjbe2ZsRhsCtgwVORgBe/uaS9xyaGhttbZR24dgFZbtZ96ztwOKK2LilSXDbxPxp8R9T/Hy8o3WNf+nXL/Z9dRK6VSTs5Xc3rVueqP+8BqVGsJH+Ew2bt2z5eCikoFS/0y8xj5cW0mWg8LENN+e2a5XueZW6m9bXrPS0ihGjotVYKKdeLLh0ffSo4RytbrO+tW7/sN/Doih99/2/+OCqJIU0Y+UH7xcbeiaDYHHDrIyUk9C4H6uuqY3ErncSYXRfQwR+AWWN69ZvrUQw1wuvkizZtH7F58aeyeA05MbYDSTJ3nEubsoQEo/GLpFsjMhDXK7duWv/mUslpdDU6eCGdctWd/QsRsHiTptXLK3C3JsKZfXWxi3/iL5+/caJjog9bHWHD393MvVE5igIxBnBxW4OC0hHz9AhWNwRXxM6C3VqGmSt6YNVm0Zim87siODDUpeekZ305dfHxuI7OfCt0+SNiYm378e70TWrdcesjLTLI0fFnMMrdbOhsPYfEh52Etq57L5o3e4huRePHk1O3b3nICue122UtuPWrXvviim8mwQWE8rKTMkfMXpsNg76P5N2IjPQ398nyd2tj58pgzxAbZp27jpw+si3yVEsUQyUzv1iCo8mg8XEsjJSC0eMfuI43Ky/wQm8MGj6adDMORh47/CEKSP+TG20WrFs4+Zt5Tm5PwzjNUol0HhTJUrHskENXldp7Lpg8duDRI2wBwZZiLeXV+Ebi/9AP8dHeozxp19eVVWd+eHqzaGIjfbmXY8Xc1PWKH06FoHFRBLxYlRlTdNHsF+fs7VV3cWrwZnweEai6oGRMth6lXAC5n1z5PgYrE8a/LgJG9cvX3W/XU8fJF3eYrB0BGLjEl6XBHE1grW9cPT60vz5L9ci6PGorv5numrxBbcTf/3o4yFwN+NbgnRJRYq569cvS+sMP50GiwePfSuxP8z+NZCy2ZwPHxSa+9xzM5p7OznJr3FwWTcl9eWyK5nbP9ntI38Kig+7KISVsPWWYybIZxY6w4dVwNIxEBe3dIJItBweC9mHH+Dnm/f0jMk3Avx8HoHod1kQFzZdydlz50v27D8UUlNd64mxwAbthfNuqb5PSserJVergqVjQAZNkPA5OxrPZTjLrnl0+JCc6MiRdwcM8OyPj5EForgzYzfj6HdeUVFxFSJFfVt9uk4Dup+RSlqx6S8r8nhsa6bOMHxfPhYufCdMI4pz0PB5SJu/rgO8olWhYcGXAny8G/oP8MTpZBcHO1s7e6WNylYpCOz3tQXQjaKobYTUNMGBWI9vX93FoTUFwmBOCH4ObFar7XX0IEnZEqIw9jY2n69alchRmS5JXQpWa44XLEoYAYV2HAaMwWYQBfAsfkkB4PDptWSYcimCqDxmyYfDWvNm6n23gdWaIX4TLT39vL+WNEH85gKAC0Bwy5mPT+PDr3gJUcArFdQAnagepm0dpKYSXwUoEkhRaCNIBWvXLus4Gtt6MCve/x/I6R5NJc/URAAAAABJRU5ErkJggg==" alt="Logo" class="pizzah-order__label--take-away-icon">
+                            Mua mang về
+                        </label>
+
+                    </div>
+
+                    <div class="pizzah-order__input">
+                        <input type="text" placeholder="Vui lòng cho chúng tôi biết địa chỉ của bạn!" class="pizzah-order__input--infor">
+                        <div class="pizzah-order__input--map" >
+                            <svg class="pizzah-order__input--map-local" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="#0A8020" d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM10 5.47l4 1.4v11.66l-4-1.4V5.47zm-5 .99l3-1.01v11.7l-3 1.16V6.46zm14 11.08l-3 1.01V6.86l3-1.16v11.84z">
+                            </path>
+                        </svg>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="pizzah-content">
+                <div class="pizzah-content__title">
+                    <h2 class="pizzah-content__title--promotion ">KHUYẾN MÃI</h2>
+                    <p class="pizzah-content__title--line"></p>
+                </div>
+
+                <div class="pizzah-content__promotion cursor-pointer">
+                    <img src="./assets/img/content-1.jpg" alt="promotion 1" class="pizzah-content__promotion--img1">
+                    <img src="./assets/img/content-1.jpg" alt=" promotion 2" class="pizzah-content__promotion--img2">
+
+                </div>
+                <div class="pizzah-content__btn font-14px">
+                    <a href="" class="pizzah-content__btn--menu">XEM MENU</a>
+                </div>
+            </div>
 
         </div>
 
         <!-- footer  -->
-        <footer class="pizzah-footer">
+        <footer class="pizzah-footer pizzah-footer__box">
+            <div class="grid">  
+                <div class="gird__row p-tb-10px ">
+                    <div class="grid__col">
+                        <h4 class="footer-heading font-13px">MENU</h4>
+                        <ul class="footer-content__list">
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--name">Mua 1 được 3</a>
+                            </li>
+
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--name">Kids Box</a>
+                            </li >
+
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--name">My Box</a>
+                            </li>
+
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--name">LIMO & COMBO</a>
+                            </li >
+
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--name">Pizza</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="grid__col">
+                        <h4 class="footer-heading font-13px">VỀ CHÚNG TÔI</h4>
+                        <ul class="footer-content__list">
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--name">Giới Thiệu</a>
+                            </li>
+
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--name">Tầm Nhìn Của Chúng Tôi</a>
+                            </li >
+
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--name">Giá Trị Cốt Lõi</a>
+                            </li>
+
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--name">Vệ Sinh An Toàn Thực Phẩm</a>
+                            </li >
+
+                        </ul>
+
+                    </div>
+
+                    <div class="grid__col">
+                        <h4 class="footer-heading font-13px">TÌM CỬA HÀNG</h4>
+                        <ul class="footer-content__list">
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--name">Miền Bắc</a>
+                            </li>
+
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--name">Miền Trung</a>
+                            </li >
+
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--name">Miền Nam</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="grid__col">
+                        <h4 class="footer-heading font-13px">THÔNG TIN TUYỂN DỤNG</h4>
+                        <ul class="footer-content__list">
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--name">Làm Việc tại Pizza Hut</a>
+                            </li>
+
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--name">Làm Việc tại Pizza Hut</a>
+                            </li >
+
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--name">Cơ Hội Nghề Nghiệp</a>
+                            </li>
+
+                            <h4  class="footer-heading font-13px">CẦN SỰ HỖ TRỢ?</h4>
+
+
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--std font-16px ">1900 1822</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="grid__col ">
+                        <h4 class="footer-heading font-13px">LIÊN HỆ VỚI PIZZA HUT</h4>
+                        <ul class="footer-content__list">
+                            <li class="footer-content__item">
+                                <a href="" class="footer-content__item--link">
+                                    <img src="./assets/img/fb.6c83ee5c1bdbedbc947a.png" alt="" class="footer-content__item--img">
+                                </a>
+
+                                <a href="" class="footer-content__item--link">
+                                    <img src="./assets/img/download.png" alt="" class="footer-content__item--img">
+                                </a>
+
+                                <a href="" class="footer-content__item--link">
+                                    <img src="./assets/img/email.2fb61912b904726a3ab0.png" alt="" class="footer-content__item--img">
+                                </a>
+
+                              
+                            </li>
+
+
+                        <h4 class="footer-heading font-13px">TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</h4>
+                            
+                        <div class="footer-content__download">
+                            <img src="./assets/img/App-QR-CODE.png" alt="" class="download--qr">
+                            <div class="footer-content__download--apps">
+                                <a href="" class="download--app-store">
+                                    <img src="./assets/img/appstore.png" alt="" class="download--app-store-img">
+                                </a>
+
+                                <a href="" class="download--app-store">
+                                    <img src="./assets/img/playstore.png" alt="" class="download--app-store-img">
+                                </a>
+
+                            </div>
+                        </div>
+
+                        </ul>
+
+                    </div>
+
+
+                </div>
+                
+                <div class="gird__row-buttom p-tb-10px ">
+
+
+                    <div class=" pizzah-footer__local">
+                        
+                        <div class="grid__col--80 pizzah-footer__local-info ">
+                            <div class="local-info">
+                                <p class="local-info-name-company">Công ty TNHH Pizza Việt Nam</p>
+                                <p class="local-info-name-dkkd">Số ĐKKD: 0303902751</p>
+                            </div>
+                            <p class="local-info-location">Số 1-3-5 đường D2 Khu dân cư phức hợp sông Sài Gòn, số 92 Nguyễn Hữu Cảnh, Phường 22, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam.</p>
+                        </div>
+
+                        <div class="grid__col--10 pizzah-footer__conditon">
+                            <p class="pizzah-footer__conditon-item">Điều khoản & Điều kiện</p>
+                            <a href="" class="pizzah-footer__conditon-link">
+                                <img src="./assets/img/Thông báo.png" alt="Logo" class="pizzah-footer__conditon-link-img">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
 
         </footer>
 
