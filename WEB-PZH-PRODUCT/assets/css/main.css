@@ -1,0 +1,518 @@
+/* heaer-navbar */
+
+.pizzah-header{
+   
+}
+
+.header-navbar{
+    width: 75%;
+    height: 64px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 5;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #5C5C5C;
+    box-shadow: 2px -1px 8px -4px #5c5c5c;
+}
+
+
+
+.navbar-logo__link--img{
+    width: 148.75px;
+    max-height: 64px;
+}
+
+
+.navbar-info__user{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-info__user--local-icon{
+    font-size: 20px;
+    padding: 12px;
+    color: #B5B6BD;
+    margin-bottom: 5px;
+}
+
+
+
+.navbar-info__user--bell-icon{
+    width: 27px;
+    height: 27px;
+}
+
+.navbar-info__user--language{
+    padding: 12px;
+    color: #f44336  ;
+}
+
+.navbar-info__user--language:hover{
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.navbar-info__user--info{
+    display: flex;
+    align-items: center;
+    padding:6px 8px;
+
+}
+
+.navbar-info__user--icon{
+    width: 25px;
+
+    margin-bottom: 1px;
+    color: #cb1c3b;
+}
+
+.navbar-info__user--info-name{
+    padding-left: 2px;
+}
+
+.navbar-info__order{
+    display: flex;
+    align-items: center;
+    padding: 12px 8px;
+
+}
+
+.navbar-info__user--info:hover,
+.navbar-info__order:hover{
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+}
+
+.navbar-info__order-icon{
+    width: 25px;
+    margin-right: 3px;
+}
+
+.navbar-info__fl{
+    font-weight: 600;
+}
+
+/* navbar-content */
+
+.navbar-content{
+
+    width: 75%;
+    height: 48px;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 5;
+}
+
+.navbar-content__list{
+    padding-left: 40px;
+}
+
+.navbar-content__item{
+    display: inline-block;
+}
+
+.navbar-content__item--link{
+    font-size: 15px;
+    color: #646464;
+    text-decoration: none;
+    display: block;
+    padding: 16px 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.navbar-content__item--icon{
+    margin-left: 16px;
+}
+
+/* header-pay */
+
+.header-pay{
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+}      
+
+
+
+.header-pay__tittle{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px 0;
+    margin-bottom: 10px;
+}
+
+.header-pay-check{
+    height: 235px;
+}
+
+
+.header-pay-check-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 30px 13px 0;
+    font-weight: 400;
+    background-color: #E8F4FD;
+    border-radius: 4px;
+}
+
+.header-pay-check-product-icon{
+    width: 22px;
+    margin-right: 12px;
+}
+
+.header-pay-check-product-name{
+
+}
+
+.header-voucher{
+    display: block;
+    text-align: center;
+    color: #0A8020;
+    text-decoration: none;
+    padding: 9px;
+    border-radius: 4px;
+    border: 1px solid rgba(10, 128, 32, 0.5);
+    margin: 5px;
+}
+
+.header-voucher:hover{
+    background-color: #F5F7F9;
+}
+
+.header-add-product{
+    font-weight: 300;
+    padding: 6px 10px;
+    background-color: #F5F7F9;
+    margin-bottom: 5px;
+}
+
+.header-product-recommend{
+    display: flex;
+    box-shadow: 0 2px 5px #d1d1d1;
+}
+
+
+
+.header-product-recommend__img{
+    width: 90px;
+    object-fit: cover;
+}
+
+.recommend-content{
+    margin-left: 5px;
+}
+
+.recommend-content__name{
+
+}
+
+.recommend-content__support-name{
+
+}
+
+.recommend-content-price-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+    margin-top: 4px;
+}
+
+.recommend-content-price{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.recommend-content-price-new{
+    font-weight: 500;
+}
+
+.recommend-content-price-btn{
+    margin-right: 20px;
+    padding: 6px 40px;
+    border-radius: 4px;
+    background-color: #0A8020;
+    font-size: 14px;
+    color: #fff;
+}
+.paid-btn:hover,
+.pizza-item-content__price-btn:hover,
+.recommend-content-price-btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.recommend-content-box-link{
+    text-align: center;
+    margin: 10px 10px 4px;
+}
+
+.recommend-content-link-icon{
+    text-decoration: none;
+}
+
+.recommend-content-icon1{
+    color: #494949;
+}
+
+.recommend-content-icon2{
+    color: #AFAFAF;
+}
+
+.recommend-content-icon2:hover{
+    color: #000;
+}
+
+.pay-all{
+    padding: 0 5px;
+    background-color: #F5F7F9;
+}
+
+.all-money{
+    padding-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+.all-money-add{
+    flex: 1;
+
+}
+
+.all-money-price{
+    flex: 1;
+    text-align: right;
+}
+
+.all-money-icon{
+    font-size: 20px;
+    color: #707172;
+    flex: 1;
+}
+
+.all-condition{
+    position: relative;
+}
+
+.all-condition:hover .all-money__condition{
+
+    display: block;
+}
+
+.all-money__condition{
+    width: 300px;
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: -146px;
+    right: 0;
+    font-size: 10px;
+    background-color: #494949;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.all-money__condition-end{
+    width: 300px;
+    display: none;
+    position: absolute;
+    top: -350%;
+    left: -146px;
+    right: 0;
+    font-size: 10px;
+    background-color: #494949;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.all-condition.all-condition-end:hover .all-money__condition-end{
+    display: block;
+}
+
+
+
+
+.paid-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #0A8020;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.paid-btn-link{
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}   
+
+.paid-btn-price{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* pizzah-container/ */
+
+.pizzah-container{
+    width: 75%;
+}
+
+.pizza-content__box{
+    background-image: url(/assets/img/backgroun-pizza.jpg);
+    margin-top: 112px;
+}
+
+.pizza-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.pizza-content__item{
+    padding: 6px;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-basis: 50%;
+}
+
+.pizza-content__item-img-box{
+    overflow: hidden;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pizza-content__item-img{
+    display: block;
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    transition: transform 0.25s linear;
+    
+}
+
+
+
+.pizza-content__item-img-box:hover {
+    background-color: #f5f5f5;
+}
+
+.pizza-content__item:hover .pizza-content__item-img{
+    transform: scale(110%);
+
+}
+
+
+
+.pizza-content__item-content{
+    background-color: #fff;
+    padding: 2px 6px 6px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.pizza-item-content__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    font-weight: 600;
+    margin: 8px 6px 6px;
+}
+
+.pizza-item-content__heading{
+    margin-top: 6px;
+}
+
+.pizza-item-content__heading-new{
+    font-size: 12px;
+    padding: 4px;
+    background-color: #FFC800;
+    color: #313123;
+}
+
+
+
+.pizza-item-content__list{
+    position: relative;
+    font-weight: 400;
+    margin-bottom: 4px;
+    line-height: 2rem;
+    height: 6rem;
+    overflow: hidden;
+
+}
+
+.pizza-item-content__list-open{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    color: orange;
+    cursor: pointer;
+}
+.pizza-item-content__price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    margin: 0 -6px;
+    padding: 8px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}   
+
+
+.pizza-item-content__price-new-number{
+    font-weight: 500;
+}
+
+.pizza-item-content__price-btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: #0A8020;
+    padding: 10px 45px;
+    border-radius: 4px;
+}
+
+
+
+
+
+
