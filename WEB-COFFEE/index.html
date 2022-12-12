@@ -51,10 +51,14 @@
                             <a href="" class="navbar-item-link">News & Blog</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="" class="navbar-item-link navbar-item-link-box">
+                            <button href="" class="js-open-modal-order cursor navbar-item-link navbar-item-link-box">
                                 Order Now
                                 <i class="navbar-item-link-box-icon fa-solid fa-angle-right"></i>
-                            </a>
+                            </button>
+                        
+                           
+
+                        
                         </li>
                        
                     </ul>
@@ -62,6 +66,68 @@
                 </nav>
 
             </header>
+
+            <div class="js-modal-order modal-order">
+                <div class="modal-coating">
+
+                    <div class="modal-order-container js-modal-order-container">
+                        <div class="modal-order__header">
+                            <i class="js_modal-order-out cursor modal-order-icon__out ti-close"></i>
+                            <p class="modal-order__order__header--recommend">We are MegaOne Company</p>
+                            <h1 class="modal-order__heading">Place your Order Here</h1>
+    
+                        </div>
+    
+                        <div class="modal-order__content">
+                            <form action="">
+                                <div class="modal-order__user">
+                                    <input class="modal-order__user--info"required type="text" name="" id="" placeholder="Name">
+                                    <input class="modal-order__user--info"required type="email" name="" id="" placeholder="Email">
+                                </div>
+    
+                                <div class="modal-order__company">
+                                    <input class="modal-order__user--info" required type="text" name="" id="" placeholder="Contract #">
+                                    <input class="modal-order__user--info" required type="text" name="" id="" placeholder="City / Block no">
+    
+                                </div>
+    
+                                <textarea class="modal-order__detail"  placeholder="Please explain your order in detail." name="" id="" cols="20" rows="5"></textarea>
+                               
+    
+                                <footer class="modal-order-footer">
+                                    <label class="modal-order-check" for="">
+                                        <span class="js-modal-check-order modal-order-check__span">
+                                            <span class="js-modal-order__checked modal-order-check__span--color">
+                                                <i class="modal-order-check__span--icon fa-solid fa-check"></i>
+                                            </span>
+                                        </span>
+                                        <span class="js-modalCheckout modalCheckout" ></span>
+    
+                                        Contact by phone is preferred
+                                    
+                                    </label>
+    
+                                    <a href="" class="modal-order-check__submit--box">
+                                        <input class="modal-order-check__submit" type="submit" value="Submit Now">
+                                        <i class="modal-order-check__submit--icon fa-solid fa-angle-right"></i>
+                                        
+                                    </a>
+    
+                                </footer>
+    
+    
+                            </form>
+    
+                        </div>
+    
+                    </div>
+    
+
+                </div>
+
+               
+
+            </div>
 
             <div class="modal-header js-modal-header">
 
@@ -115,11 +181,12 @@
 
                                     </a>
                                 </li>
-                                <li class="navbar-item">
-                                    <a href="" class="navbar-item-link navbar-item-link-box modal_box-item-order ">
+                                <li class=" navbar-item">
+                                    <button href="" class="js-open-modal-order cursor navbar-item-link navbar-item-link-box modal_box-item-order ">
                                         Order Now
                                         <i class="navbar-item-link-box-icon fa-solid fa-angle-right"></i>
-                                    </a>
+                                    </button>
+
                                 </li>
                                
                             </ul>
@@ -161,8 +228,6 @@
 
 
             </div>
-
-
 
             <!-- slide -->
 
@@ -352,10 +417,10 @@
 
                     <div class="ctn-info__coffee-cups">
                         <div class="ctn-info__coffee-cups-box-img">
-                            <img class="ctn-content-info-img" src="data:image/png;base64,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">
+                            <img class="ctn-content-info-img ctn-content-info-img--invest" src="./assets/img/smile.png">
                         </div>
 
-                        <h2 class="ctn-info__coffee-cups-number">3785</h2>
+                        <h2 class="ctn-info__coffee-cups-number">2995</h2>
 
                         <p class="ctn-info__coffee-cups-name">Coffee Cups</p>
                     </div>
@@ -365,7 +430,7 @@
                             <img class="ctn-content-info-img" src="data:image/png;base64,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">
                         </div>
 
-                        <h2 class="ctn-info__coffee-cups-number">3785</h2>
+                        <h2 class="ctn-info__coffee-cups-number">1559</h2>
 
                         <p class="ctn-info__coffee-cups-name">Coffee Cups</p>
                     </div>
@@ -375,7 +440,7 @@
                             <img  class="ctn-content-info-img ctn-content-info-img--invest" src="./assets/img/return-on-investment.png" alt="">
                         </div>
                        
-                        <h2 class="ctn-info__coffee-cups-number">3785</h2>
+                        <h2 class="ctn-info__coffee-cups-number">1990</h2>
 
                         <p class="ctn-info__coffee-cups-name">Coffee Cups</p>
                     </div>
@@ -401,7 +466,7 @@
 
                     <div class="grid">  
                         
-                        <div class="grid-row">
+                        <div class="grid-row cursor">
                             <div class="grid-col-frist">
                                 <div class="coffee-menu__box--img">
                                     <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="Menu" class="coffee-menu__img">
@@ -418,7 +483,11 @@
                                
                                 </div>
 
-                                
+                                <div class="menu-box-item">
+                                    <div class="menu-box-item__coating"></div>
+                                    <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+
+                                </div>
 
                             </div>
 
@@ -436,6 +505,11 @@
                                     </div>
                                 </div>
 
+                                <div class="menu-box-item">
+                                    <div class="menu-box-item__coating"></div>
+                                    <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+
+                                </div>
                             </div>
 
                             <div class="grid-col-frist">
@@ -450,20 +524,329 @@
                                         <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
                                         <h3 class="coffee-modal-name">Coffee Cup</h3>
                                     </div>
+
+                                    <div class="menu-box-item">
+                                        <div class="menu-box-item__coating"></div>
+                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+    
+                                    </div>
+                                    
                                 </div>
                             </div>
 
                         </div>
 
+                        <div class="grid-row cursor">
+                            <div class="grid-col">
+                                <div class="coffee-menu__box--img">
+                                    <img src="./assets/img-menu/gallery-img-4.jpg" alt="Menu" class="coffee-menu__img">
+                                    <div class="coffee-menu__box--modal">
+                                       
+                                    </div>
+
+                                    <div class="coffee-menu__box--modal-content">
+
+                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
+                                    </div>
+
+                                    <div class="menu-box-item">
+                                        <div class="menu-box-item__coating"></div>
+                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-col">
+                                <div class="coffee-menu__box--img">
+                                    <img src="./assets/img-menu/gallery-img-5.jpg" alt="Menu" class="coffee-menu__img">
+                                    <div class="coffee-menu__box--modal">
+                                       
+                                    </div>
+
+                                    <div class="coffee-menu__box--modal-content">
+
+                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
+                                    </div>
+
+                                    <div class="menu-box-item">
+                                        <div class="menu-box-item__coating"></div>
+                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-col">
+                                <div class="coffee-menu__box--img">
+                                    <img src="./assets/img-menu/gallery-img-6.jpg" alt="Menu" class="coffee-menu__img">
+                                    <div class="coffee-menu__box--modal">
+                                       
+                                    </div>
+
+                                    <div class="coffee-menu__box--modal-content">
+
+                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
+                                    </div>
+
+                                    <div class="menu-box-item">
+                                        <div class="menu-box-item__coating"></div>
+                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-col">
+                                <div class="coffee-menu__box--img">
+                                    <img src="./assets/img-menu/gallery-img-7.jpg" alt="Menu" class="coffee-menu__img">
+                                    <div class="coffee-menu__box--modal">
+                                       
+                                    </div>
+
+                                    <div class="coffee-menu__box--modal-content">
+
+                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
+                                    </div>
+
+                                    <div class="menu-box-item">
+                                        <div class="menu-box-item__coating"></div>
+                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+    
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="grid-row cursor">
+                            <div class="grid-col">
+                                <div class="coffee-menu__box--img">
+                                    <img src="./assets/img-menu/gallery-img-8.jpg" alt="Menu" class="coffee-menu__img">
+                                    <div class="coffee-menu__box--modal">
+                                       
+                                    </div>
+
+                                    <div class="coffee-menu__box--modal-content">
+
+                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
+                                    </div>
+
+                                    <div class="menu-box-item">
+                                        <div class="menu-box-item__coating"></div>
+                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-col">
+                                <div class="coffee-menu__box--img">
+                                    <img src="./assets/img-menu/gallery-img-9.jpg" alt="Menu" class="coffee-menu__img">
+                                    <div class="coffee-menu__box--modal">
+                                       
+                                    </div>
+
+                                    <div class="coffee-menu__box--modal-content">
+
+                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
+                                    </div>
+
+                                    <div class="menu-box-item">
+                                        <div class="menu-box-item__coating"></div>
+                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-col">
+                                <div class="coffee-menu__box--img">
+                                    <img src="./assets/img-menu/gallery-img-10.jpg" alt="Menu" class="coffee-menu__img">
+                                    <div class="coffee-menu__box--modal">
+                                       
+                                    </div>
+
+                                    <div class="coffee-menu__box--modal-content">
+
+                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
+                                    </div>
+
+                                    <div class="menu-box-item">
+                                        <div class="menu-box-item__coating"></div>
+                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-col">
+                                <div class="coffee-menu__box--img">
+                                    <img src="./assets/img-menu/gallery-img-11.jpg" alt="Menu" class="coffee-menu__img">
+                                    <div class="coffee-menu__box--modal">
+                                       
+                                    </div>
+
+                                    <div class="coffee-menu__box--modal-content">
+
+                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
+                                    </div>
+
+                                    <div class="menu-box-item">
+                                        <div class="menu-box-item__coating"></div>
+                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+    
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
 
 
                     </div>
+
+                    <div class="container__coffee--review">
+                        <div class="container-review__box-img">
+                            <img src="./assets/img/testimonial-img.png" alt="" class="container-review__box-img">
+                        </div>
+
+                        <div class="container-review__content">
+
+                            <div class="container-heading margin-0">
+                                <div class="ctn-heading-box-img">
+                                    <img src="./assets/img/about-border.png" alt="Heading" class="ctn-heading-img">
+                            
+                                </div>
+        
+                                <h1 class="ctn-heading-title">Coffee Lovers</h1>
+                                
+                                <i class="container-review__icon fa-solid fa-quote-right"></i>
+
+                            <p class="ctn-heading-content maxWidth-100 margin-0">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.</p>
+                                
+                            <div class="container-review__user">
+                                <img src="./assets/img/review-1.jpg" alt="" class="container-review__user--img">
+                                <p class="container-review__user--name">Sara Williams</p>
+                            </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    
+                    <div class="container__coffee--blog">
+
+                        <div class="container__blog-box-content">
+                            <div class="container-heading width-60-mg-auto">
+                                <p class="container__blog-time font-20-cl-white">Dec 14, 2020</p>
+                                <h1 class="ctn-heading-title color-white">Coffee Blogs</h1>
+                                <p class="ctn-heading-content maxWidth-100 margin-0 color-444444">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.</p>
+                                
+                            </div>
+
+                            <button href="" class="margin-button-blog  cursor navbar-item-link navbar-item-link-box">
+                                Read Blogs
+                                <i class="navbar-item-link-box-icon fa-solid fa-angle-right"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="container__blog-box-img">
+                            <img src="./assets/img/blog-img.jpg" alt="" class="container__blog--img">
+
+                        </div>
+
+                    
+                    </div>
+
+                    <div class="container__coffee--place">
+                        <div class="container-place__box-img">
+                            <img src="./assets/img/standalone-img3.jpg" alt="" class="container-place__img">
+                        
+                        </div>
+
+                        <div class="container-review__content">
+
+                            <div class="container-heading margin-0 fix-place-user__info">
+                                <div class="ctn-heading-box-img">
+                                    <img src="./assets/img/about-border.png" alt="Heading" class="ctn-heading-img">
+                                </div>
+        
+                                <h1 class="ctn-heading-title ml-0">Place your order</h1>
+                                
+                                <form action="">
+                                    <input class="place-user__info modal-order__user--info" type="text" name="" id="" placeholder="Your Name">
+                                    <input class="place-user__info modal-order__user--info" type="email" name="" id="" placeholder="Email">
+                                    <input class="place-user__info modal-order__user--info" type="text" name="" id="" placeholder="Contract">
+
+                                    <textarea class="place-user__info--detail modal-order__detail" name="" id="" placeholder="Coffee Details"></textarea>
+
+                                    <button  class="place-user__info--btn margin-button-blog  cursor navbar-item-link navbar-item-link-box ">
+                                        Read Blogs
+                                        <i class="place-user__info--btn-icon navbar-item-link-box-icon fa-solid fa-angle-right "></i>
+                                    </button>
+
+                                </form>
+                            
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            <!-- footer  -->
+            <footer class="footer-coffee">
+                <div class="modal_box-social">
+                   
+                    <div class="slider-content__box-social footer-coffee__fix">
+                        <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                            <i class="box-social__icon fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                            <i class="box-social__icon fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                            <i class="box-social__icon fa-brands fa-google-plus-g"></i>
+                        </a>
+
+                        <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                            <i class="box-social__icon fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                            <i class="box-social__icon fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                            <i class="box-social__icon fa-brands fa-pinterest-p"></i>
+                        </a>
+
+                    </div>
+                    
+                    <p class="modal-social__credit font-12px color-444444">© 2020 MegaOne. Made With Love by Themesindustry</p>
 
 
                 </div>
 
 
-            </div>
+
+            </footer>
 
     </div>
 
@@ -471,20 +854,67 @@
         const modalClick = document.querySelector('.js-modal-menu')
         const modalHeader = document.querySelector('.js-modal-header')
         const modalOut = document.querySelector('.js-modal-out')
+        const modalOrder = document.querySelector('.js-modal-check-order')
+        const modalOrdered = document.querySelector('.js-modal-order__checked')
+        const modalOrderout = document.querySelector('.js-modalCheckout')
+
+        const OpenOrderS = document.querySelectorAll('.js-open-modal-order')
+        const modalOpenorder = document.querySelector('.js-modal-order')
+        const modalOutorder = document.querySelector('.js_modal-order-out')
+
+        const modalOrderCtn = document.querySelector('.js-modal-order-container')
+
         function openModal () {
             modalHeader.classList.add('open')
-            
         }
 
         function removeModal () {
-
             modalHeader.classList.remove('open')
-
-            
         }
-
         modalClick.addEventListener('click',openModal)
         modalOut.addEventListener('click',removeModal)
+        
+        function openModalOder () {
+            modalOpenorder.classList.add('open')
+        }
+
+
+        for (const OpenOrder of OpenOrderS){
+            OpenOrder.addEventListener('click', openModalOder)
+        }
+
+        function removeModaloder () {
+            modalOpenorder.classList.remove('open')
+        }
+
+
+
+
+        modalOutorder.addEventListener('click',removeModaloder)
+        modalOpenorder.addEventListener('click',removeModaloder)
+
+
+
+
+        function modalOrderopen () {
+            modalOrdered.classList.add('open')
+            modalOrderout.classList.add('open')
+
+        }
+        function removeModalOrder () {
+            modalOrdered.classList.remove('open')
+            modalOrderout.classList.remove('open')
+
+        }
+        modalOrder.addEventListener('click',modalOrderopen)
+        modalOrderout.addEventListener('click',removeModalOrder)
+
+        modalOrderCtn.addEventListener('click',function (event) {
+            event.stopPropagation()
+
+        })
+
+
 
 
     </script>
