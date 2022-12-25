@@ -1,8 +1,6 @@
 /* header-navbar */
 
-.header-coffee{
 
-}
 
 .header-navbar{
     position: fixed;
@@ -46,10 +44,7 @@
     transform: scale(70%);
 }
 
-.navbar-logo-item{
-   
 
-}
 .navbar-logo-web{
     margin-left: 58px;
 }
@@ -67,9 +62,7 @@
     display: inline-block;
 }
 
-.navbar-item-icon{
 
-}
 
 .link-relative{
     position: relative;
@@ -186,9 +179,7 @@
 
 }
 
-.modal-order__content{
 
-}
 
 .modal-order__user{
     display: flex;
@@ -238,9 +229,7 @@
     padding: 30px;
 }
 
-.modal-order-check{
 
-}
 
 
 
@@ -422,9 +411,7 @@
 
 }
 
-.modal-header-icon{
-    
-}
+
 
 
 .modal-icon__out{
@@ -449,9 +436,7 @@
     border-bottom: 1px solid #fff;
 }
 
-.modal_box-list{
 
-}
 
 .modal-header__content .navbar-item-link{
     font-size: 3rem;
@@ -679,18 +664,14 @@
 
 
 /* container  */
-.container__coffee{
-    
-}
+
 
 .container-heading{
     text-align: center;
     margin: 120px 0 100px;
 }
 
-.ctn-heading-box-img{
 
-}
 
 .ctn-heading-img{
     width: 100px;
@@ -734,8 +715,7 @@
     margin: 48px;
 }
 
-.ctn-content-info-box-img{
-}
+
 
 .ctn-content-info-img:hover{
     transform: translateY(-10px);
@@ -789,13 +769,8 @@
     padding: 48px 0;
 }
 
-.ctn-info__coffee-cups-box-img{
 
-}
 
-.ctn-content-info-img{
-
-}
 
 .ctn-content-info-img--invest{
     width: 50px;
@@ -928,11 +903,12 @@
 .container-review__box-img{
     flex-basis: 50%;
     margin-left: 20px;
-
 }
 
-.container-review__content{
 
+
+.container-review__content{
+    transform: translate();
     flex-basis: 35%;
 }
 
@@ -975,9 +951,6 @@
 
 }
 
-.container__blog-time{
-
-}
 
 .container__blog--img{
     display: block;
@@ -994,13 +967,6 @@
     padding: 120px 0;
 }
 
-.container-place__box-img{
-
-}
-
-.container-place__img{
-
-}
 
 .place-user__info{
     display: block;
