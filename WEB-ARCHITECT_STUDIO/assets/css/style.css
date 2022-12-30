@@ -49,9 +49,6 @@
     justify-content: space-between;
 }
 
-.navbar-logo{
-
-}
 
 .navbar-logo__link{
     margin-left: 125px;
@@ -67,9 +64,6 @@
     justify-content: space-between;
 }
 
-.navbar-conten__list{
-
-}
 
 .navbar-conten__items{
     display: inline-block;
@@ -77,21 +71,14 @@
 }
 
 .navbar-conten__items-link{
-    padding: 24px 16px;
+    padding: 24px 6px;
     font-weight: 500;
-}
-
-.navbar-conten__items--number{
-
+    margin: 0 10px;
 }
 
 .navbar-conten__items--number-icon{
     padding-left: 5px;
     padding-right: 3px;
-}
-
-.navbar-box-menu{
-
 }
 
 .navbar-menu__btn{
@@ -164,29 +151,12 @@
     margin-left: -26px;
 }
 
-.modal-logo__close{
-
-}
-
 .modal-logo__close--icon{
     font-size: 25px;
     position: absolute;
     top: 0;
     right: -50px;
     color: #fff;
-}
-
-
-.modal-nav{
-
-}
-
-.modal-nav__list{
-
-}
-
-.modal-nav__items{
-
 }
 
 .modal-nav__link p{
@@ -239,10 +209,6 @@
 .modal-social span{
     display: block;
     margin-bottom: 10px;
-}
-
-.modal-social__pn{
-
 }
 
 .modal-social__copyright{
@@ -394,9 +360,6 @@
     padding: 120px 15px 120px 50px;
     position: relative;
 }
-.about-description .overlay{
-    
-}
 
 .about-description__heading{
     font-size: 60px;
@@ -524,9 +487,6 @@
     padding: 20px 15px;
 }
 
-.team-web__description--heading{
-
-}
 
 .team-web__description--heading span{
     display: block;
@@ -556,10 +516,6 @@
     color: var(--background-color);
 }
 
-.team-web__icon{
-
-}
-
 .member-web{
     max-width: 278px;
     text-align: center;
@@ -567,10 +523,6 @@
 
 .member-web span{
     font-weight: 300;
-}
-
-.member-web__img{
-
 }
 
 .member-web__img--name{
@@ -633,10 +585,6 @@
 
 /* portfolio-web */
 
-.portfolio-web{
-
-}
-
 .portfolio-web .row:first-child{
     justify-content: space-between;
     padding: 0 15px;
@@ -658,9 +606,6 @@
     margin-bottom: 48px;
 }
 
-.portfolio-left__box-list{
-
-}
 
 .portfolio-left__list{
     margin-bottom: 30px;
@@ -760,13 +705,6 @@
 
 }
 
-.portfolio-info{
-
-}
-
-.portfolio-info__content{
-
-}
 
 .portfolio-info__content--text{
     color: #202020;
@@ -786,9 +724,6 @@
 
 }
 
-.portfolio-info__btn{
-
-}
 
 .portfolio-info__btn--link{
     background-color: var(--background-color) !important;
@@ -852,9 +787,6 @@
     margin: 0 auto 30px;
 }
 
-.customer-info__member{
-
-}
 
 .customer-info__img{
     width: 100px;
