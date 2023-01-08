@@ -61,11 +61,11 @@ a{
     cursor: pointer;
 }
 
-.grid{
+/* .grid{
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
-}
+} */
 
 .grid-row{
     display: flex;

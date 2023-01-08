@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
     <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
@@ -16,52 +18,49 @@
     <div class="main">
         <!-- header-navbar  -->
             <header  class="header-coffee">
-                <nav class="header-navbar" >
-                    <div class="navbar-logo">
-
+                <nav class="header-navbar grid wide" >
+                    <div class="row">
                         <button class="cursor navbar-logo-menu js-modal-menu">
                             <span class=" navbar-menu-span menu-animation"></span>
                             <span class=" navbar-menu-span "></span>
                             <span class=" navbar-menu-span menu-animation"></span>
-
                         </button>
-                        <a id="home" href="" class="navbar-logo-web">
-                            <img src="./assets/img/logo.png" alt="Logo" class="navbar-img">
-                        </a>
-                    </div>
-
-                    <ul class="navbar-list">
-                        <li class="navbar-item">
-                            <a href="" class="navbar-item-link">Home</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="#coffee" class="navbar-item-link link-relative">
-                                About Coffee
-                                <i class="navbar-item-icon fa-solid fa-angle-down"></i>
-
+                        <div class="navbar-logo col l-2 l-ip-2">
+                            <a id="home" href="" class="navbar-logo-web">
+                                <img src="./assets/img/logo.png" alt="Logo" class="navbar-img">
                             </a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="#menu" class="navbar-item-link">Our Menu</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="#review" class="navbar-item-link">Reviews</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="#blog" class="navbar-item-link">News & Blog</a>
-                        </li>
-                        <li class="navbar-item">
-                            <button href="" class="js-open-modal-order cursor navbar-item-link navbar-item-link-box">
-                                Order Now
-                                <i class="navbar-item-link-box-icon fa-solid fa-angle-right"></i>
-                            </button>
-                        
-                           
-
-                        
-                        </li>
-                       
-                    </ul>
+                        </div>
+    
+                        <ul class="navbar-list col l-10 m-0 c-0">
+                            <li class="navbar-item">
+                                <a href="" class="navbar-item-link">Home</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#coffee" class="navbar-item-link link-relative">
+                                    About Coffee
+                                    <i class="navbar-item-icon fa-solid fa-angle-down"></i>
+    
+                                </a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#menu" class="navbar-item-link">Our Menu</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#review" class="navbar-item-link">Reviews</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#blog" class="navbar-item-link">News & Blog</a>
+                            </li>
+                            <li class="navbar-item">
+                                <button href="" class="js-open-modal-order cursor navbar-item-link navbar-item-link-box">
+                                    Order Now
+                                    <i class="navbar-item-link-box-icon fa-solid fa-angle-right"></i>
+                                </button>
+    
+                            </li>
+    
+                        </ul>
+                    </div>
 
                 </nav>
 
@@ -131,98 +130,98 @@
 
             <div class="modal-header js-modal-header">
 
-                <div class="modal-background"></div>
-
                 <div class="modal-coating"></div>
-
-
-                <div class="modal-header__container">
+                <div class="modal-inner-wrapper">
                     <i class="js-modal-out cursor modal-icon__out ti-close"></i>
+                    <div class="modal-header__container grid wide">
+                        <div>
 
-                    <a href="" class="modal-header__logo">
-                        <img src="./assets/img/logo.png" alt="Logo" class="modal-header-icon">
-                    </a>
-
-                    <div class="modal-header__content">
-                        <div class="modal_box-list">
-                            <ul class="navbar-list">
-                                <li class="navbar-item ">
-                                    <a href="" class="navbar-item-link">
-                                        Home
-                                    <span class="modal_box-item-underlined"></span>
-
-                                    </a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="" class="navbar-item-link">
-                                        About Coffee
-                                    <span class="modal_box-item-underlined"></span>
-
-                                    </a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="" class="navbar-item-link">
-                                        Our Menu
-                                    <span class="modal_box-item-underlined"></span>
-
-                                    </a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="" class="navbar-item-link">
-                                        Reviews
-                                    <span class="modal_box-item-underlined"></span>
-
-                                    </a>
-                                </li>
-                                <li class="navbar-item">
-                                    <a href="" class="navbar-item-link">
-                                        News & Blog
-                                    <span class="modal_box-item-underlined"></span>
-
-                                    </a>
-                                </li>
-                                <li class=" navbar-item">
-                                    <button href="" class="js-open-modal-order cursor navbar-item-link navbar-item-link-box modal_box-item-order ">
-                                        Order Now
-                                        <i class="navbar-item-link-box-icon fa-solid fa-angle-right"></i>
-                                    </button>
-
-                                </li>
-                               
-                            </ul>
+                            <a href="" class="modal-header__logo">
+                                <img src="./assets/img/logo.png" alt="Logo" class="modal-header-icon">
+                            </a>
                         </div>
-
-                        <div class="modal_box-social">
-                            <p class="modal-social__std">+1 631 123 4567</p>
-                            <p class="modal-social__email">email@website.com</p>
-                            
-                            <div class="slider-content__box-social">
-                                <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
-                                    <i class="box-social__icon fa-brands fa-facebook-f"></i>
-                                </a>
     
-                                <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
-                                    <i class="box-social__icon fa-brands fa-twitter"></i>
-                                </a>
+                        <div class="modal-header__content">
+                            <div class="modal_box-list">
+                                <ul class="navbar-list">
+                                    <li class="navbar-item ">
+                                        <a href="" class="navbar-item-link">
+                                            Home
+                                        <span class="modal_box-item-underlined"></span>
     
-                                <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
-                                    <i class="box-social__icon fa-brands fa-youtube"></i>
-                                </a>
+                                        </a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="" class="navbar-item-link">
+                                            About Coffee
+                                        <span class="modal_box-item-underlined"></span>
     
-                                <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
-                                    <i class="box-social__icon fa-brands fa-instagram"></i>
-                                </a>
+                                        </a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="" class="navbar-item-link">
+                                            Our Menu
+                                        <span class="modal_box-item-underlined"></span>
+    
+                                        </a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="" class="navbar-item-link">
+                                            Reviews
+                                        <span class="modal_box-item-underlined"></span>
+    
+                                        </a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a href="" class="navbar-item-link">
+                                            News & Blog
+                                        <span class="modal_box-item-underlined"></span>
+    
+                                        </a>
+                                    </li>
+                                    <li class=" navbar-item">
+                                        <button href="" class="js-open-modal-order cursor navbar-item-link navbar-item-link-box modal_box-item-order ">
+                                            Order Now
+                                            <i class="navbar-item-link-box-icon fa-solid fa-angle-right"></i>
+                                        </button>
+    
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+    
+                            <div class="modal_box-social">
+                                <p class="modal-social__std">+1 631 123 4567</p>
+                                <p class="modal-social__email">email@website.com</p>
+                                
+                                <div class="slider-content__box-social">
+                                    <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                                        <i class="box-social__icon fa-brands fa-facebook-f"></i>
+                                    </a>
+        
+                                    <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                                        <i class="box-social__icon fa-brands fa-twitter"></i>
+                                    </a>
+        
+                                    <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                                        <i class="box-social__icon fa-brands fa-youtube"></i>
+                                    </a>
+        
+                                    <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                                        <i class="box-social__icon fa-brands fa-instagram"></i>
+                                    </a>
+        
+                                </div>
+                                
+                                <p class="modal-social__credit">© 2020 MegaOne. Made With Love by Themesindustry</p>
+    
     
                             </div>
-                            
-                            <p class="modal-social__credit">© 2020 MegaOne. Made With Love by Themesindustry</p>
-
-
+    
                         </div>
-
+    
+    
                     </div>
-
-
                 </div>
 
 
@@ -236,10 +235,9 @@
                 </div>
                 <img src="./assets/img/slider-1.jpg" alt="" class="slider-img">
 
-
                 <div class="slider-content">
 
-                    <div class="slider-content__stt ">
+                    <div class="slider-content__stt col c-0">
                         <span class="cursor slider-stt slider-stt-open">1</span>
                         <span class="cursor slider-stt">2</span>
                         <span class="cursor slider-stt">3</span>
@@ -247,7 +245,7 @@
 
 
                     <div class="slider-content__box">
-                        <div class="slider-content__box-title">
+                        <div class="slider-content__box-title ">
 
                             <h1 class="slider-content__heading">
                                 Best in Town 
@@ -267,7 +265,7 @@
 
                         </div>
 
-                        <div class="slider-content__box-social">
+                        <div class="slider-content__box-social col c-0">
                             <a href="" class="slide-box-social__link slider-stt--social">
                                 <i class="box-social__icon fa-brands fa-facebook-f"></i>
                             </a>

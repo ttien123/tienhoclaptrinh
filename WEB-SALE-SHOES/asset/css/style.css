@@ -14,23 +14,11 @@
     
 }
 
-
 .header-logo{
     max-width: 145px;
     margin-top: 15px;
 }
 
-.header-logo__img{
-
-}
-
-.header-setting{
-
-}
-
-.header-list{
-
-}
 
 .header-items{
     display: inline-block;
@@ -61,6 +49,7 @@
     border: 0.2px solid #dfdfdf;
     border-radius: 3px;
     animation: slow linear .25s;
+    background: #fff;
 }
 
 .header-list__language::before{
@@ -159,10 +148,6 @@
     display: block;
 }
 
-.modal-header-cart{
-
-}
-
 .modal-heading{
     color: #862359;
     padding: 20px;
@@ -196,18 +181,6 @@
     margin: 0 4px;
 }
 
-.modal-cart__link--img{
-
-}
-
-.modal-cart__info{
-
-}
-
-.modal-cart__info--link{
-
-}
-
 .modal-cart__info--name{
     font-size: 14px;
     font-weight: 600;
@@ -238,16 +211,13 @@
     font-size: 1.2rem;
 }
 
-.modal-cart__qtt-del{
-
+.modal-cart__qtt-del:hover .modal-cart__del-icon{
+    color: red;
 }
 
 .modal-cart__del-icon{
     font-size: 12px;
-}
-
-.modal-cart-footer{
-
+    transition: 0.5s;
 }
 
 .modal-footer__total{
@@ -329,10 +299,6 @@
     margin-top: 150px;
 }
 
-.navbar-social__list{
-
-}
-
 .navbar-social__items{
     text-align: center;
     margin-bottom: 30px;
@@ -393,10 +359,6 @@
 
 /* slider-web */
 
-.slider-web{
-
-}
-
 .slider-box{
     background-image: url('../img/product-listing-banner.jpg');
     min-height: 300px;
@@ -405,15 +367,10 @@
     background-position: 50% 70%;
 }
 
-.slider-box__img{
-
-}
-
 /* product-style  */
-
-
 .product-style{
     max-width: 25%;
+    height: 100vh;
     padding: 10px 35px;
     position: sticky;
     top: 0;
@@ -427,10 +384,6 @@
     font-weight: 500;
     margin: 20px 0 20px;
     letter-spacing: 0.8px;
-}
-
-.product__month{
-
 }
 
 .product__month--name{
@@ -473,10 +426,6 @@
 
 .product-add{
     max-width: 95%;
-}
-
-.product-add__img{
-
 }
 
 .product__copyright{
@@ -530,17 +479,15 @@
 
 .product-box{
     max-width: 25%;
-    padding: 15px;
+    padding: 15px 15px 0;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-bottom: 15px;
 }
 
 .product-img{
     position: relative;
-}
-
-.product-box__img{
-
 }
 
 .product-box__hover{
@@ -584,29 +531,26 @@
 }
 
 /* footer-web */
-
-.footert-web{
-
-}
-
 .footert-content{
-
+    margin-bottom: 20px;
+    font-weight: 300;
 }
 
 .footert-dec{
-
-}
-
-.footert-dec__ship{
-
+    display: flex;
+    justify-content: space-around;
 }
 
 .footert-dec__ship--heading{
-
+    font-size: 1.8rem;
+    margin-bottom: 8px;
 }
 
 .footert-dec__ship--cnt{
-
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
 }
 
 
