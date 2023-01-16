@@ -36,6 +36,7 @@ a{
     display: block;
 }
 
+
 .font-12px{
     font-size: 12px;
 }
@@ -45,6 +46,8 @@ a{
 .slider-content__stt{
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 25%;
 }
 
 .slider-stt-open{
@@ -61,20 +64,18 @@ a{
     cursor: pointer;
 }
 
-/* .grid{
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
-} */
 
 .grid-row{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5px -5px;
+    padding: 0 20px !important;
 }
+
 
 .margin-0{
     margin: 0;
+}
+
+.mt-10px{
+    margin-top: 10px;
 }
 
 .ml-0{
@@ -134,8 +135,10 @@ a{
 }
 
 .margin-button-blog{
-    margin: 50px 0 0 130px;
     font-size: 15px !important;
+    position: relative;
+    top: 35px;
+    left: 18%;
 }
 .display-block{
     display: block;

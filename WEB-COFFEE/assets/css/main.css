@@ -483,6 +483,7 @@
 }
 
 .modal_box-social .slider-content__box-social{
+    position: unset;
     display: flex;
     flex-direction: row;
     margin-left: -10px;
@@ -547,17 +548,15 @@
 
 .slider-content{
     position: absolute;
-    top: 45%;
+    top: 25%;
     left: 0;
     right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
 }
 
 .slider-content__box{
-    display: flex;
-    justify-content: flex-end;
+
+    
 }
 
 
@@ -575,9 +574,7 @@
 
 
 .slider-content__box-title{
-    max-width: 45%;
-    margin-top: -9%;
-    padding-left: 16px;
+
 }
 
 .slider-content__heading{
@@ -660,6 +657,9 @@
 .slider-content__box-social{
     display: flex;
     flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 20%;
 }
 
 .slide-box-social__link{
@@ -703,27 +703,31 @@
     font-size: 1.6rem;
     max-width: 60%;
     margin: 0 auto;
-    line-height: 2.2rem;
+    line-height: 3rem;
 
 }
 
 
 .ctn-content{
-    display: flex;
-    justify-content: space-evenly;
     margin-bottom: 120px;
 }   
 
 .ctn-content-info-coffe{
-    max-width: 35%;
+    margin-top: 30px;
 }
 
 .ctn-content-info{
     display: flex;
-    margin: 48px;
+    margin-bottom: 48px;
 }
 
+.ctn-content__box-img{
+    text-align: center;
+}
 
+.ctn-content__img{
+    max-width: 90%;
+}
 
 .ctn-content-info-img:hover{
     transform: translateY(-10px);
@@ -899,25 +903,13 @@
 /* container-review */
 
 .container__coffee--review{
-    display: flex;
     padding: 120px 0;
-    justify-content: center;
-    max-width: 1140px;
-    margin: auto;
-}
-
-
-
-.container-review__box-img{
-    flex-basis: 50%;
-    margin-left: 20px;
 }
 
 
 
 .container-review__content{
-    transform: translate();
-    flex-basis: 35%;
+ 
 }
 
 .container-review__icon{
@@ -984,10 +976,14 @@
 
 }
 
+.container-place__box-img{
+    text-align: center;
+}
+
 .place-user__info--detail{
     font-size: 16px;
     margin: 15px 0;
-    min-height: 140px;
+    min-height: 130px;
 
 }
 
@@ -995,7 +991,10 @@
     background-color: #444444 !important;
     width: 100%;
     margin: 0!important;
+    top: 15px !important;
+    left: 0 !important;
 }
+
 
 .place-user__info--btn:hover{
     background-color: var(--color) !important;
@@ -1003,7 +1002,7 @@
 }
 
 .place-user__info--btn:hover .place-user__info--btn-icon{
-    transform: translateX(160px);
+    transform: translateX(150px);
 
 }
 
@@ -1011,6 +1010,8 @@
     transition: transform linear 0.25s;
     transform: translateX(180px);
 }
+
+
 
 /* footer  */
 
@@ -1024,4 +1025,6 @@
     justify-content: center;
 }
 
-
+.footer-coffee .slider-content__box-social{
+    margin-left: 0;
+}

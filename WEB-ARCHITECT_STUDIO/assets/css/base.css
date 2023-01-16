@@ -87,7 +87,7 @@ button{
     width: 35%;
 }
 
-.mg-b{
+.pb-b{
     padding-bottom: 25px !important;
 }
 
@@ -111,6 +111,26 @@ button{
     margin-left: 25px;
 }
 
+.left-35{
+    left: 35%;
+}
+
+.right-35{
+    right: 35%;
+}
+
+.pd-left-25px{
+    padding-left: 25px !important;
+}
+
+.pd-right-25px{
+    padding-right: 25px !important;
+}
+
+.mr-40px{
+    margin-right: 40px !important;
+}
+
 .max-width-50{
     max-width: 50%;
 }
@@ -118,7 +138,6 @@ button{
 .container{
     width: 100%;
     max-width: 1140px;
-    padding: 0 15px;
     margin: 0 auto;
     position: relative;
 }

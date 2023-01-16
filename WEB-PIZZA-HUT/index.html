@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
 </head>
@@ -15,46 +17,48 @@
     <div class="main">
         <!-- header  -->
         <header class="pizzah-header">
-            <nav class="header-navbar ">
-
+            <nav class="header-navbar">
                 <div class="navbar-logo">
+                            <a href="" class="navbar-logo__link">
+                                <img src="./assets/img/pizza-hut-logo.png" alt="Logo" class="navbar-logo__link--img">
+                            </a>
+                </div>
+
+                <div class="navbar-logo-mobile">
                     <a href="" class="navbar-logo__link">
-                        <img src="./assets/img/pizza-hut-logo.png" alt="Logo" class="navbar-logo__link--img">
+                        <img src="https://cdn.pizzahut.vn/images/Web_V3/Homepage/hat.svg" alt="Logo" class="navbar-logo__link--img">
                     </a>
-
                 </div>
-
+    
                 <div class="navbar-info">
-
-                    <div class="navbar-info__user cursor-pointer">
-                        <a href="" class="navbar-info__user--bell">
-                            <svg  class="navbar-info__user--bell-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="font-size: 27px;">
-                                <path d="M19.29 17.29L18 16v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-1.29 1.29c-.63.63-.19 1.71.7 1.71h13.17c.9 0 1.34-1.08.71-1.71zM16 17H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6zm-4 5c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2z">
-                                </path>
-                            </svg>
-                        </a>
-
-                        <span class="navbar-info__user--language font-16px font-weight-600">EN</span>
-
-                        <div class="navbar-info__user--info">
-                            <svg class="navbar-info__user--icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill="#cb1c3b" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z">
-                                </path>
-                            </svg>
-                            <span class="navbar-info__user--info-name font-14px font-weight-600">Thành viên</span>
+                        <div class="navbar-info__user cursor-pointer">
+                            <a href="" class="navbar-info__user--bell">
+                                <svg  class="navbar-info__user--bell-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="font-size: 27px;">
+                                    <path d="M19.29 17.29L18 16v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-1.29 1.29c-.63.63-.19 1.71.7 1.71h13.17c.9 0 1.34-1.08.71-1.71zM16 17H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6zm-4 5c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2z">
+                                    </path>
+                                </svg>
+                            </a>
+    
+                            <span class="navbar-info__user--language font-16px font-weight-600">EN</span>
+    
+                            <div class="navbar-info__user--info">
+                                <svg class="navbar-info__user--icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill="#cb1c3b" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z">
+                                    </path>
+                                </svg>
+                                <span class="navbar-info__user--info-name font-14px font-weight-600">Thành viên</span>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="navbar-info__order cursor-pointer">
-
-          
-                            <img src="https://cdn.pizzahut.vn/images/Web_V3/OrderTracker/track_your_order.svg" alt="Logo" class="navbar-info__order-icon">
-        
-                        <span class="navbar-info__fl font-14px font-weight-600 ">Theo Dõi Đơn Hàng</span>
-                    </div>
-
+    
+                        <div class="navbar-info__order cursor-pointer">
+    
+              
+                                <img src="https://cdn.pizzahut.vn/images/Web_V3/OrderTracker/track_your_order.svg" alt="Logo" class="navbar-info__order-icon">
+            
+                            <span class="navbar-info__fl font-14px font-weight-600 ">Theo Dõi Đơn Hàng</span>
+                        </div>
+    
                 </div>
-
 
             </nav>
 
@@ -104,23 +108,33 @@
                     <p class="pizzah-content__title--line"></p>
                 </div>
 
-                <div class="pizzah-content__promotion cursor-pointer">
-                    <img src="./assets/img/content-1.jpg" alt="promotion 1" class="pizzah-content__promotion--img1">
-                    <img src="./assets/img/content-1.jpg" alt=" promotion 2" class="pizzah-content__promotion--img2">
+                <div class="grid wide">
+                    
+                    <div class="row cursor-pointer">
+                        <div class="pizzah-content__promotion--img col l-6 m-6 c-12">
+                            <img src="./assets/img/content-1.jpg" alt="promotion 1" class="pizzah-content__promotion--img">
+                        </div>
+                        
+                        <div class="pizzah-content__promotion--img col l-6 m-6 c-12">
+                            <img src="./assets/img/content-1.jpg" alt=" promotion 2" class="pizzah-content__promotion--img">
+                        </div>
+    
+                    </div>
+    
+                    <div class="pizzah-content__btn font-14px col l-12">
+                        <a href="" class="pizzah-content__btn--menu">XEM MENU</a>
+                    </div>
+                </div>
 
-                </div>
-                <div class="pizzah-content__btn font-14px">
-                    <a href="" class="pizzah-content__btn--menu">XEM MENU</a>
-                </div>
             </div>
 
         </div>
 
         <!-- footer  -->
         <footer class="pizzah-footer pizzah-footer__box">
-            <div class="grid">  
-                <div class="gird__row p-tb-10px ">
-                    <div class="grid__col">
+            <div class="grid wide">  
+                <div class="row p-tb-10px ">
+                    <div class="col l-2-4 m-3 c-6">
                         <h4 class="footer-heading font-13px">MENU</h4>
                         <ul class="footer-content__list">
                             <li class="footer-content__item">
@@ -146,7 +160,7 @@
 
                     </div>
 
-                    <div class="grid__col">
+                    <div class="col l-2-4 m-3 c-6">
                         <h4 class="footer-heading font-13px">VỀ CHÚNG TÔI</h4>
                         <ul class="footer-content__list">
                             <li class="footer-content__item">
@@ -169,7 +183,7 @@
 
                     </div>
 
-                    <div class="grid__col">
+                    <div class="col l-2-4 m-3 c-6">
                         <h4 class="footer-heading font-13px">TÌM CỬA HÀNG</h4>
                         <ul class="footer-content__list">
                             <li class="footer-content__item">
@@ -188,7 +202,7 @@
 
                     </div>
 
-                    <div class="grid__col">
+                    <div class="col l-2-4 m-3 c-6">
                         <h4 class="footer-heading font-13px">THÔNG TIN TUYỂN DỤNG</h4>
                         <ul class="footer-content__list">
                             <li class="footer-content__item">
@@ -203,17 +217,16 @@
                                 <a href="" class="footer-content__item--name">Cơ Hội Nghề Nghiệp</a>
                             </li>
 
-                            <h4  class="footer-heading font-13px">CẦN SỰ HỖ TRỢ?</h4>
-
+                            <h4  class="footer-heading font-13px mobile-none">CẦN SỰ HỖ TRỢ?</h4>
 
                             <li class="footer-content__item">
-                                <a href="" class="footer-content__item--std font-16px ">1900 1822</a>
+                                <a href="" class="footer-content__item--std font-16px mobile-none">1900 1822</a>
                             </li>
                         </ul>
 
                     </div>
 
-                    <div class="grid__col ">
+                    <div class="col l-2-4 m-3 c-6 ">
                         <h4 class="footer-heading font-13px">LIÊN HỆ VỚI PIZZA HUT</h4>
                         <ul class="footer-content__list">
                             <li class="footer-content__item">
@@ -253,15 +266,25 @@
 
                     </div>
 
+                    <div class="col l-0 m-0 c-6">
+                        <h4  class="footer-heading font-13px">CẦN SỰ HỖ TRỢ?</h4>
+                        <div class="footer-content__item">
+                            <a href="" class="footer-content__item--std font-16px ">1900 1822</a>
+                        </div>
+                        <div class="pizzah-footer__conditon moblie-footer__remake">
+                            <a href="" class="pizzah-footer__conditon-link">
+                                <img src="./assets/img/Thông báo.png" alt="Logo" class="pizzah-footer__conditon-link-img">
+                            </a>
+                            <p class="pizzah-footer__conditon-item">Điều khoản & Điều kiện</p>
+
+                        </div>
+                    </div>
 
                 </div>
                 
-                <div class="gird__row-buttom p-tb-10px ">
-
-
-                    <div class=" pizzah-footer__local">
-                        
-                        <div class="grid__col--80 pizzah-footer__local-info ">
+                <div class="p-tb-10px footer-conten__borderB">
+                    <div class="row pizzah-footer__local">
+                        <div class="col l-10 m-12 c-12 pizzah-footer__local-info">
                             <div class="local-info">
                                 <p class="local-info-name-company">Công ty TNHH Pizza Việt Nam</p>
                                 <p class="local-info-name-dkkd">Số ĐKKD: 0303902751</p>
@@ -269,7 +292,7 @@
                             <p class="local-info-location">Số 1-3-5 đường D2 Khu dân cư phức hợp sông Sài Gòn, số 92 Nguyễn Hữu Cảnh, Phường 22, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam.</p>
                         </div>
 
-                        <div class="grid__col--10 pizzah-footer__conditon">
+                        <div class="col l-2 m-12 c-12 pizzah-footer__conditon mobile-none">
                             <p class="pizzah-footer__conditon-item">Điều khoản & Điều kiện</p>
                             <a href="" class="pizzah-footer__conditon-link">
                                 <img src="./assets/img/Thông báo.png" alt="Logo" class="pizzah-footer__conditon-link-img">
