@@ -1,13 +1,46 @@
 /* moblie */
 
 @media (max-width: 767px){
- 
+    .navbar-info__user--info-name{
+        display: none;
+    }
+
+    .navbar-info__user--language{
+        position: absolute;
+        left: 8%;
+    }
+
+    .navbar-info__user--local{
+        position: absolute;
+        left: 20%;
+    }
+
+    .navbar-content__cart{
+        display: flex;
+    }
+
+    .navbar-content__list{
+        padding-left: 0;
+    }
+
+    .pizza-content__item{
+        flex-basis: 100%;
+    }
 }
 
 /* tablet */
 
 @media (min-width: 768px) and (max-width: 991px){
 
+    .navbar-info__user--local{
+        position: absolute;
+        left: 7%;
+    }
+
+    .navbar-info__user--bell{
+        position: absolute;
+        right: 17%;
+    }
 }
 
 /* tablet-mobile */
@@ -22,10 +55,103 @@
 
 @media (min-width: 992px) and (max-width: 1199px){
 
+    .navbar-info__user--local{
+        position: absolute;
+        left: 5%;
+    }
+
+    .navbar-info__user--bell{
+        position: absolute;
+        right: 13%;
+    }
+}
+
+/* >=low pc  */
+
+@media (max-width: 1199px) {
+    .header-pay{
+        display: none;
+    }
+
+    .width-res-100{
+        width: 100%;
+    }
+
+    .navbar-logo__link{
+        display: none;
+    }
+    
+    .navbar-info{
+        width: 100%;
+    }
+
+    .navbar-info__user{
+        justify-content: space-between;
+    }
+
+    .navbar-info__user--language{
+        order: 1;
+    }
+
+    .navbar-info__user--info{
+        order: 4;
+    }
+
+    .navbar-content{
+        position: fixed;
+        top: auto;
+        height: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        z-index: 5;
+    }
+
+    .navbar-content__list{
+        background-color: #231F20;
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .navbar-content__list::-webkit-scrollbar{
+        display: none;
+    }
+
+    .navbar-content__item{
+        flex-shrink: 0;
+    }
+
+    .navbar-content__item--link{
+        color: #fff;
+    }
+
+    .navbar-content__item--icon{
+        color: #fff;
+        margin: 16px 16px 0;
+    }
+
+    .pizza-content__box{
+        margin-top: 65px;
+        margin-bottom: 105px;
+
+    }
+
+    .pizza-content{
+        margin-top: 5px;
+    }
+
 }
 
 /* pc */
 
 @media (min-width: 1200px){
+    .navbar-logo__res{
+        display: none;
+    }
 
+    .navbar-content__cart--box{
+        display: none;
+
+    }
 }

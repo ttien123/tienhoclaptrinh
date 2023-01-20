@@ -5,7 +5,7 @@
 }
 
 .grid.wide {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 18px;
 }
@@ -13,8 +13,8 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -6px;
-    margin-right: -6px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .row.no-gutters {
@@ -23,8 +23,8 @@
 }
 
 .col {
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .row.no-gutters .col {
@@ -161,13 +161,13 @@
     }
 
     .row {
-        margin-left: -6px;
-        margin-right: -6px;
+        margin-left: -15px;
+        margin-right: -15px;
     }
 
     .col {
-        padding-left: 6px;
-        padding-right: 6px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .row.sm-gutter {
@@ -306,13 +306,13 @@
 
 @media (min-width: 992px) {
     .row {
-        margin-left: -6px;
-        margin-right: -6px;
+        margin-left: -15px;
+        margin-right: -15px;
     }
 
     .col {
-        padding-left: 6px;
-        padding-right: 6px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .row.sm-gutter {
@@ -462,8 +462,8 @@
     }
 
     .wide .row {
-        margin-left: -6px;
-        margin-right: -6px;
+        margin-left: -15px;
+        margin-right: -15px;
     }
 
     .wide .row.sm-gutter {
@@ -472,8 +472,8 @@
     }
 
     .wide .col {
-        padding-left: 6px;
-        padding-right: 6px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .wide .row.sm-gutter .col {
@@ -624,8 +624,8 @@
     }
 
     .wide .row {
-        margin-left: -6px;
-        margin-right: -6px;
+        margin-left: -15px;
+        margin-right: -15px;
     }
 
     .wide .row.sm-gutter {
@@ -634,8 +634,8 @@
     }
 
     .wide .col {
-        padding-left: 6px;
-        padding-right: 6px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .wide .row.sm-gutter .col {

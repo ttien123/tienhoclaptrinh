@@ -1,3 +1,7 @@
+.main{
+    overflow: hidden;
+}
+
 /* heaer-navbar */
 
 .pizzah-header{
@@ -5,10 +9,10 @@
 }
 
 .header-navbar{
-    width: 75%;
-    height: 64px;
-    padding: 0 18px;
     display: flex;
+    width: 75%;
+    padding: 0 18px ;
+    height: 64px;
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -19,7 +23,9 @@
     right: 0;
     border-bottom: 1px solid #5C5C5C;
     box-shadow: 2px -1px 8px -4px #5c5c5c;
+    margin: unset !important;
 }
+
 
 
 
@@ -29,24 +35,41 @@
 }
 
 
+.navbar-logo__res{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    right: 0;
+    left: 0;
+}
+
+.avbar-logo__res--img{
+    max-height: 35px;
+    margin: auto;
+}
+
 .navbar-info__user{
     display: flex;
     align-items: center;
     position: relative;
 }
 
+
 .navbar-info__user--local-icon{
     font-size: 20px;
     padding: 12px;
     color: #B5B6BD;
-    margin-bottom: 5px;
 }
 
-
+.navbar-info__user--bell{
+    display: flex;
+}
 
 .navbar-info__user--bell-icon{
     width: 27px;
     height: 27px;
+    margin: auto;
 }
 
 .navbar-info__user--language{
@@ -135,6 +158,35 @@
     margin-left: 16px;
 }
 
+/* nav-respon */
+
+.navbar-content__cart--box{
+    padding: 8px;
+}
+
+.navbar-content__cart{
+    background: #0A8020;
+    border-radius: 5px;
+}
+
+.navbar-content__cart--item{
+    display: inline-block;
+    padding: 12px;
+    width: 33%;
+    text-align: center;
+
+}
+
+.navbar-content__cart--link{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.navbar-content__cart--icon{
+
+}
+
+
 /* header-pay */
 
 .header-pay{
@@ -143,6 +195,8 @@
     position: fixed;
     top: 0;
     right: 0;
+    display: flex;
+    flex-direction: column;
 }      
 
 
@@ -156,7 +210,8 @@
 }
 
 .header-pay-check{
-    height: 235px;
+    flex: 1;
+    
 }
 
 
@@ -229,7 +284,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between  ;
-    margin-top: 4px;
+    margin: 4px;
 }
 
 .recommend-content-price{
@@ -377,16 +432,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
 /* pizzah-container/ */
 
 .pizzah-container{
@@ -396,6 +441,7 @@
 .pizza-content__box{
     background-image: url(/assets/img/backgroun-pizza.jpg);
     margin-top: 112px;
+    min-height: 100vh;
 }
 
 .pizza-content{

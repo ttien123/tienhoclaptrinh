@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="stylesheet" href="./asset/css/base.css">
-
+    <link rel="stylesheet" href="./asset/css/grid.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
 </head>
 <body>
     <div class="app">
@@ -180,7 +181,7 @@
 
                     <div class="header-setting">
                         <ul class="header-list">
-                            <li class="header-items">
+                            <li class="header-items display-none">
                                 <a href="" class="header-item__link">
                                     ENG
                                     <i class="header-item__link--icon fa-solid fa-caret-down"></i>
@@ -212,7 +213,7 @@
 
                             </li>
                             
-                            <li class="header-items">
+                            <li class="header-items display-none">
                                 <a href="" class="header-item__link">
                                     USD
                                     <i class="header-item__link--icon fa-solid fa-caret-down"></i>
@@ -244,7 +245,7 @@
 
                             </li>
 
-                            <li class="header-items">
+                            <li class="header-items display-none">
                                 <a href="" class="header-item__link">
                                     ACCOUNT
                                     <i class="header-item__link--icon fa-solid fa-caret-down"></i>
@@ -272,6 +273,14 @@
                                     <i class="header-item__icon-cart ti-shopping-cart"></i>
                                     <span class="header-item__qtt">2</span>
                                 </button>
+                            </li>
+
+                            <li>
+                                <div class="navbar-menu navbar-menu__mobi">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                             </li>
 
                         </ul>
@@ -335,24 +344,24 @@
                 </section>
 
             <!-- container-web -->
-                <section class="container-web">
-                    <div class="product-nav">
+                <section class="container-web grid">
+                    <div class="product-nav col l-12">
                         <a href="" class="product-nav__item">Home</a>
                         <a href="" class="product-nav__item">categories</a>
                         <a href="" class="product-nav__item">sports</a>
 
                     </div>
 
-                    <h1 class="product-content__header">
+                    <h1 class="product-content__header col l-12">
                         <span>Sports</span>
                         Collection
                     </h1>
 
-                    <p class="product-content__dec">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+                    <p class="product-content__dec col l-12">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
 
                     <div class="grid">
                         <div class="row">
-                            <div class="product-box">
+                            <div class="product-box col l-3 m-6 c-12">
                                 <div class="product-img">
                                     <img src="./asset/img/product/p1.jpg" alt="p1" class="product-box__img">
 
@@ -365,7 +374,7 @@
                                 <p class="product-box__price">$100.00</p>
                             </div>
                             
-                            <div class="product-box">
+                            <div class="product-box col l-3 m-6 c-12">
                                 <div class="product-img">
                                     <img src="./asset/img/product/p2.jpg" alt="p2" class="product-box__img">
 
@@ -378,7 +387,7 @@
                                 <p class="product-box__price">$107.00</p>
                             </div>
 
-                            <div class="product-box">
+                            <div class="product-box col l-3 m-6 c-12">
                                 <div class="product-img">
                                     <img src="./asset/img/product/p3.jpg" alt="p3" class="product-box__img">
 
@@ -391,7 +400,7 @@
                                 <p class="product-box__price">$100.00</p>
                             </div>
 
-                            <div class="product-box">
+                            <div class="product-box col l-3 m-6 c-12">
                                 <div class="product-img">
                                     <img src="./asset/img/product/p4.jpg" alt="p4" class="product-box__img">
 
@@ -407,7 +416,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="product-box">
+                            <div class="product-box col l-3 m-6 c-12">
                                 <div class="product-img">
                                     <img src="./asset/img/product/p3.jpg" alt="p5" class="product-box__img">
 
@@ -420,7 +429,7 @@
                                 <p class="product-box__price">$165.00</p>
                             </div>
 
-                            <div class="product-box">
+                            <div class="product-box col l-3 m-6 c-12">
                                 <div class="product-img">
                                     <img src="./asset/img/product/p2.jpg" alt="p6" class="product-box__img">
 
@@ -433,7 +442,7 @@
                                 <p class="product-box__price">$107.00</p>
                             </div>
 
-                            <div class="product-box">
+                            <div class="product-box col l-3 m-6 c-12">
                                 <div class="product-img">
                                     <img src="./asset/img/product/p1.jpg" alt="p7" class="product-box__img">
 
@@ -446,7 +455,7 @@
                                 <p class="product-box__price">$160.00</p>
                             </div>
 
-                            <div class="product-box">
+                            <div class="product-box col l-3 m-6 c-12">
                                 <div class="product-img">
                                     <img src="./asset/img/product/p6.jpg" alt="p8" class="product-box__img">
 
