@@ -9096,7 +9096,7 @@ textarea.form-control {
   z-index: 100;
 }
 
-.modal-container{
+.modal-product .modal-container{
   display: flex;
   width: 1020px;
   background-color: #fff;
@@ -9123,9 +9123,12 @@ textarea.form-control {
   font-weight: 500;
 }
 
-.modal-content{
+.modal-product .modal-content{
   padding: 30px;
   position: relative;
+  border: none;
+  background-color: #FAFAFA;
+  border-radius: 20px;
 }
 
 .product-header{
