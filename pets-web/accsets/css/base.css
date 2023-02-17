@@ -1,0 +1,149 @@
+
+:root{
+    --web-color: #EF5030;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.font-mas{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* cac the  */
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+}
+
+button{
+    background: transparent;
+    border: none
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+section{
+    padding: 120px 0;
+}
+
+/* title-content */
+
+.text-center{
+    text-align: center !important;
+}
+
+.title-heading{
+    font-size: 1.6rem;
+    line-height: 25px;
+    margin-bottom: 24px;
+}
+
+.title-heading__dec{
+    font-size: 4.8rem;
+    color: var(--web-color);
+    margin-bottom: 24px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.mg-auto{
+    margin: auto;
+}
+
+.mg-0{
+    margin: 0 !important;
+}
+
+.mb-96px{
+    margin-bottom: 96px !important;
+}
+
+.mb-24px{
+    margin-bottom: 24px !important;
+}
+
+.bgr-blue{
+    background-color: #00A0D1;
+}
+
+.pt-120{
+    padding-top: 120px !important;
+}
+
+/* review-web */
+
+.form-content{
+    margin: 50px 0;
+}
+
+.input-box{
+
+}
+
+.input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(000,000,000,0.2);
+    padding: 6px 16px 6px 0;
+    font-size: 1.6rem;
+    color: #495057;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.input-name{
+
+}
+
+.input-email{
+
+
+}
+
+.review-button{
+    width: 100%;
+    border: 1px solid #000;
+    padding: 13px 12px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all linear 0.15s;
+}
+
+.review-button:hover{
+    background: #ef5030;
+    border: 1px solid #ef5030;
+    color: #fff;
+}
+
+.review-form .title-heading__dec{
+    text-align: left !important;
+    margin-left: -18px;
+}

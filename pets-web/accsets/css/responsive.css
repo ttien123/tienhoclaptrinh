@@ -1,0 +1,142 @@
+/* moblie */
+
+@media (max-width: 767px){
+    .mb-mobi-60px{
+        margin-bottom: 60px !important;
+    }
+
+    .nav-web__container{
+        height: 65px;
+    }
+
+    .slider-header__heading{
+        font-size: 2.7rem;
+
+    }
+
+    .slider-header__dec{
+        font-size: 1.1rem;
+        margin: 15px 0;
+    }
+
+    .title-heading{
+        font-size: 1.5rem;
+    }
+
+    .title-heading__dec{
+        font-size: 3rem;
+
+    }
+
+    .title-new{
+        font-size: 1.4rem;
+    }
+
+    .service-web{
+        padding: 100px 0 50px;
+        text-align: center;
+    }
+
+    .service-blog__content{
+        margin-bottom: 18px;
+    }
+
+    .service-web .title-heading{
+        font-size: 1.4rem;
+    }
+
+    .service-web .title-heading__dec{
+        font-size: 3rem;
+    }
+
+    .service-web__dec{
+        font-size: 1.3rem;
+
+    }
+
+
+
+    .demo-start__heading{
+        font-size: 4rem;
+    }
+
+    .demo-start__dec{
+        font-size: 1.2rem;
+    }
+
+}
+
+/* tablet */
+
+@media (min-width: 768px) and (max-width: 991px){
+    .slider-header{
+        padding-top: 50px;
+    }
+
+    .slider-header__heading{
+        font-size: 5rem;
+
+    }
+
+    .title-heading{
+        font-size: 1.8rem;
+    }
+
+    .title-heading__dec{
+        font-size: 4.4rem;
+
+    }
+
+    .title-new{
+        font-size: 1.6rem;
+    }
+
+    .service-web{
+        padding-top: 200px;
+    }
+
+    .slider-header__dec{
+        font-size: 1.8rem;
+    }
+
+    .service-web .title-heading{
+        font-size: 1.6rem;
+    }
+
+    .service-web .title-heading__dec{
+        font-size: 4rem;
+    }
+
+    .service-blog__content{
+        margin-bottom: 15px;
+    }
+
+    .demo-start__heading{
+        font-size: 6.8rem;
+    }
+
+    .demo-start__dec{
+        font-size: 1.8rem;
+    }
+    
+}
+
+/* tablet-mobile */
+
+@media (max-width: 991px) {
+
+}
+
+/* low-pc */
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .nav-btn__link{
+        padding: 10px 8px;
+    }
+}
+
+/* pc */
+
+@media (min-width: 1200px){
+
+}
