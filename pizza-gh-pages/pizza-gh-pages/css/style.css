@@ -9255,3 +9255,22 @@ textarea.form-control {
   border: none;
   color: #fff;
 }
+
+
+.modal-out{
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 8%;
+  right: 13%;
+  cursor: pointer;
+} 
+
+.modal-out__icon{
+  font-size: 30px;
+  color: #fff;
+}
+
+button{
+  cursor: pointer;
+}
