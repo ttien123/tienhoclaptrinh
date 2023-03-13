@@ -1,6 +1,10 @@
 /* moblie */
 
 @media (max-width: 767px){
+    section{
+        padding: 80px 0 0;
+    }
+
     .mb-mobi-60px{
         margin-bottom: 60px !important;
     }
@@ -64,6 +68,8 @@
         font-size: 1.2rem;
     }
 
+   
+
 }
 
 /* tablet */
@@ -124,7 +130,43 @@
 /* tablet-mobile */
 
 @media (max-width: 991px) {
+    .text-center-t-m{
+        text-align: center;
+    }
 
+    .review-form .title-heading__dec {
+        text-align: center !important;
+        margin-left: -18px;
+    }
+
+    .review-contact {
+        text-align: center;
+    }
+
+    .review-contact__box{
+        margin-left: unset;
+    }
+
+    .contact-des{
+        max-width: 100% !important;
+    }
+
+    .contact-box-icon{
+        margin-bottom: 32px;
+    }
+
+    .pricing-card {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .footer-web{
+        padding-bottom: 120px;
+    }
+
+    .footer-social {
+        margin-bottom: 16px;
+    }
 }
 
 /* low-pc */

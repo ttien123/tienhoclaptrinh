@@ -1,0 +1,28 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    letter-spacing: 0.05rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    display: inline-block;
+
+}
+
+button{
+    background: transparent;
+    border: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+
+}

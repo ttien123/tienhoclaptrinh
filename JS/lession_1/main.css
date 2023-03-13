@@ -1,0 +1,32 @@
+
+
+
+
+#create{
+
+}
+
+.repair{
+    display: none;
+}
+
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    /* display: flex; */
+}
+
+.header{
+    text-align: center;
+}
+
+.member-1 h2{
+    color: red;
+
+}
+span{
+    color: red;
+}
