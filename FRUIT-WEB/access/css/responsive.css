@@ -1,25 +1,59 @@
 /* moblie */
 
 @media (max-width: 767px){
+    .header-web .shop-details{
+        margin-right: 4px;
+    }
 
+    .header-menu{
+        right: unset;
+        left: 25px;
+    }
+
+    .shop-card{
+        width: 100%;
+    }
 }
 
 /* tablet */
 
 @media (min-width: 768px) and (max-width: 991px){
-   
+    .header-menu{
+        right: unset;
+        left: 0;
+    }
+
+    .shop-card{
+        width: 50%;
+    }
 }
 
 /* tablet-mobile */
 
 @media (max-width: 991px) {
+    .text-center{
+        text-align: center;
+    }
 
+    .box-nav-list{
+        display: none;
+    }
 }
 
 /* low-pc */
 
 @media (min-width: 992px) and (max-width: 1199px){
-  
+    .header-web .shop-details{
+        justify-content: center;
+    }
+
+    .header-web-scroll .shop-details{
+        justify-content: flex-start;
+    }
+
+    .header-menu{
+        right: 0;
+    }
 }
 
 /* pc */

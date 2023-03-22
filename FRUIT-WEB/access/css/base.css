@@ -1,3 +1,12 @@
+:root{
+    --web-color: #79a207;
+    --web-font-color: #2d2d2d;
+}
+
+.display-block{
+    display: block !important;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -7,6 +16,35 @@
 
 }
 
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+    color: #2b2b2b;
+    line-height: 26px;
+    letter-spacing: .5px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    width: 12px;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+}
+::-webkit-scrollbar-thumb {
+    background: #79a207;
+    width: 0;
+    height: 25%;
+}
+
 ul{
     list-style: none;
 }
@@ -14,21 +52,23 @@ ul{
 
 a{
     display: inline-block;
+    text-decoration: none;
+    color: #000;
 }
 
 button{
     background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-image{
+img{
     width: 100%;
     display: block;
 }
 
-html{
-    font-family: 'Poppins', sans-serif;
-    font-size: 62.5%;
-}
 
 .font-poppins{
     font-family: 'Poppins', sans-serif;
@@ -37,3 +77,94 @@ html{
 .font-roboto{
     font-family: 'Roboto', sans-serif;
 }
+
+.mb-16{
+    margin-bottom: 16px;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
+
+/* nav-list-web */
+
+.box-nav-list{
+
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-list__item{
+    position: relative;
+}
+
+.nav-list__link{
+    font-size: 15px;
+    padding: 8px 10px;
+    margin: 8px;
+    color: var(--web-font-color);
+    transition: all linear 0.25s;
+}
+
+.nav-list__link:hover{
+    color: var(--web-color);
+}
+
+
+/* list-page */
+
+.box-list__page{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    padding: 16px 8px;
+    min-width: 240px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 5px;
+    display: none;
+}
+
+.page-item{
+    position: relative;
+    transition: all ease .5s;
+}
+
+.page-item:hover{
+    background-color: #f8f9fa;
+}
+
+.page-item:hover .page-link{
+    color: var(--web-color);
+
+}
+
+.page-item:last-child::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -8px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,.15);
+}
+
+.page-link{
+    font-size: 1.5rem;
+    padding: 10px 24px;
+    transition: all ease .5s;
+
+}
+
+
+.icon-page__arrow{
+
+}
+
+

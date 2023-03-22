@@ -138,11 +138,10 @@
     right: 0;
     left: 0;
     bottom: 0;
-    display: none;
     z-index: 20;
-    animation: openModalOrder linear 0.3s;
-
-    
+    opacity: 0; 
+    display: none;
+    /* animation: openModalOrder linear 0.3s; */
 }
 
 @keyframes openModalOrder {
@@ -366,12 +365,12 @@
     left: 0;
     bottom: 0;
     z-index: 5;
-    display: none;
-    animation: modalFadein linear 0.45s ;
+    display: block;
+    /* animation: modalFadein linear 0.45s ; */
     background-image: url('/assets/img/slider-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-
+    transform: translateY(100%);
 }
 .modal-inner-wrapper{
     padding: 4.13% 5.9%;
@@ -407,11 +406,6 @@
     transform: translateY(0);
     }
 }
-
-
-
-
-
 
 .modal-header__logo{
     display: block;

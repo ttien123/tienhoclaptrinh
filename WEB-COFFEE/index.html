@@ -876,29 +876,76 @@
         const modalOrderCtn = document.querySelector('.js-modal-order-container')
 
         function openModal () {
-            modalHeader.classList.add('open')
+            modalHeader.animate([
+                {
+                    transform: 'translateY(100%)',
+                },
+                {
+                    transform: 'translateY(0)',
+
+                }
+            ],{
+                duration: 500,
+                fill: 'forwards'
+            })
         }
 
         function removeModal () {
-            modalHeader.classList.remove('open')
+            modalHeader.animate([
+                {
+                    transform: 'translateY(0)',
+                },
+                {
+                    transform: 'translateY(100%)',
+
+                }
+            ],{
+                duration: 500,
+                fill: 'forwards'
+            })
         }
+
         modalClick.addEventListener('click',openModal)
         modalOut.addEventListener('click',removeModal)
+
+
         
         function openModalOder () {
             modalOpenorder.classList.add('open')
+            modalOpenorder.animate([
+                {
+                    opacity: 0
+                },
+                {
+                    opacity: 1
+                }
+            ],{
+                duration: 500,
+                fill: 'forwards'
+            })
         }
-
 
         for (const OpenOrder of OpenOrderS){
             OpenOrder.addEventListener('click', openModalOder)
         }
-
         function removeModaloder () {
-            modalOpenorder.classList.remove('open')
+            var opt = modalOpenorder.animate([
+                {
+                    opacity: 1
+                },
+                {
+                    opacity: 0
+                }
+            ],{
+                duration: 500,
+                fill: 'forwards'
+            })
+
+            opt.addEventListener('finish', function() {
+                modalOpenorder.classList.remove('open')
+            });
+
         }
-
-
 
 
         modalOutorder.addEventListener('click',removeModaloder)
