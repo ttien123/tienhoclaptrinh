@@ -13,6 +13,10 @@
     .shop-card{
         width: 100%;
     }
+
+    .modal-menu{
+        width: 100%;
+    }
 }
 
 /* tablet */
@@ -26,6 +30,17 @@
     .shop-card{
         width: 50%;
     }
+
+    .modal-menu{
+        width: 50%;
+    }
+
+    .modal-menu__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
 }
 
 /* tablet-mobile */
@@ -37,6 +52,14 @@
 
     .box-nav-list{
         display: none;
+    }
+
+    .contact-social{
+        justify-content: center;
+    }
+
+    .copyright-web {
+        text-align: center;
     }
 }
 
@@ -53,6 +76,19 @@
 
     .header-menu{
         right: 0;
+    }
+
+    .modal-menu__container{
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    .contact-social{
+        justify-content: center;
+    }
+
+    .copyright-web {
+        text-align: center;
     }
 }
 
