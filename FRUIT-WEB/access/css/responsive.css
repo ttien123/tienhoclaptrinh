@@ -1,6 +1,10 @@
 /* moblie */
 
 @media (max-width: 767px){
+    .heading-section{
+        font-size: 40px;
+    }
+
     .header-web .shop-details{
         margin-right: 4px;
     }
@@ -16,6 +20,66 @@
 
     .modal-menu{
         width: 100%;
+    }
+
+    .slider-container__header{
+        font-size: 1.6rem;
+    }
+
+    .slider-content-heading__des{
+        font-size: 2.9rem;
+    }
+
+    .slider-des{
+        font-size: 1rem;
+    }
+    
+    .btn-web{
+        font-size: 1.3rem;
+        padding: 8px 24px;
+    }
+
+    .btn-slide{
+        display: none;
+    }
+
+    .box-slider-header{
+        margin: 16px 0;
+    }
+
+    .box-slider-des{
+        margin: 16px 0;
+
+    }
+
+    .box-service{
+        border: none;
+        margin-top: 32px;
+    }
+
+    .sale-container{
+        margin-top: 150px;
+    }
+
+    .sale-product{
+        left: 50%;
+        top: -38%;
+        transform: translate(-50%, -18%);
+    }
+
+    .icon-sale{
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .sale-container .box-btn-web{
+        right: 50%;
+        transform: translateX(50%);
+        bottom: -4%;
+    }
+
+    .sale-container .heading-section {
+        font-size: 40px;
     }
 }
 
@@ -41,6 +105,36 @@
         justify-content: center;
         height: 100%;
     }
+
+    .slider-container__header{
+        font-size: 2.2rem;
+    }
+
+    .slider-content-heading__des{
+        font-size: 4.2rem;
+    }
+
+    .slider-des{
+        font-size: 1.4rem;
+    }
+
+    .box-service:nth-child(2){
+        border: none;
+    }
+    
+    .box-service{
+        margin-top: 32px;
+    }
+
+    .sale-product{
+        left: 5%;
+        top: 45%;
+    }
+
+    .sale-container .box-btn-web{
+        right: 3%;
+        
+    }
 }
 
 /* tablet-mobile */
@@ -60,6 +154,27 @@
 
     .copyright-web {
         text-align: center;
+    }
+
+    .slider-container{
+        margin: auto;
+        text-align: center !important;
+    }
+
+    .slider-content{
+        justify-content: center !important;
+    }
+
+    .slider-des{
+        max-width: 100%;
+    }
+
+    .arrow-scroll-top{
+        display: none;
+    }
+
+    .sale-content{
+        padding: 0 20px !important;
     }
 }
 
@@ -89,6 +204,24 @@
 
     .copyright-web {
         text-align: center;
+    }
+
+    .slider-des{
+        max-width: 100%;
+    }
+
+    .sale-content{
+        padding: 0;
+    }
+
+    .sale-container .heading-section{
+        width: 120%;
+        text-align: left;
+    }
+
+    .sale-product{
+        left: 1%;
+        top: 45%;
     }
 }
 

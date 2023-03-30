@@ -4,14 +4,29 @@
 var btnWeb = document.querySelector('.btn-full-web');
 var headerStatic = document.querySelector('.header-web');
 var headerDynamic = document.querySelector('.header-web-scroll');
+var arrowScroll = document.querySelector('.arrow-scroll-top');
 
 
-// biến
-var isScroll = true;
-var totalHeightHeader = headerStatic.offsetHeight;
+// biến scrollHeader
+var isScrollHeader = true;
+var isScrollArrow = true
+var HeightHeader = headerStatic.offsetHeight;
+
+// biến scroll product
+var productsItems = document.querySelectorAll('.product-up')
+var ArrayProductsList = Array.from(productsItems);
+
+// biến about-web
+
+var aboutCtns = document.querySelectorAll('.about-container');
+var boxAboutCtn = document.querySelector('.about-box-container')
+var ArrayAboutCtns = Array.from(aboutCtns);
+var isSrollAbout = true;
+var timeAbout = 300;
 
 document.onscroll = function () {
-    if (isScroll && ((window.scrollY || document.documentElement.scrollTop) >= totalHeightHeader)) {
+    var heightScrollWeb = (window.scrollY || document.documentElement.scrollTop) + window.innerHeight;
+    if (isScrollHeader && ((window.scrollY || document.documentElement.scrollTop) >= HeightHeader)) {
         headerDynamic.classList.add('display-block');
         headerDynamic.animate([
             {
@@ -25,19 +40,57 @@ document.onscroll = function () {
             fill: 'forwards',
             }
         );
-        isScroll = false;
+        isScrollHeader = false;
     } else {
-        if (!isScroll && ((window.scrollY || document.documentElement.scrollTop) < totalHeightHeader)) {
+        if (!isScrollHeader && ((window.scrollY || document.documentElement.scrollTop) < HeightHeader)) {
             headerDynamic.classList.remove('display-block');
-            isScroll = true;
+            isScrollHeader = true;
         }
     }
-    
-    
 
+    if (isScrollArrow && ((window.scrollY || document.documentElement.scrollTop) >= HeightHeader + 250)) {
+        arrowScroll.classList.add('display-block')
+        isScrollArrow = false;
+    } else {
+        if (!isScrollArrow && ((window.scrollY || document.documentElement.scrollTop) < HeightHeader + 250)) {
+            arrowScroll.classList.remove('display-block');
+            isScrollArrow = true;
+        }
+    }
+
+    ArrayProductsList.forEach(function (product, index) {
+        if (( heightScrollWeb >= product.offsetTop)) {
+                product.style.animation = `slideUp linear 0.5s forwards`
+        };
+    });
+
+    if (isSrollAbout && heightScrollWeb >= boxAboutCtn.offsetTop) {
+        ArrayAboutCtns.forEach(function (service, index) {
+            console.log(service.offsetTop)
+            service.animate([
+                {
+                    opacity: 0,
+                    transform: 'translateY(15%)',
+                },
+                {
+                    opacity: 1,
+                    transform: 'translateY(0%)',
+                }
+            ], {
+                delay: timeAbout,
+                duration: 500,
+                fill: 'forwards',
+                easing: 'ease',
+                }
+            );
+            timeAbout += 200;
+            isSrollAbout = false;
+        });
+    }
 }
-// dom-event 
 
+
+// dom-event 
 
 // click page link 
 var btnOpenListpages = document.querySelectorAll('.JS-btn-listPage');
@@ -242,12 +295,31 @@ var sliderHeight = document.querySelector('.box-slider-web');
 sliderHeight.style.height = heightSlider + 'px';
 
 
+openAniText();
 function openAniText() {
     var slideTextAppears = document.querySelectorAll('.slider-web.display-block .slider-content-heading__des');
+    var slideHeaderAppears = document.querySelector('.slider-web.display-block .slider-container__header');
+    var slideDesAppears = document.querySelector('.slider-web.display-block .slider-des');
+    var slideBtnAppears = document.querySelector('.slider-web.display-block .btn-web');
     var arrayText = Array.from(slideTextAppears);
-    var x = 250;
+    var x = 300;
+
+    slideHeaderAppears.animate([
+        {
+            transform: 'translateY(100%)',
+        },
+        {
+            transform: 'translateY(0)',
+        }
+    ],{
+        duration: 1000,
+        fill: 'forwards',
+        easing: 'ease',
+        })
+
+
     arrayText.forEach(function (value,index) {
-        var name = value.animate([
+        value.animate([
             {
                 opacity: 0
             },
@@ -262,103 +334,583 @@ function openAniText() {
             })
         x += 80;
     });
-}
 
+    slideDesAppears.animate([
+        {
+            transform: 'translateY(100%)',
+        },
+        {
+            transform: 'translateY(0)',
+        }
+    ],{
+        delay: x,
+        duration: 1000,
+        fill: 'forwards',
+        easing: 'ease',
+        })
+
+    slideBtnAppears.animate([
+        {
+            transform: 'translateY(100%)',
+        },
+        {
+            transform: 'translateY(0)',
+        }
+    ],{
+        delay: x + 1000,
+        duration: 1000,
+        fill: 'forwards',
+        easing: 'ease',
+        })
+}
 
 function hideAniText() {
     var slideTextAppears = document.querySelectorAll('.slider-web.display-block .slider-content-heading__des');
+    var slideHeaderAppears = document.querySelector('.slider-web.display-block .slider-container__header');
+    var slideDesAppears = document.querySelector('.slider-web.display-block .slider-des');
+    var slideBtnAppears = document.querySelector('.slider-web.display-block .btn-web');
     var arrayText = Array.from(slideTextAppears);
-    arrayText.forEach(function (value,index) {
-        var name = value.animate([
+    var x = 300;
+
+    setTimeout(() => {
+        slideHeaderAppears.animate([
             {
-                opacity: 1
+
+                transform: 'translateY(0)',
             },
             {
-                opacity: 0
+
+                transform: 'translateY(100%)',
             }
         ],{
-            duration: 1500,
+            // duration: 100,
+            fill: 'forwards',
+            easing: 'ease',
+            });
+    
+        arrayText.forEach(function (value,index) {
+            value.animate([
+                {
+                    opacity: 1
+                },
+                {
+                    opacity: 0
+                }
+            ],{
+                // duration: 1500,
+                fill: 'forwards',
+                easing: 'ease',
+                })
+            x += 80;
+        });
+    
+        slideDesAppears.animate([
+            {
+                transform: 'translateY(0%)',
+            },
+            {
+                transform: 'translateY(100%)',
+            }
+        ],{
+            // duration: 100,
             fill: 'forwards',
             easing: 'ease',
             })
-    });
+    
+        slideBtnAppears.animate([
+            {
+                transform: 'translateY(0%)',
+            },
+            {
+                transform: 'translateY(100%)',
+            }
+        ],{
+            // duration: 100,
+            fill: 'forwards',
+            easing: 'ease',
+            })
+        
+    }, 1000);
+
 }
 
+var isSuccessNext = false;
+var isSuccessPre = false;
+var OpenedPreSlide = true;
+var OpenedNextSlide = true;
+
+btnNextSlider.onclick = function () {
+    hideAniText()
+    for ( var i = 0; i < arrayallSlider.length; i++) {
+        if (arrayallSlider[i].matches('.display-block')) {
+            arrayallSlider[i].animate([
+                {
+                    opacity: 1
+                },
+                {
+                    opacity: 0
+                }
+            ],{
+                duration: 1000,
+                fill: 'forwards',
+                easing: 'ease'
+                });                                      
+                setTimeout(() => {
+                    arrayallSlider[i].classList.remove('display-block'); 
+                }, 800);
 
 
-openAniText();
-
-    btnNextSlider.onclick = function () {
-        hideAniText()
-        for ( var i = 0; i < arrayallSlider.length; i++) {
-            if (arrayallSlider[i].matches('.display-block')) {
-                arrayallSlider[i].animate([
-                    {
-                        opacity: 1
-                    },
+            if (i + 1 == arrayallSlider.length ) {
+                arrayallSlider[0].classList.add('display-block')
+                arrayallSlider[0].animate([
                     {
                         opacity: 0
+                    },
+                    {
+                        opacity: 1
                     }
                 ],{
-                    duration: 1500,
+                    duration: 1000,
                     fill: 'forwards',
                     easing: 'ease'
-                    });                   
-                    
+                    });    
                     setTimeout(() => {
-                        arrayallSlider[i].classList.remove('display-block');                                                                    
-                    }, 500);
-
-
-                if (i + 1 == arrayallSlider.length ) {
-                    arrayallSlider[0].classList.add('display-block')
-                    arrayallSlider[0].animate([
-                        {
-                            opacity: 0
-                        },
-                        {
-                            opacity: 1
-                        }
-                    ],{
-                        duration: 1500,
-                        fill: 'forwards',
-                        easing: 'ease'
-                        });    
-
-                        setTimeout(() => {
-                            openAniText();
-                        }, 1000);
-                        
-                }else {
-                    arrayallSlider[i + 1].classList.add('display-block')
-                    arrayallSlider[i + 1].animate([
-                        {
-                            opacity: 0
-                        },
-                        {
-                            opacity: 1
-                        }
-                    ],{
-                        duration: 1500,
-                        fill: 'forwards',
-                        easing: 'ease'
-                        });
+                        openAniText()
+                    }, 800);
                     
-                    setTimeout(() => {
-                        openAniText();
-                    }, 1000);
-                }
+            }else {
+                arrayallSlider[i + 1].classList.add('display-block')
+                arrayallSlider[i + 1].animate([
+                    {
+                        opacity: 0
+                    },
+                    {
+                        opacity: 1
+                    }
+                ],{
+                    duration: 1000,
+                    fill: 'forwards',
+                    easing: 'ease'
+                    });
 
-                break;
+                    setTimeout(() => {
+                        openAniText()
+                    }, 800);
             }
 
-           
+            break;
+        };
 
-        }
+    }
+
+    if (OpenedNextSlide) {
+        setTimeNextSlide = setInterval(() => {
+            hideAniText();
+            for ( var i = 0; i < arrayallSlider.length; i++) {
+                if (arrayallSlider[i].matches('.display-block')) {
+                    arrayallSlider[i].animate([
+                        {
+                            opacity: 1
+                        },
+                        {
+                            opacity: 0
+                        }
+                    ],{
+                        duration: 1000,
+                        fill: 'forwards',
+                        easing: 'ease'
+                        });                                      
+                        setTimeout(() => {
+                            arrayallSlider[i].classList.remove('display-block'); 
+                        }, 800);
+        
+        
+                    if (i + 1 == arrayallSlider.length ) {
+                        arrayallSlider[0].classList.add('display-block')
+                        arrayallSlider[0].animate([
+                            {
+                                opacity: 0
+                            },
+                            {
+                                opacity: 1
+                            }
+                        ],{
+                            duration: 1000,
+                            fill: 'forwards',
+                            easing: 'ease'
+                            });    
+                            setTimeout(() => {
+                                openAniText()
+                            }, 800);
+                            
+                    }else {
+                        arrayallSlider[i + 1].classList.add('display-block')
+                        arrayallSlider[i + 1].animate([
+                            {
+                                opacity: 0
+                            },
+                            {
+                                opacity: 1
+                            }
+                        ],{
+                            duration: 1000,
+                            fill: 'forwards',
+                            easing: 'ease'
+                            });
+        
+                            setTimeout(() => {
+                                openAniText()
+                            }, 800);
+                    }
+                    break;
+                };
+        
+            }
+        }, 8000);
+        OpenedNextSlide = false;
+    } else {
+        clearInterval(setTimeNextSlide);
+        setTimeNextSlide = setInterval(() => {
+            hideAniText();
+            for ( var i = 0; i < arrayallSlider.length; i++) {
+                if (arrayallSlider[i].matches('.display-block')) {
+                    arrayallSlider[i].animate([
+                        {
+                            opacity: 1
+                        },
+                        {
+                            opacity: 0
+                        }
+                    ],{
+                        duration: 1000,
+                        fill: 'forwards',
+                        easing: 'ease'
+                        });                                      
+                        setTimeout(() => {
+                            arrayallSlider[i].classList.remove('display-block'); 
+                        }, 800);
+        
+        
+                    if (i + 1 == arrayallSlider.length ) {
+                        arrayallSlider[0].classList.add('display-block')
+                        arrayallSlider[0].animate([
+                            {
+                                opacity: 0
+                            },
+                            {
+                                opacity: 1
+                            }
+                        ],{
+                            duration: 1000,
+                            fill: 'forwards',
+                            easing: 'ease'
+                            });    
+                            setTimeout(() => {
+                                openAniText()
+                            }, 800);
+                            
+                    }else {
+                        arrayallSlider[i + 1].classList.add('display-block')
+                        arrayallSlider[i + 1].animate([
+                            {
+                                opacity: 0
+                            },
+                            {
+                                opacity: 1
+                            }
+                        ],{
+                            duration: 1000,
+                            fill: 'forwards',
+                            easing: 'ease'
+                            });
+        
+                            setTimeout(() => {
+                                openAniText()
+                            }, 800);
+                    }
+                    break;
+                };
+        
+            }
+        }, 8000);
     }
 
 
+    if (isSuccessPre){
+        clearInterval(setTimePreSlide);
+    }
+    isSuccessNext = true;
+    clearInterval(setTimeSlide);
+}
 
-    
+btnPreSlider.onclick = function () {
+    hideAniText()
+    for ( var i = 0; i < arrayallSlider.length; i++) {
+        if (arrayallSlider[i].matches('.display-block')) {
+            arrayallSlider[i].animate([
+                {
+                    opacity: 1
+                },
+                {
+                    opacity: 0
+                }
+            ],{
+                duration: 1000,
+                fill: 'forwards',
+                easing: 'ease'
+                });                                      
+                setTimeout(() => {
+                    arrayallSlider[i].classList.remove('display-block'); 
+                }, 800);
 
-   
+
+            if (i - 1 < 0 ) {
+                arrayallSlider[arrayallSlider.length - 1].classList.add('display-block')
+                arrayallSlider[arrayallSlider.length - 1].animate([
+                    {
+                        opacity: 0
+                    },
+                    {
+                        opacity: 1
+                    }
+                ],{
+                    duration: 1000,
+                    fill: 'forwards',
+                    easing: 'ease'
+                    });    
+                    setTimeout(() => {
+                        openAniText()
+                    }, 800);
+                    
+            }else {
+                arrayallSlider[i - 1].classList.add('display-block')
+                arrayallSlider[i - 1].animate([
+                    {
+                        opacity: 0
+                    },
+                    {
+                        opacity: 1
+                    }
+                ],{
+                    duration: 1000,
+                    fill: 'forwards',
+                    easing: 'ease'
+                    });
+
+                    setTimeout(() => {
+                        openAniText()
+                    }, 800);
+            }
+
+            break;
+        };
+    };
+
+
+    if (OpenedPreSlide) {
+        setTimePreSlide = setInterval(() => {
+            hideAniText();
+            for ( var i = 0; i < arrayallSlider.length; i++) {
+                if (arrayallSlider[i].matches('.display-block')) {
+                    arrayallSlider[i].animate([
+                        {
+                            opacity: 1
+                        },
+                        {
+                            opacity: 0
+                        }
+                    ],{
+                        duration: 1000,
+                        fill: 'forwards',
+                        easing: 'ease'
+                        });                                      
+                        setTimeout(() => {
+                            arrayallSlider[i].classList.remove('display-block'); 
+                        }, 800);
+        
+        
+                    if (i + 1 == arrayallSlider.length ) {
+                        arrayallSlider[0].classList.add('display-block')
+                        arrayallSlider[0].animate([
+                            {
+                                opacity: 0
+                            },
+                            {
+                                opacity: 1
+                            }
+                        ],{
+                            duration: 1000,
+                            fill: 'forwards',
+                            easing: 'ease'
+                            });    
+                            setTimeout(() => {
+                                openAniText()
+                            }, 800);
+                            
+                    }else {
+                        arrayallSlider[i + 1].classList.add('display-block')
+                        arrayallSlider[i + 1].animate([
+                            {
+                                opacity: 0
+                            },
+                            {
+                                opacity: 1
+                            }
+                        ],{
+                            duration: 1000,
+                            fill: 'forwards',
+                            easing: 'ease'
+                            });
+        
+                            setTimeout(() => {
+                                openAniText()
+                            }, 800);
+                    }
+        
+                    break;
+                };
+        
+            }
+        }, 8000);
+        OpenedPreSlide = false;
+    } else {
+        clearInterval(setTimePreSlide);
+        setTimePreSlide = setInterval(() => {
+            hideAniText();
+            for ( var i = 0; i < arrayallSlider.length; i++) {
+                if (arrayallSlider[i].matches('.display-block')) {
+                    arrayallSlider[i].animate([
+                        {
+                            opacity: 1
+                        },
+                        {
+                            opacity: 0
+                        }
+                    ],{
+                        duration: 1000,
+                        fill: 'forwards',
+                        easing: 'ease'
+                        });                                      
+                        setTimeout(() => {
+                            arrayallSlider[i].classList.remove('display-block'); 
+                        }, 800);
+        
+        
+                    if (i + 1 == arrayallSlider.length ) {
+                        arrayallSlider[0].classList.add('display-block')
+                        arrayallSlider[0].animate([
+                            {
+                                opacity: 0
+                            },
+                            {
+                                opacity: 1
+                            }
+                        ],{
+                            duration: 1000,
+                            fill: 'forwards',
+                            easing: 'ease'
+                            });    
+                            setTimeout(() => {
+                                openAniText()
+                            }, 800);
+                            
+                    }else {
+                        arrayallSlider[i + 1].classList.add('display-block')
+                        arrayallSlider[i + 1].animate([
+                            {
+                                opacity: 0
+                            },
+                            {
+                                opacity: 1
+                            }
+                        ],{
+                            duration: 1000,
+                            fill: 'forwards',
+                            easing: 'ease'
+                            });
+        
+                            setTimeout(() => {
+                                openAniText()
+                            }, 800);
+                    }
+        
+                    break;
+                };
+        
+            }
+        }, 8000);
+    }
+
+
+    if (isSuccessNext) {
+        clearInterval(setTimeNextSlide);
+    }
+
+    isSuccessPre = true;
+    clearInterval(setTimeSlide);
+}
+
+setTimeSlide = setInterval(() => {
+    hideAniText();
+    for ( var i = 0; i < arrayallSlider.length; i++) {
+        if (arrayallSlider[i].matches('.display-block')) {
+            arrayallSlider[i].animate([
+                {
+                    opacity: 1
+                },
+                {
+                    opacity: 0
+                }
+            ],{
+                duration: 1000,
+                fill: 'forwards',
+                easing: 'ease'
+                });                                      
+                setTimeout(() => {
+                    arrayallSlider[i].classList.remove('display-block'); 
+                }, 800);
+
+
+            if (i + 1 == arrayallSlider.length ) {
+                arrayallSlider[0].classList.add('display-block')
+                arrayallSlider[0].animate([
+                    {
+                        opacity: 0
+                    },
+                    {
+                        opacity: 1
+                    }
+                ],{
+                    duration: 1000,
+                    fill: 'forwards',
+                    easing: 'ease'
+                    });    
+                    setTimeout(() => {
+                        openAniText()
+                    }, 800);
+                    
+            }else {
+                arrayallSlider[i + 1].classList.add('display-block')
+                arrayallSlider[i + 1].animate([
+                    {
+                        opacity: 0
+                    },
+                    {
+                        opacity: 1
+                    }
+                ],{
+                    duration: 1000,
+                    fill: 'forwards',
+                    easing: 'ease'
+                    });
+
+                    setTimeout(() => {
+                        openAniText()
+                    }, 800);
+            }
+            break;
+        };
+
+    }
+}, 8000);
+

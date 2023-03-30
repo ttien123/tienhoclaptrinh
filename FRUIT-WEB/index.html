@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRUIT-WEB</title>
+    <title>Food Shop</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./access/font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
     <link rel="stylesheet" href="./access/font/themify-icons-font/themify-icons/themify-icons.css">
+    <!-- <link href="https://megaone.acrothemes.com/food-shop/img/favicon.ico" rel="icon"> -->
     <link rel="stylesheet" href="./access/css/main.css">
     <link rel="stylesheet" href="./access/css/base.css">
     <link rel="stylesheet" href="./access/css/grid.css">
@@ -18,7 +19,9 @@
 <body>
     <div class="fruit-web btn-full-web">
         <!-- header-web -->
-        <header class="header-web" >
+        
+        <header id="header-web" class="header-web" >
+            
             <nav class="nav-web grid wide">
                 <div class="row">
                     <div class="col l-6 m-0 c-0 phone-number">
@@ -120,7 +123,7 @@
         <header class="header-web-scroll" >
             <nav class="nav-web-scroll grid wide">
                 <div class="row">
-                    <div class="col l-2 l-o-0 m-2 m-o-5 c-2 c-o-4">
+                    <div class="col l-2 l-o-0 m-2 m-o-5 c-2 c-o-5">
                         <a href="" class="S-logo-link">
                             <img src="./access/img/logo-black.png" alt="Logo" class="S-logo__img">
                         </a>
@@ -180,7 +183,7 @@
                         </ul>
                     </div>
 
-                    <div class="col l-2 l-o-0 m-2 m-o-3 c-4 c-o-2">
+                    <div class="col l-2 l-o-0 m-2 m-o-3 c-4 c-o-1">
                         <div class="shop-details row">
                             <div class="shop-find">
                                 <button class="shop-find__link">
@@ -206,6 +209,12 @@
                 </div>
             </nav>
         </header>
+
+        <section class="arrow-scroll-top">
+            <a href="#header-web" class="arrow-top__link">
+                <i class="arrow-top__icon fa-sharp fa-solid fa-chevron-up"></i>
+            </a>
+        </section>
 
         <section class="Js-Shop-bag shop-card">
             <button class="JS-btn-close-bag shop-card__close">
@@ -391,19 +400,22 @@
         </section>
 
         <section class="box-slider-web">
-
-            <button class="JS-btn-pre box-arrow-icon box-arrow-left">
+            
+            <button class="JS-btn-pre btn-slide box-arrow-icon box-arrow-left">
                 <i class="fa-sharp fa-solid fa-chevron-left"></i>
             </button>
 
             <div class="slider-web slide-1 display-block">
-                <div class="slider-container col l-5 l-o-1">
+                <svg id="header-svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="60" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M0 100 C40 0 60 0 100 100 Z"></path>
+                </svg>
+                <div class="slider-container col l-5 m-10 c-12 l-o-1">
                     <div class="box-slider-header">
                         <h4 class="slider-container__header">Stay Healthy With</h4>
 
                     </div>
                     <div class="slider-content">
-                        <div class="slider-content-heading mr-16">
+                        <div class="slider-content-heading">
                             <div class="slider-content-heading__des">N</div>
                             <div class="slider-content-heading__des">a</div>
                             <div class="slider-content-heading__des">t</div>
@@ -431,53 +443,71 @@
                         <button class="btn-web">Shop Now</button>
                     </div>
                 </div>
+                <svg id="header-svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="60" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M0 100 C40 0 60 0 100 100 Z"></path>
+                </svg>
             </div>
 
             <div class="slider-web slide-2">
-                <div class="slider-container col l-5 l-o-4">
+                <svg id="header-svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="60" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M0 100 C40 0 60 0 100 100 Z"></path>
+                </svg>
+                <div class="slider-container col l-6 m-10 c-12 l-o-3">
                     <div class="box-slider-header">
-                        <h4 class="slider-container__header">Stay Healthy With</h4>
+                        <h4 class="slider-container__header">We Deliver Organic Fruits. </h4>
 
                     </div>
                     <div class="slider-content">
                         <div class="slider-content-heading mr-16">
-                            <div class="slider-content-heading__des">N</div>
-                            <div class="slider-content-heading__des">a</div>
-                            <div class="slider-content-heading__des">t</div>
-                            <div class="slider-content-heading__des">u</div>
+                            <div class="slider-content-heading__des">F</div>
                             <div class="slider-content-heading__des">r</div>
-                            <div class="slider-content-heading__des">a</div>
-                            <div class="slider-content-heading__des">l</div>
+                            <div class="slider-content-heading__des">e</div>
+                            <div class="slider-content-heading__des">s</div>
+                            <div class="slider-content-heading__des">h</div>
                         </div>
         
                         <div class="slider-content-heading">
-                            <div class="slider-content-heading__des">F</div>
+                            <div class="slider-content-heading__des">O</div>
                             <div class="slider-content-heading__des">r</div>
-                            <div class="slider-content-heading__des">u</div>
+                            <div class="slider-content-heading__des">g</div>
+                            <div class="slider-content-heading__des">a</div>
+                            <div class="slider-content-heading__des">n</div>
                             <div class="slider-content-heading__des">i</div>
-                            <div class="slider-content-heading__des">t</div>
-                            <div class="slider-content-heading__des">s</div>
+                            <div class="slider-content-heading__des">c</div>
+                        </div>
+
+                        <div class="slider-content-heading mr-16">
+                            <div class="slider-content-heading__des">F</div>
+                            <div class="slider-content-heading__des">o</div>
+                            <div class="slider-content-heading__des">o</div>
+                            <div class="slider-content-heading__des">d</div>
                         </div>
                     </div>
     
                     <div class="box-slider-des">
-                        <p class="slider-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. tellus lacus faucibus lectus, sed cursused eros ligula non odio. </p>
+                        <p class="slider-des">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.  </p>
                     </div>
                     
                     <div class="box-btn-web">
                         <button class="btn-web">Shop Now</button>
                     </div>
                 </div>
+                <svg id="header-svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="60" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M0 100 C40 0 60 0 100 100 Z"></path>
+                </svg>
             </div>
 
             <div class="slider-web slide-3">
-                <div class="slider-container col l-5 l-o-6">
+                <svg id="header-svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="60" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M0 100 C40 0 60 0 100 100 Z"></path>
+                </svg>
+                <div class="slider-container col l-5 m-10 c-12 l-o-6">
                     <div class="box-slider-header">
-                        <h4 class="slider-container__header">Stay Healthy With</h4>
+                        <h4 class="slider-container__header">We care for your </h4>
 
                     </div>
                     <div class="slider-content">
-                        <div class="slider-content-heading mr-16">
+                        <div class="slider-content-heading">
                             <div class="slider-content-heading__des">N</div>
                             <div class="slider-content-heading__des">a</div>
                             <div class="slider-content-heading__des">t</div>
@@ -486,13 +516,21 @@
                             <div class="slider-content-heading__des">a</div>
                             <div class="slider-content-heading__des">l</div>
                         </div>
-        
+
                         <div class="slider-content-heading">
                             <div class="slider-content-heading__des">F</div>
                             <div class="slider-content-heading__des">r</div>
-                            <div class="slider-content-heading__des">u</div>
-                            <div class="slider-content-heading__des">i</div>
-                            <div class="slider-content-heading__des">t</div>
+                            <div class="slider-content-heading__des">e</div>
+                            <div class="slider-content-heading__des">s</div>
+                            <div class="slider-content-heading__des">h</div>
+                        </div>
+        
+                        
+                        <div class="slider-content-heading mr-0">
+                            <div class="slider-content-heading__des">G</div>
+                            <div class="slider-content-heading__des">o</div>
+                            <div class="slider-content-heading__des">o</div>
+                            <div class="slider-content-heading__des">d</div>
                             <div class="slider-content-heading__des">s</div>
                         </div>
                     </div>
@@ -502,18 +540,520 @@
                     </div>
                     
                     <div class="box-btn-web">
-                        <button class="btn-web">Shop Now</button>
+                        <button class="btn-web">Order Now</button>
+                    </div>
+                </div>
+                <svg id="header-svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="60" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M0 100 C40 0 60 0 100 100 Z"></path>
+                </svg>
+            </div>
+
+            <button class="JS-btn-next btn-slide box-arrow-icon box-arrow-right">
+                <i class="fa-sharp fa-solid fa-chevron-right"></i>
+            </button>
+
+           
+
+        </section>
+
+        <section class="service-web">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12 box-service">
+                        <a href="" class="service-icon__link">
+                            <i class="service-icon fa-regular fa-paper-plane"></i>
+                        </a>
+                        <div class="service-content">
+                            <h4 class="service-content__heading">FREE SHIPPING</h4>
+                            <P class="service-content__des">ON $300 ABOVE ORDER</P>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12 box-service">
+                        <a href="" class="service-icon__link">
+                            <i class="service-icon fa-sharp fa-solid fa-headset"></i>
+                        </a>
+                        <div class="service-content">
+                            <h4 class="service-content__heading">SUPPORT</h4>
+                            <P class="service-content__des">ON $300 ABOVE ORDER</P>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12 box-service">
+                        <a href="" class="service-icon__link">
+                            <i class="service-icon fa-solid fa-earth-europe"></i>
+                        </a>
+                        <div class="service-content">
+                            <h4 class="service-content__heading">FREE REFUND</h4>
+                            <P class="service-content__des">ON $300 ABOVE ORDER</P>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12 box-service">
+                        <a href="" class="service-icon__link">
+                            <i class="service-icon fa-solid fa-phone"></i>
+                        </a>
+                        <div class="service-content">
+                            <h4 class="service-content__heading">CONTACT US</h4>
+                            <P class="service-content__des">ON $300 ABOVE ORDER</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="products-web">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12 header-section">
+                        <h4 class="heading-section">Our Products</h4>
+                        <p class="header-section-des">Lorem ipsum is simply dummy text of the printing and type setting has been the industry.</p>
+                    </div>
+                </div>
+
+                <div class="row productlist">
+                    <div class="col l-4 m-6 c-12 product-up">
+                        <div class="product-container">
+                            <div class="product-content-img">
+                                <div class="product-box-img">
+                                    <img src="./access/img/product_main/item8.jpg" alt="product" class="product-item__img">
+                                    <div class="product-box-items">
+                                        <div class="product-items">
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-bag"></i>
+                                            </a>
+    
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-heart"></i>
+                                            </a>
+    
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-content-des">
+                                <div class="product__name">Oranges</div>
+                                <ul class="product-list-reviews">
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+                                </ul>
+                                <p class="product-price">$20</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12 product-up">
+                        <div class="product-container">
+                            <div class="product-content-img">
+                                <div class="product-box-img">
+                                    <img src="./access/img/product_main/item9.jpg" alt="product" class="product-item__img">
+                                    <div class="product-box-items">
+                                        <div class="product-items">
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-bag"></i>
+                                            </a>
+    
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-heart"></i>
+                                            </a>
+    
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-content-des">
+                                <div class="product__name">Grapes</div>
+                                <ul class="product-list-reviews">
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+                                </ul>
+                                <p class="product-price">$30</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12 product-up hee">
+                        <div class="product-container">
+                            <div class="product-content-img">
+                                <div class="product-box-img">
+                                    <img src="./access/img/product_main/item10.jpg" alt="product" class="product-item__img">
+                                    <div class="product-box-items">
+                                        <div class="product-items">
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-bag"></i>
+                                            </a>
+    
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-heart"></i>
+                                            </a>
+    
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-content-des">
+                                <div class="product__name">Bananas</div>
+                                <ul class="product-list-reviews">
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+                                </ul>
+                                <p class="product-price">$40</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12 product-up">
+                        <div class="product-container">
+                            <div class="product-content-img">
+                                <div class="product-box-img">
+                                    <img src="./access/img/product_main/item11.jpg" alt="product" class="product-item__img">
+                                    <div class="product-box-items">
+                                        <div class="product-items">
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-bag"></i>
+                                            </a>
+    
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-heart"></i>
+                                            </a>
+    
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-content-des">
+                                <div class="product__name">Kiwi</div>
+                                <ul class="product-list-reviews">
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+                                </ul>
+                                <p class="product-price">$10</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12 product-up">
+                        <div class="product-container">
+                            <div class="product-content-img">
+                                <div class="product-box-img">
+                                    <img src="./access/img/product_main/item7.jpg" alt="product" class="product-item__img">
+                                    <div class="product-box-items">
+                                        <div class="product-items">
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-bag"></i>
+                                            </a>
+    
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-heart"></i>
+                                            </a>
+    
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-content-des">
+                                <div class="product__name">Strawberries</div>
+                                <ul class="product-list-reviews">
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+                                </ul>
+                                <p class="product-price">$20</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 c-12 product-up hii">
+                        <div class="product-container">
+                            <div class="product-content-img">
+                                <div class="product-box-img">
+                                    <img src="./access/img/product_main/item5.jpg" alt="product" class="product-item__img">
+                                    <div class="product-box-items">
+                                        <div class="product-items">
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-bag"></i>
+                                            </a>
+    
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-heart"></i>
+                                            </a>
+    
+                                            <a href="" class="product-item-link-icon">
+                                                <i class="product-item__icon ti-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-content-des">
+                                <div class="product__name">Cherries</div>
+                                <ul class="product-list-reviews">
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+
+                                    <li class="product-reviews-item">
+                                        <i class="product-reviews__icon ti-star"></i>
+                                    </li>
+                                </ul>
+                                <p class="product-price">$30</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="box-btn-web">
+                    <button class="btn-web">
+                        Load More 
+                        <i class="products-web__btn ti-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <section class="sale-web">
+            <div class="overlay-white"></div>
+            <div class="sale-container col l-7 l-o-3 m-8 m-o-2 c-12">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12 header-section">
+                        <h4 class="heading-section">
+                            <i class="icon-sale fa-sharp fa-solid fa-gifts"></i>
+                            Big Sale Today</h4>
+                        <p class="header-section-des">Get 30% Off</p>
+                    </div>
+                </div>
+
+                <div class="sale-content">
+                    <div class="row">
+                        <div class="sale-cpn col l-3 m-6 c-6">
+                            <h4 class="sale-cpn__number">00</h4>
+                            <span class="sale-cpn__des">Days</span>
+                        </div>
+    
+                        <div class="sale-cpn col l-3 m-6 c-6">
+                            <h4 class="sale-cpn__number">00</h4>
+                            <span class="sale-cpn__des">Hours</span>
+                        </div>
+    
+                        <div class="sale-cpn col l-3 m-6 c-6">
+                            <h4 class="sale-cpn__number">00</h4>
+                            <span class="sale-cpn__des">Minutes</span>
+                        </div>
+    
+                        <div class="sale-cpn col l-3 m-6 c-6">
+                            <h4 class="sale-cpn__number">00</h4>
+                            <span class="sale-cpn__des">Sec</span>
+                        </div>
+    
+                        <div class="sale-product">
+                            <img src="./access/img/banner-img.png" alt="img" class="sale-product__img">
+                        </div>
+                        
+                        <div class="box-btn-web">
+                            <button class="btn-web">
+                                Load More 
+                                <i class="btn-sale__icon fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <section class="about-web">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-8 l-o-2 m-12 c-12 header-section">
+                        <h4 class="heading-section">About Our Farm</h4>
+                        <p class="header-section-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+
+                <div class="about-box-container row">
+                    <div class="about-container col l-4 m-12 c-12">
+                        <div class="about-content">
+                            <div class="about-content__box-icon">
+                                <i class="about-content__icon fa-solid fa-house-chimney-user"></i>
+                            </div>
+
+                            <h4 class="about-conten__heading">Who We Are?</h4>
+
+                            <p class="about-content__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                            <div class="box-btn-web">
+                                <button class="btn-web">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-container col l-4 m-12 c-12">
+                        <div class="about-content">
+                            <div class="about-content__box-icon">
+                                <i class="about-content__icon fa-solid fa-tractor"></i>
+                            </div>
+
+                            <h4 class="about-conten__heading">Who We Are?</h4>
+
+                            <p class="about-content__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                            <div class="box-btn-web">
+                                <button class="btn-web">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-container col l-4 m-12 c-12">
+                        <div class="about-content">
+                            <div class="about-content__box-icon">
+                                <i class="about-content__icon fa-solid fa-seedling"></i>
+                            </div>
+
+                            <h4 class="about-conten__heading">Who We Are?</h4>
+
+                            <p class="about-content__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                            <div class="box-btn-web">
+                                <button class="btn-web">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <button class="JS-btn-next box-arrow-icon box-arrow-right">
-                <i class="fa-sharp fa-solid fa-chevron-right"></i>
-            </button>
-
+            
         </section>
 
-        <section style="height: 5000px;"></section>
+        <section class="members-web">
+            
+        </section>
 
     </div>
 
