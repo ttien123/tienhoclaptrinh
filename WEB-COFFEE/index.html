@@ -1,981 +1,918 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COFFEE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
-    <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COFFEE</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" href="./assets/css/main.css">
+<link rel="stylesheet" href="./assets/css/base.css">
+<link rel="stylesheet" href="./assets/css/grid.css">
+<link rel="stylesheet" href="./assets/css/responsive.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
+<link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 <body>
-    <div class="main">
-        <!-- header-navbar  -->
-            <header  class="header-coffee">
-                <nav class="header-navbar grid wide" >
-                    <div class="row">
-                        <button class="cursor navbar-logo-menu js-modal-menu">
-                            <span class=" navbar-menu-span menu-animation"></span>
-                            <span class=" navbar-menu-span "></span>
-                            <span class=" navbar-menu-span menu-animation"></span>
+<div class="main">
+    <!-- header-navbar  -->
+    <header  class="header-coffee header-top">
+        <nav class="header-navbar grid wide" >
+            <div class="row">
+                <button class="cursor navbar-logo-menu js-modal-menu">
+                    <span class=" navbar-menu-span menu-animation"></span>
+                    <span class=" navbar-menu-span "></span>
+                    <span class=" navbar-menu-span menu-animation"></span>
+                </button>
+                <div class="navbar-logo col l-2 l-ip-2">
+                    <a id="home" href="" class="navbar-logo-web">
+                        <img src="./assets/img/logo.png" alt="Logo" class="navbar-img">
+                    </a>
+                </div>
+
+                <ul class="navbar-list col m-0 c-0">
+                    <li class="navbar-item">
+                        <a href="#slide" class="navbar-item-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar-item JS-click-trs">
+                        <a href="#coffee" class="navbar-item-link">
+                            About Coffee
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#menu" class="navbar-item-link">
+                            Our Menu
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#review" class="navbar-item-link">
+                            Reviews
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#blog" class="navbar-item-link">
+                            News & Blog
+                        </a>
+                    </li>
+                    
+                    <li class="navbar-item">
+                        <button href="" class="js-open-modal-order cursor navbar-item-link navbar-item-link-box">
+                            Order Now
+                            <i class="navbar-item-link-box-icon fa-solid fa-angle-right"></i>
                         </button>
-                        <div class="navbar-logo col l-2 l-ip-2">
-                            <a id="home" href="" class="navbar-logo-web">
-                                <img src="./assets/img/logo.png" alt="Logo" class="navbar-img">
-                            </a>
+                    </li>
+
+                    <li class="navbar-item-box-icon">
+                        <a href="#blog" class="navbar-item-link">
+                            <i class="navbar-item-icon fa-solid fa-angle-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <header  class="header-coffee JS-header">
+        <nav class="header-navbar grid wide" >
+            <div class="row">
+                <button class="cursor navbar-logo-menu js-modal-menu">
+                    <span class=" navbar-menu-span menu-animation"></span>
+                    <span class=" navbar-menu-span "></span>
+                    <span class=" navbar-menu-span menu-animation"></span>
+                </button>
+                <div class="navbar-logo col l-2 l-ip-2">
+                    <a id="home" href="" class="navbar-logo-web">
+                        <img src="./assets/img/logo.png" alt="Logo" class="navbar-img">
+                    </a>
+                </div>
+
+                <ul class="navbar-list col">
+                    <li class="navbar-item active">
+                        <a href="#slide" class="navbar-item-link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#coffee" class="navbar-item-link">
+                            About Coffee
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#menu" class="navbar-item-link">Our Menu</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#review" class="navbar-item-link">Reviews</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#blog" class="navbar-item-link">News & Blog</a>
+                    </li>
+                    <li class="navbar-item">
+                        <button href="" class="js-open-modal-order cursor navbar-item-link navbar-item-link-box">
+                            Order Now
+                            <i class="navbar-item-link-box-icon fa-solid fa-angle-right"></i>
+                        </button>
+
+                    </li>
+                    
+                    <li class="navbar-item-box-icon">
+                        <a href="#blog" class="navbar-item-link">
+                            <i class="navbar-item-icon fa-solid fa-angle-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section class="js-modal-order modal-order">
+        <div class="modal-coating">
+            <div class="modal-order-container js-modal-order-container">
+                <div class="modal-order__header">
+                    <i class="js_modal-order-out cursor modal-order-icon__out ti-close"></i>
+                    <p class="modal-order__order__header--recommend">We are MegaOne Company</p>
+                    <h1 class="modal-order__heading">Place your Order Here</h1>
+
+                </div>
+
+                <div class="modal-order__content">
+                    <form action="">
+                        <div class="modal-order__user">
+                            <input class="modal-order__user--info"required type="text" name="" id="" placeholder="Name">
+                            <input class="modal-order__user--info"required type="email" name="" id="" placeholder="Email">
                         </div>
-    
-                        <ul class="navbar-list col l-10 m-0 c-0">
-                            <li class="navbar-item">
-                                <a href="" class="navbar-item-link">Home</a>
-                            </li>
-                            <li class="navbar-item">
-                                <a href="#coffee" class="navbar-item-link link-relative">
-                                    About Coffee
-                                    <i class="navbar-item-icon fa-solid fa-angle-down"></i>
-    
+
+                        <div class="modal-order__company">
+                            <input class="modal-order__user--info" required type="text" name="" id="" placeholder="Contract #">
+                            <input class="modal-order__user--info" required type="text" name="" id="" placeholder="City / Block no">
+
+                        </div>
+
+                        <textarea class="modal-order__detail"  placeholder="Please explain your order in detail." name="" id="" cols="20" rows="5"></textarea>
+                        
+
+                        <footer class="modal-order-footer">
+                            <label class="modal-order-check" for="">
+                                <span class="js-modal-check-order modal-order-check__span">
+                                    <span class="js-modal-order__checked modal-order-check__span--color">
+                                        <i class="modal-order-check__span--icon fa-solid fa-check"></i>
+                                    </span>
+                                </span>
+                                <span class="js-modalCheckout modalCheckout" ></span>
+
+                                Contact by phone is preferred
+                            
+                            </label>
+
+                            <a href="" class="modal-order-check__submit--box">
+                                <input class="modal-order-check__submit" type="submit" value="Submit Now">
+                                <i class="modal-order-check__submit--icon fa-solid fa-angle-right"></i>
+                                
+                            </a>
+
+                        </footer>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        
+
+    </section>
+
+    <section class="modal-header js-modal-header">
+        <div class="modal-coating"></div>
+        <div class="modal-inner-wrapper">
+            <i class="js-modal-out cursor modal-icon__out ti-close"></i>
+            <div class="modal-header__container grid wide">
+                <div>
+
+                    <a href="" class="modal-header__logo">
+                        <img src="./assets/img/logo.png" alt="Logo" class="modal-header-icon">
+                    </a>
+                </div>
+
+                <div class="modal-header__content">
+                    <div class="modal_box-list">
+                        <ul class="navbar-list">
+                            <li class="navbar-item ">
+                                <a href="" class="navbar-item-link">
+                                    Home
+                                <span class="modal_box-item-underlined"></span>
                                 </a>
                             </li>
                             <li class="navbar-item">
-                                <a href="#menu" class="navbar-item-link">Our Menu</a>
+                                <a href="" class="navbar-item-link">
+                                    About Coffee
+                                <span class="modal_box-item-underlined"></span>
+
+                                </a>
                             </li>
                             <li class="navbar-item">
-                                <a href="#review" class="navbar-item-link">Reviews</a>
+                                <a href="" class="navbar-item-link">
+                                    Our Menu
+                                <span class="modal_box-item-underlined"></span>
+
+                                </a>
                             </li>
                             <li class="navbar-item">
-                                <a href="#blog" class="navbar-item-link">News & Blog</a>
+                                <a href="" class="navbar-item-link">
+                                    Reviews
+                                <span class="modal_box-item-underlined"></span>
+
+                                </a>
                             </li>
                             <li class="navbar-item">
-                                <button href="" class="js-open-modal-order cursor navbar-item-link navbar-item-link-box">
+                                <a href="" class="navbar-item-link">
+                                    News & Blog
+                                <span class="modal_box-item-underlined"></span>
+
+                                </a>
+                            </li>
+                            <li class=" navbar-item">
+                                <button href="" class="js-open-modal-order cursor navbar-item-link navbar-item-link-box modal_box-item-order ">
                                     Order Now
                                     <i class="navbar-item-link-box-icon fa-solid fa-angle-right"></i>
                                 </button>
-    
+
                             </li>
-    
+                            
                         </ul>
                     </div>
 
-                </nav>
-
-            </header>
-
-            <div class="js-modal-order modal-order">
-                <div class="modal-coating">
-
-                    <div class="modal-order-container js-modal-order-container">
-                        <div class="modal-order__header">
-                            <i class="js_modal-order-out cursor modal-order-icon__out ti-close"></i>
-                            <p class="modal-order__order__header--recommend">We are MegaOne Company</p>
-                            <h1 class="modal-order__heading">Place your Order Here</h1>
-    
-                        </div>
-    
-                        <div class="modal-order__content">
-                            <form action="">
-                                <div class="modal-order__user">
-                                    <input class="modal-order__user--info"required type="text" name="" id="" placeholder="Name">
-                                    <input class="modal-order__user--info"required type="email" name="" id="" placeholder="Email">
-                                </div>
-    
-                                <div class="modal-order__company">
-                                    <input class="modal-order__user--info" required type="text" name="" id="" placeholder="Contract #">
-                                    <input class="modal-order__user--info" required type="text" name="" id="" placeholder="City / Block no">
-    
-                                </div>
-    
-                                <textarea class="modal-order__detail"  placeholder="Please explain your order in detail." name="" id="" cols="20" rows="5"></textarea>
-                               
-    
-                                <footer class="modal-order-footer">
-                                    <label class="modal-order-check" for="">
-                                        <span class="js-modal-check-order modal-order-check__span">
-                                            <span class="js-modal-order__checked modal-order-check__span--color">
-                                                <i class="modal-order-check__span--icon fa-solid fa-check"></i>
-                                            </span>
-                                        </span>
-                                        <span class="js-modalCheckout modalCheckout" ></span>
-    
-                                        Contact by phone is preferred
-                                    
-                                    </label>
-    
-                                    <a href="" class="modal-order-check__submit--box">
-                                        <input class="modal-order-check__submit" type="submit" value="Submit Now">
-                                        <i class="modal-order-check__submit--icon fa-solid fa-angle-right"></i>
-                                        
-                                    </a>
-    
-                                </footer>
-    
-    
-                            </form>
-    
-                        </div>
-    
-                    </div>
-    
-
-                </div>
-
-               
-
-            </div>
-
-            <div class="modal-header js-modal-header">
-
-                <div class="modal-coating"></div>
-                <div class="modal-inner-wrapper">
-                    <i class="js-modal-out cursor modal-icon__out ti-close"></i>
-                    <div class="modal-header__container grid wide">
-                        <div>
-
-                            <a href="" class="modal-header__logo">
-                                <img src="./assets/img/logo.png" alt="Logo" class="modal-header-icon">
-                            </a>
-                        </div>
-    
-                        <div class="modal-header__content">
-                            <div class="modal_box-list">
-                                <ul class="navbar-list">
-                                    <li class="navbar-item ">
-                                        <a href="" class="navbar-item-link">
-                                            Home
-                                        <span class="modal_box-item-underlined"></span>
-    
-                                        </a>
-                                    </li>
-                                    <li class="navbar-item">
-                                        <a href="" class="navbar-item-link">
-                                            About Coffee
-                                        <span class="modal_box-item-underlined"></span>
-    
-                                        </a>
-                                    </li>
-                                    <li class="navbar-item">
-                                        <a href="" class="navbar-item-link">
-                                            Our Menu
-                                        <span class="modal_box-item-underlined"></span>
-    
-                                        </a>
-                                    </li>
-                                    <li class="navbar-item">
-                                        <a href="" class="navbar-item-link">
-                                            Reviews
-                                        <span class="modal_box-item-underlined"></span>
-    
-                                        </a>
-                                    </li>
-                                    <li class="navbar-item">
-                                        <a href="" class="navbar-item-link">
-                                            News & Blog
-                                        <span class="modal_box-item-underlined"></span>
-    
-                                        </a>
-                                    </li>
-                                    <li class=" navbar-item">
-                                        <button href="" class="js-open-modal-order cursor navbar-item-link navbar-item-link-box modal_box-item-order ">
-                                            Order Now
-                                            <i class="navbar-item-link-box-icon fa-solid fa-angle-right"></i>
-                                        </button>
-    
-                                    </li>
-                                   
-                                </ul>
-                            </div>
-    
-                            <div class="modal_box-social">
-                                <p class="modal-social__std">+1 631 123 4567</p>
-                                <p class="modal-social__email">email@website.com</p>
-                                
-                                <div class="slider-content__box-social">
-                                    <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
-                                        <i class="box-social__icon fa-brands fa-facebook-f"></i>
-                                    </a>
-        
-                                    <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
-                                        <i class="box-social__icon fa-brands fa-twitter"></i>
-                                    </a>
-        
-                                    <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
-                                        <i class="box-social__icon fa-brands fa-youtube"></i>
-                                    </a>
-        
-                                    <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
-                                        <i class="box-social__icon fa-brands fa-instagram"></i>
-                                    </a>
-        
-                                </div>
-                                
-                                <p class="modal-social__credit">© 2020 MegaOne. Made With Love by Themesindustry</p>
-    
-    
-                            </div>
-    
-                        </div>
-    
-    
-                    </div>
-                </div>
-
-
-
-            </div>
-
-            <!-- slide -->
-
-            <div class="slider">
-                <div class="slider-img--box">
-                </div>
-                <img src="./assets/img/slider-1.jpg" alt="" class="slider-img">
-
-                <div class="slider-content">
-                    <div class="row">
-                        <div class="slider-content__stt col l-2 m-0 c-0">
-                            <span class="cursor slider-stt slider-stt-open">1</span>
-                            <span class="cursor slider-stt">2</span>
-                            <span class="cursor slider-stt">3</span>
-                        </div>
-    
-                        <div class="grid wide">
-                            <div class="slider-content__box col l-6 l-o-6 m-7 m-o-5 ">
-                                <div class="slider-content__box-title ">
-                                    <h1 class="slider-content__heading">
-                                        Best in Town 
-                                        <span class="slider-content__title-name">Coffee House</span>
-        
-                                    </h1>
-                                    <p class="slider-content-recommend">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.</p>
-                                    <a href="" class="slider-content__btn ">
-                                        LEARN MORE
-                                        <i class="slider-content__btn-icon  fa-solid fa-angle-right"></i>
-        
-                                    </a>
-                                </div>
-        
-                            </div>
-                        </div>
-    
-                        <div class="slider-content__box-social col l-1 m-0 c-0">
-                            <a href="" class="slide-box-social__link slider-stt--social">
+                    <div class="modal_box-social">
+                        <p class="modal-social__std">+1 631 123 4567</p>
+                        <p class="modal-social__email">email@website.com</p>
+                        
+                        <div class="slider-content__box-social">
+                            <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
                                 <i class="box-social__icon fa-brands fa-facebook-f"></i>
                             </a>
-    
-                            <a href="" class="slide-box-social__link slider-stt--social">
+
+                            <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
                                 <i class="box-social__icon fa-brands fa-twitter"></i>
                             </a>
-    
-                            <a href="" class="slide-box-social__link slider-stt--social">
-                                <i class="box-social__icon fa-brands fa-linkedin-in"></i>
+
+                            <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                                <i class="box-social__icon fa-brands fa-youtube"></i>
                             </a>
-    
-                            <a href="" class="slide-box-social__link slider-stt--social">
+
+                            <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
                                 <i class="box-social__icon fa-brands fa-instagram"></i>
                             </a>
-    
+
                         </div>
+                        
+                        <p class="modal-social__credit">© 2020 MegaOne. Made With Love by Themesindustry</p>
+
+
                     </div>
-                
+
                 </div>
 
+
             </div>
+        </div>
 
-            <!-- container -->
-            <div id="coffee" class="container__coffee">
-                <div class="container-heading">
-                    <div class="ctn-heading-box-img">
-                        <img src="./assets/img/about-border.png" alt="Heading" class="ctn-heading-img">
-                    
-                    </div>
 
-                    <p class="ctn-heading-intro">Top quality coffee</p>
 
-                    <h1 class="ctn-heading-title">Best Coffee in Town</h1>
+    </section>
 
-                    <p class="ctn-heading-content">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.</p>
+    <!-- slide -->
+    <section id="slide" class="Js-section slider">
+        <div class="slider-img--box">
+        </div>
+        <img src="./assets/img/slider-1.jpg" alt="" class="slider-img">
 
+        <div class="slider-content">
+            <div class="row">
+                <div class="slider-content__stt col l-2 m-0 c-0">
+                    <span class="cursor slider-stt slider-stt-open">1</span>
+                    <span class="cursor slider-stt">2</span>
+                    <span class="cursor slider-stt">3</span>
                 </div>
 
                 <div class="grid wide">
-                    <div class="ctn-content row">
-                        <div class="ctn-content-info-coffe col l-4 m-12 c-12">
-                            <div class="ctn-content-info">
-                                <div class="ctn-content-info-box-img">
-                                    <img class="ctn-content-info-img" src="data:image/png;base64,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">
-                                </div>
-                                
-                                <div class="ctn-content-info--about">
-                                    <h3 class="ctn-content-info--about-title">We are food lovers</h3>
-                                    
-                                    <span class="ctn-content-info--about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.</span>
-                                
-                                </div>
-                           
-                            </div>
-    
-                            <div class="ctn-content-info">
-                                <div class="ctn-content-info-box-img">
-                                    <img class="ctn-content-info-img" src="./assets/img/peach.png" alt="drink">
-                                </div>
-                                
-                                <div class="ctn-content-info--about">
-                                    <h3 class="ctn-content-info--about-title">Diversity in food</h3>
-                                    
-                                    <span class="ctn-content-info--about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.</span>
-                                
-                                </div>
-                           
-                            </div>
-    
-                            <div class="ctn-content-info">
-                                <div class="ctn-content-info-box-img">
-                                    <img class="ctn-content-info-img ctn-content-info-img--smile" src="./assets/img/smile.png" alt="smile">
-                                </div>
-                                
-                                <div class="ctn-content-info--about">
-                                    <h3 class="ctn-content-info--about-title">100% Free Delivery</h3>
-                                    
-                                    <span class="ctn-content-info--about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.</span>
-                                
-                                </div>
-                           
-                            </div>
-    
+                    <div class="slider-content__box col l-6 l-o-6 m-7 m-o-5 ">
+                        <div class="slider-content__box-title ">
+                            <h1 class="slider-content__heading">
+                                Best in Town 
+                                <span class="slider-content__title-name">Coffee House</span>
+
+                            </h1>
+                            <p class="slider-content-recommend">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.</p>
+                            <a href="" class="slider-content__btn ">
+                                LEARN MORE
+                                <i class="slider-content__btn-icon  fa-solid fa-angle-right"></i>
+
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="slider-content__box-social col l-1 m-0 c-0">
+                    <a href="" class="slide-box-social__link slider-stt--social">
+                        <i class="box-social__icon fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="" class="slide-box-social__link slider-stt--social">
+                        <i class="box-social__icon fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="" class="slide-box-social__link slider-stt--social">
+                        <i class="box-social__icon fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="" class="slide-box-social__link slider-stt--social">
+                        <i class="box-social__icon fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+            </div>
+        
+        </div>
+
+    </section>
+
+    <!-- container -->
+    <section id="coffee" class="Js-section container__coffee">
+        <div class="container-heading">
+            <div class="ctn-heading-box-img">
+                <img src="./assets/img/about-border.png" alt="Heading" class="ctn-heading-img">
+            
+            </div>
+            <p class="ctn-heading-intro">Top quality coffee</p>
+            <h1 class="ctn-heading-title">Best Coffee in Town</h1>
+            <p class="ctn-heading-content">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.</p>
+        </div>
+        <div class="grid wide">
+            <div class="ctn-content row">
+                <div class="ctn-content-info-coffe info-coffe__left col l-4 m-12 c-12">
+                    <div class="ctn-content-info">
+                        <div class="ctn-content-info-box-img">
+                            <img class="ctn-content-info-img" src="data:image/png;base64,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">
                         </div>
                         
-                        <div class="ctn-content__box-img col l-4 m-12 c-12">
-                            <img src="./assets/img/about-img.png" alt="" class="ctn-content__img">
+                        <div class="ctn-content-info--about">
+                            <h3 class="ctn-content-info--about-title">We are food lovers</h3>
+                            
+                            <span class="ctn-content-info--about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.</span>
+                        
                         </div>
-    
-                        <div class="ctn-content-info-coffe col l-4 m-12 c-12">
-                            <div class="ctn-content-info">
-                                <div class="ctn-content-info-box-img">
-                                    <img class="ctn-content-info-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAAG2klEQVRoge2aXWwcVxmGn+/sOt6QxE5UEjf2bmq3SWt7126rBAm3SJikcopoC0VZee2GylS0cAcXKVApQlELba74U1WJEnBQ65/gVqiNUERAwEVDRINpmngdklgQx2s3xIUmMTRZ7+58XMxGWM5uZjyZbW3wI1kztt/zzftqds+cc+bAIosUpT1ac2dnNNIFiBt9R1N1fSIafnwXGFf1GyKxRCzymNv6bnB14ULEW8JLA8jrinZvb66+3Unf2koQy/xC4MUT0chGJ/2n168vN0ZfE9WfPNIUjnn1ORvPgcsuaVxhHTC8/tjEaSd99fnIZ4B6YLQytOaok74ylP4ccCtwero+NezV52w8B1aVT+bPfrwLLMcGQl7PT18cHMw4X8C6qt8zMEDOm8tr8RxYhJB9lCk3egsrBKCoK/1c67vF+x1GjwCost2NXtQcARDkETedlsKbdn3dznzotLKh8m7gXaC1M1rzKUd9pfYDKWDjyYbIQ076nE6/DPp34J6OaHirV5+z8Rx4YPCvF4EXABQecNQfTl1G5fsAatRZn5z8l2KeBxAX9d3iOXDeyCSAIpVu9Gqs8/l2rvT5O4yqW70zNxRYYTOAqJxwoxc1W+x26kpv0C0AYtzp3dX0SDy6ejnwEDBtgtY+R32cAGg7kAsGtMdJ31VbG1Lk80A2YIJ9Xn3OJuC14fDk+9PNVRVGRX/Wd3z8DUf9MNq8piIr8GrP0PhBJ/3RCxeysTWVKiq9PUNnf+fV5yKLLPK/RdEhW7wlvDQwpduwTD2inju3kqKSw1h/ya2QVwYOpy67aVIwcNddtSvTmewhoNFXg6VjuLwseO/eo2cuOAmDhf54ZTr3pAiNwDER3YeKb9MzXxENqEoCaEpnMjuAnU5NCgY2opsUEOTrvUOpX/ls01c6ouE/AwdANrnRFwyssATAEk376K0kCJpWBIGGRDS8u5DGiIxaGV7rPzk2UTDwQkLQaUVQWCfwjUIaVUWCPNsejbQt+MAbkhOHT0bDjwvcVExjwScEHjBY313wgXeBRTK153qartraH6SXZS+DfOyGpocLhb1nzlzJn5b/XwSeyYL/SMfvvnl1MFPWq6rd/clUr5N+wd9hkw5uQvU+gU5X+lIbKjVBY4/zFdSNvlhgBTCqvq0Hl4qcGgMgyA0EFi7bxSTkm7NSIZa9oil6yY28YGBR+3VIQNwtv364yCoAVC+6URcMrMhZu4ZV55uvUqFU2wfzTjGJvWIKQK5IYE4DiEiD7wZ9RkQ2AojFUDFN4FikKn96vkhgfRPsMajvDv1FUN0IECwzbxdVBa178mcnCwZuSI4fB94TqGuPRW7z3aZPJGLVLcAqhZGXjo3+rZhOkC/lz/YXDGy/4Jb9AKJ0lMCrLwgmAWDyXguRiNZsA7YC72XRvUUHHgK99lG/OONLP2+It4SXorQD5KDgq5j2WKRNkG77N9k5kEz9s2jg25NjvwZOAbcGTkS2+W/5xghe0i8Da4A/7kuOHZn5v86Gtbd0RsPPG9VfAsuBPX3JsRfA4c16ZzT8hMKPFEYupkOxAyMj82LJ5wvNVcuyubLTwFpF4/3J8VcSsfDDojwB1GJvngHIAs/0JVPPcHX0eL3Cy0NV3cCwwPqVofSOEmaYE5lc2W5grSKH+pPjrwIIPArcjx32EkKPJbnmvmTqaWaMsx3Hyh3Rms0gvwGyFnLv7I/PB01nQ/V9asxBICfGfLz3+NlBgEfra27Kit6dI3DOMhWnBpLJ6ULt3e2gi0a+B/o1YDRgBVpePjFadFRTSjobwhvUcAhYjcjOvqGx78y1hqvp4YV0+TeBPwC35Exuf2vrB79w0BGrq1LDAWC1wME7hsae81LHVeADIyNpMtZnsXvtxup/rFvh5WJe6WwIb1DNvAHcBvwplL2yzdVmuALMab772B0fXTEVClUMvJ0a93IxLyQaa7aIyD7sZdi3skuyWwfeOjfptd68neA/uLH6I8uumG8JPAkYgYOSDsV7RkZczXuLIR2xyM+vDsDnGavyPwAInFX7uToXRrNU3j+zxw6i2oS9a3Vek9+5O1dWwPklwH8DZ6m8s8xMhf2zNn+YWpI9t39w8n1HYUesrsrtrvV5gsSjtTe7EV4TqqOppgXNTJyKhn/ov6/SkGiMfDtIdqI9Fmlz0l4TWDNl7wDTCl9JxMIPl8Shj7THIm0iugOwyDHhpC/4WOporHkKkWcBFfitih5Vlbn2kCXFKAEVYkAb9o3b3ZdMPeXUruhzuDMW/qoqTwMV/tksCf9G5Dm34+rrDjy67qpdOZ3NblZL6kR0Xr14s0RyqHVGMvr7vlMT737YfhaZL/wHSLBLYWTKvvIAAAAASUVORK5CYII=">
-                                </div>
-                                
-                                <div class="ctn-content-info--about">
-                                    <h3 class="ctn-content-info--about-title">We are food lovers</h3>
-                                    
-                                    <span class="ctn-content-info--about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.</span>
-                                
-                                </div>
-                           
-                            </div>
-    
-                            <div class="ctn-content-info">
-                                <div class="ctn-content-info-box-img">
-                                    <img class="ctn-content-info-img" src="./assets/img/peach.png" alt="drink">
-                                </div>
-                                
-                                <div class="ctn-content-info--about">
-                                    <h3 class="ctn-content-info--about-title">Diversity in food</h3>
-                                    
-                                    <span class="ctn-content-info--about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.</span>
-                                
-                                </div>
-                           
-                            </div>
-    
-                            <div class="ctn-content-info">
-                                <div class="ctn-content-info-box-img">
-                                    <img class="ctn-content-info-img ctn-content-info-img--smile" src="./assets/img/smile.png" alt="smile">
-                                </div>
-                                
-                                <div class="ctn-content-info--about">
-                                    <h3 class="ctn-content-info--about-title">100% Free Delivery</h3>
-                                    
-                                    <span class="ctn-content-info--about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.</span>
-                                
-                                </div>
-                           
-                            </div>
-    
+                    
+                    </div>
+
+                    <div class="ctn-content-info">
+                        <div class="ctn-content-info-box-img">
+                            <img class="ctn-content-info-img" src="./assets/img/peach.png" alt="drink">
                         </div>
-    
+                        
+                        <div class="ctn-content-info--about">
+                            <h3 class="ctn-content-info--about-title">Diversity in food</h3>
+                            
+                            <span class="ctn-content-info--about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.</span>
+                        
+                        </div>
+                    
+                    </div>
+
+                    <div class="ctn-content-info">
+                        <div class="ctn-content-info-box-img">
+                            <img class="ctn-content-info-img ctn-content-info-img--smile" src="./assets/img/smile.png" alt="smile">
+                        </div>
+                        
+                        <div class="ctn-content-info--about">
+                            <h3 class="ctn-content-info--about-title">100% Free Delivery</h3>
+                            
+                            <span class="ctn-content-info--about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.</span>
+                        
+                        </div>
+                    
+                    </div>
+
+                </div>
+                
+                <div class="ctn-content__box-img col l-4 m-12 c-12">
+                    <img src="./assets/img/about-img.png" alt="" class="ctn-content__img">
+                </div>
+
+                <div class="ctn-content-info-coffe info-coffe__right col l-4 m-12 c-12">
+                    <div class="ctn-content-info">
+                        <div class="ctn-content-info-box-img">
+                            <img class="ctn-content-info-img" src="data:image/png;base64,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">
+                        </div>
+                        
+                        <div class="ctn-content-info--about">
+                            <h3 class="ctn-content-info--about-title">We are food lovers</h3>
+                            
+                            <span class="ctn-content-info--about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.</span>
+                        
+                        </div>
+                    
+                    </div>
+
+                    <div class="ctn-content-info">
+                        <div class="ctn-content-info-box-img">
+                            <img class="ctn-content-info-img" src="./assets/img/peach.png" alt="drink">
+                        </div>
+                        
+                        <div class="ctn-content-info--about">
+                            <h3 class="ctn-content-info--about-title">Diversity in food</h3>
+                            
+                            <span class="ctn-content-info--about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.</span>
+                        
+                        </div>
+                    
+                    </div>
+
+                    <div class="ctn-content-info">
+                        <div class="ctn-content-info-box-img">
+                            <img class="ctn-content-info-img ctn-content-info-img--smile" src="./assets/img/smile.png" alt="smile">
+                        </div>
+                        
+                        <div class="ctn-content-info--about">
+                            <h3 class="ctn-content-info--about-title">100% Free Delivery</h3>
+                            
+                            <span class="ctn-content-info--about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim viverra ultrices.</span>
+                        
+                        </div>
+                    
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ctn-information">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="ctn-info__coffee-cups col l-3 m-6 c-12">
+                        <div class="ctn-info__coffee-cups-box-img">
+                            <img class="ctn-content-info-img" src="data:image/png;base64,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">
+                        </div>
+
+                        <h2 class="ctn-info__coffee-cups-number number1">3785</h2>
+
+                        <p class="ctn-info__coffee-cups-name">Coffee Cups</p>
+                    </div>
+
+                    <div class="ctn-info__coffee-cups col l-3 m-6 c-12">
+                        <div class="ctn-info__coffee-cups-box-img">
+                            <img class="ctn-content-info-img ctn-content-info-img--invest" src="./assets/img/smile.png">
+                        </div>
+
+                        <h2 class="ctn-info__coffee-cups-number">2995</h2>
+
+                        <p class="ctn-info__coffee-cups-name">Customers</p>
+                    </div>
+
+                    <div class="ctn-info__coffee-cups col l-3 m-6 c-12">
+                        <div class="ctn-info__coffee-cups-box-img">
+                            <img class="ctn-content-info-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAAG2klEQVRoge2aXWwcVxmGn+/sOt6QxE5UEjf2bmq3SWt7126rBAm3SJikcopoC0VZee2GylS0cAcXKVApQlELba74U1WJEnBQ65/gVqiNUERAwEVDRINpmngdklgQx2s3xIUmMTRZ7+58XMxGWM5uZjyZbW3wI1kztt/zzftqds+cc+bAIosUpT1ac2dnNNIFiBt9R1N1fSIafnwXGFf1GyKxRCzymNv6bnB14ULEW8JLA8jrinZvb66+3Unf2koQy/xC4MUT0chGJ/2n168vN0ZfE9WfPNIUjnn1ORvPgcsuaVxhHTC8/tjEaSd99fnIZ4B6YLQytOaok74ylP4ccCtwero+NezV52w8B1aVT+bPfrwLLMcGQl7PT18cHMw4X8C6qt8zMEDOm8tr8RxYhJB9lCk3egsrBKCoK/1c67vF+x1GjwCost2NXtQcARDkETedlsKbdn3dznzotLKh8m7gXaC1M1rzKUd9pfYDKWDjyYbIQ076nE6/DPp34J6OaHirV5+z8Rx4YPCvF4EXABQecNQfTl1G5fsAatRZn5z8l2KeBxAX9d3iOXDeyCSAIpVu9Gqs8/l2rvT5O4yqW70zNxRYYTOAqJxwoxc1W+x26kpv0C0AYtzp3dX0SDy6ejnwEDBtgtY+R32cAGg7kAsGtMdJ31VbG1Lk80A2YIJ9Xn3OJuC14fDk+9PNVRVGRX/Wd3z8DUf9MNq8piIr8GrP0PhBJ/3RCxeysTWVKiq9PUNnf+fV5yKLLPK/RdEhW7wlvDQwpduwTD2inju3kqKSw1h/ya2QVwYOpy67aVIwcNddtSvTmewhoNFXg6VjuLwseO/eo2cuOAmDhf54ZTr3pAiNwDER3YeKb9MzXxENqEoCaEpnMjuAnU5NCgY2opsUEOTrvUOpX/ls01c6ouE/AwdANrnRFwyssATAEk376K0kCJpWBIGGRDS8u5DGiIxaGV7rPzk2UTDwQkLQaUVQWCfwjUIaVUWCPNsejbQt+MAbkhOHT0bDjwvcVExjwScEHjBY313wgXeBRTK153qartraH6SXZS+DfOyGpocLhb1nzlzJn5b/XwSeyYL/SMfvvnl1MFPWq6rd/clUr5N+wd9hkw5uQvU+gU5X+lIbKjVBY4/zFdSNvlhgBTCqvq0Hl4qcGgMgyA0EFi7bxSTkm7NSIZa9oil6yY28YGBR+3VIQNwtv364yCoAVC+6URcMrMhZu4ZV55uvUqFU2wfzTjGJvWIKQK5IYE4DiEiD7wZ9RkQ2AojFUDFN4FikKn96vkhgfRPsMajvDv1FUN0IECwzbxdVBa178mcnCwZuSI4fB94TqGuPRW7z3aZPJGLVLcAqhZGXjo3+rZhOkC/lz/YXDGy/4Jb9AKJ0lMCrLwgmAWDyXguRiNZsA7YC72XRvUUHHgK99lG/OONLP2+It4SXorQD5KDgq5j2WKRNkG77N9k5kEz9s2jg25NjvwZOAbcGTkS2+W/5xghe0i8Da4A/7kuOHZn5v86Gtbd0RsPPG9VfAsuBPX3JsRfA4c16ZzT8hMKPFEYupkOxAyMj82LJ5wvNVcuyubLTwFpF4/3J8VcSsfDDojwB1GJvngHIAs/0JVPPcHX0eL3Cy0NV3cCwwPqVofSOEmaYE5lc2W5grSKH+pPjrwIIPArcjx32EkKPJbnmvmTqaWaMsx3Hyh3Rms0gvwGyFnLv7I/PB01nQ/V9asxBICfGfLz3+NlBgEfra27Kit6dI3DOMhWnBpLJ6ULt3e2gi0a+B/o1YDRgBVpePjFadFRTSjobwhvUcAhYjcjOvqGx78y1hqvp4YV0+TeBPwC35Exuf2vrB79w0BGrq1LDAWC1wME7hsae81LHVeADIyNpMtZnsXvtxup/rFvh5WJe6WwIb1DNvAHcBvwplL2yzdVmuALMab772B0fXTEVClUMvJ0a93IxLyQaa7aIyD7sZdi3skuyWwfeOjfptd68neA/uLH6I8uumG8JPAkYgYOSDsV7RkZczXuLIR2xyM+vDsDnGavyPwAInFX7uToXRrNU3j+zxw6i2oS9a3Vek9+5O1dWwPklwH8DZ6m8s8xMhf2zNn+YWpI9t39w8n1HYUesrsrtrvV5gsSjtTe7EV4TqqOppgXNTJyKhn/ov6/SkGiMfDtIdqI9Fmlz0l4TWDNl7wDTCl9JxMIPl8Shj7THIm0iugOwyDHhpC/4WOporHkKkWcBFfitih5Vlbn2kCXFKAEVYkAb9o3b3ZdMPeXUruhzuDMW/qoqTwMV/tksCf9G5Dm34+rrDjy67qpdOZ3NblZL6kR0Xr14s0RyqHVGMvr7vlMT737YfhaZL/wHSLBLYWTKvvIAAAAASUVORK5CYII=">
+                        </div>
+
+                        <h2 class="ctn-info__coffee-cups-number">1559</h2>
+
+                        <p class="ctn-info__coffee-cups-name">Cup of Tea</p>
+                    </div>
+
+                    <div class="ctn-info__coffee-cups col l-3 m-6 c-12">
+                        <div class="ctn-info__coffee-cups-box-img">
+                            <img  class="ctn-content-info-img ctn-content-info-img--invest" src="./assets/img/return-on-investment.png" alt="">
+                        </div>
+                        
+                        <h2 class="ctn-info__coffee-cups-number">1990</h2>
+
+                        <p class="ctn-info__coffee-cups-name">Since</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="menu" class="Js-section container__coffee--menu">
+        <div class="container-heading">
+            <div class="ctn-heading-box-img">
+                <img src="./assets/img/about-border.png" alt="Heading" class="ctn-heading-img">
+            
+            </div>
+
+            <p class="ctn-heading-intro">Top quality coffee</p>
+
+            <h1 class="ctn-heading-title">Best Coffee in Town</h1>
+
+            <p class="ctn-heading-content">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.</p>
+
+
+        </div>
+
+        <div class="grid grid-row">  
+            <div class="row sm-gutter cursor">
+                <div class="col l-2 m-2 c-12 mt-10px">
+                    <div class="coffee-menu__box--img">
+                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="Menu" class="coffee-menu__img">
+                        
+                        <div class="coffee-menu__box--modal">
+                            
+                        </div>
+
+                        <div class="coffee-menu__box--modal-content">
+
+                            <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                            <h3 class="coffee-modal-name">Coffee Cup</h3>
+                        </div>
+                    
+                    </div>
+
+                    <div class="menu-box-item">
+                        <div class="menu-box-item__coating"></div>
+                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+
+                    </div>
+
+                </div>
+
+                <div class="col l-8 m-8 c-12 mt-10px">
+                    <div class="coffee-menu__box--img">
+                        <img src="./assets/img-menu/gallery-img-2.jpg" alt="Menu" class="coffee-menu__img">
+                        <div class="coffee-menu__box--modal">
+                            
+                        </div>
+
+                        <div class="coffee-menu__box--modal-content c-hover">
+
+                            <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                            <h3 class="coffee-modal-name">Coffee Cup</h3>
+                        </div>
+                    </div>
+
+                    <div class="menu-box-item">
+                        <div class="menu-box-item__coating"></div>
+                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+
                     </div>
                 </div>
 
- 
-                <div class="ctn-information">
-                    <div class="grid wide">
-                        <div class="row">
-                            <div class="ctn-info__coffee-cups col l-3 m-6 c-12">
-                                <div class="ctn-info__coffee-cups-box-img">
-                                    <img class="ctn-content-info-img" src="data:image/png;base64,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">
-                                </div>
-        
-                                <h2 class="ctn-info__coffee-cups-number">3785</h2>
-        
-                                <p class="ctn-info__coffee-cups-name">Coffee Cups</p>
-                            </div>
-        
-                            <div class="ctn-info__coffee-cups col l-3 m-6 c-12">
-                                <div class="ctn-info__coffee-cups-box-img">
-                                    <img class="ctn-content-info-img ctn-content-info-img--invest" src="./assets/img/smile.png">
-                                </div>
-        
-                                <h2 class="ctn-info__coffee-cups-number">2995</h2>
-        
-                                <p class="ctn-info__coffee-cups-name">Customers</p>
-                            </div>
-        
-                            <div class="ctn-info__coffee-cups col l-3 m-6 c-12">
-                                <div class="ctn-info__coffee-cups-box-img">
-                                    <img class="ctn-content-info-img" src="data:image/png;base64,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">
-                                </div>
-        
-                                <h2 class="ctn-info__coffee-cups-number">1559</h2>
-        
-                                <p class="ctn-info__coffee-cups-name">Cup of Tea</p>
-                            </div>
-        
-                            <div class="ctn-info__coffee-cups col l-3 m-6 c-12">
-                                <div class="ctn-info__coffee-cups-box-img">
-                                    <img  class="ctn-content-info-img ctn-content-info-img--invest" src="./assets/img/return-on-investment.png" alt="">
-                                </div>
-                               
-                                <h2 class="ctn-info__coffee-cups-number">1990</h2>
-        
-                                <p class="ctn-info__coffee-cups-name">Since</p>
-                            </div>
+                <div class="col l-2 m-2 c-12 mt-10px">
+                    <div class="coffee-menu__box--img">
+                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="Menu" class="coffee-menu__img">
+                        <div class="coffee-menu__box--modal">
+                            
+                        </div>
+
+                        <div class="coffee-menu__box--modal-content">
+
+                            <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                            <h3 class="coffee-modal-name">Coffee Cup</h3>
+                        </div>
+
+                        <div class="menu-box-item">
+                            <div class="menu-box-item__coating"></div>
+                            <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row sm-gutter cursor">
+                <div class="col l-3 m-3 c-12 mt-10px">
+                    <div class="coffee-menu__box--img">
+                        <img src="./assets/img-menu/gallery-img-4.jpg" alt="Menu" class="coffee-menu__img">
+                        
+                        <div class="coffee-menu__box--modal"></div>
+
+                        <div class="coffee-menu__box--modal-content">
+
+                            <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                            <h3 class="coffee-modal-name">Coffee Cup</h3>
+                        </div>
+
+                        <div class="menu-box-item">
+                            <div class="menu-box-item__coating"></div>
+                            <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+
                         </div>
                     </div>
-    
                 </div>
-  
 
-                <div id="menu" class="container__coffee--menu">
-                    <div class="container-heading">
+                <div class="col l-3 m-3 c-12 mt-10px">
+                    <div class="coffee-menu__box--img">
+                        <img src="./assets/img-menu/gallery-img-5.jpg" alt="Menu" class="coffee-menu__img">
+                        <div class="coffee-menu__box--modal">
+                            
+                        </div>
+
+                        <div class="coffee-menu__box--modal-content">
+
+                            <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                            <h3 class="coffee-modal-name">Coffee Cup</h3>
+                        </div>
+
+                        <div class="menu-box-item">
+                            <div class="menu-box-item__coating"></div>
+                            <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 m-3 c-12 mt-10px">
+                    <div class="coffee-menu__box--img">
+                        <img src="./assets/img-menu/gallery-img-6.jpg" alt="Menu" class="coffee-menu__img">
+                        <div class="coffee-menu__box--modal">
+                            
+                        </div>
+
+                        <div class="coffee-menu__box--modal-content">
+
+                            <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                            <h3 class="coffee-modal-name">Coffee Cup</h3>
+                        </div>
+
+                        <div class="menu-box-item">
+                            <div class="menu-box-item__coating"></div>
+                            <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 m-3 c-12 mt-10px">
+                    <div class="coffee-menu__box--img">
+                        <img src="./assets/img-menu/gallery-img-7.jpg" alt="Menu" class="coffee-menu__img">
+                        <div class="coffee-menu__box--modal">
+                            
+                        </div>
+
+                        <div class="coffee-menu__box--modal-content">
+
+                            <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                            <h3 class="coffee-modal-name">Coffee Cup</h3>
+                        </div>
+
+                        <div class="menu-box-item">
+                            <div class="menu-box-item__coating"></div>
+                            <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row sm-gutter cursor">
+                <div class="col l-3 m-3 c-12 mt-10px">
+                    <div class="coffee-menu__box--img">
+                        <img src="./assets/img-menu/gallery-img-8.jpg" alt="Menu" class="coffee-menu__img">
+                        <div class="coffee-menu__box--modal">
+                            
+                        </div>
+
+                        <div class="coffee-menu__box--modal-content">
+
+                            <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                            <h3 class="coffee-modal-name">Coffee Cup</h3>
+                        </div>
+
+                        <div class="menu-box-item">
+                            <div class="menu-box-item__coating"></div>
+                            <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 m-3 c-12 mt-10px">
+                    <div class="coffee-menu__box--img">
+                        <img src="./assets/img-menu/gallery-img-9.jpg" alt="Menu" class="coffee-menu__img">
+                        <div class="coffee-menu__box--modal">
+                            
+                        </div>
+
+                        <div class="coffee-menu__box--modal-content">
+
+                            <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                            <h3 class="coffee-modal-name">Coffee Cup</h3>
+                        </div>
+
+                        <div class="menu-box-item">
+                            <div class="menu-box-item__coating"></div>
+                            <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 m-3 c-12 mt-10px">
+                    <div class="coffee-menu__box--img">
+                        <img src="./assets/img-menu/gallery-img-10.jpg" alt="Menu" class="coffee-menu__img">
+                        <div class="coffee-menu__box--modal">
+                            
+                        </div>
+
+                        <div class="coffee-menu__box--modal-content">
+
+                            <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                            <h3 class="coffee-modal-name">Coffee Cup</h3>
+                        </div>
+
+                        <div class="menu-box-item">
+                            <div class="menu-box-item__coating"></div>
+                            <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 m-3 c-12 mt-10px">
+                    <div class="coffee-menu__box--img">
+                        <img src="./assets/img-menu/gallery-img-11.jpg" alt="Menu" class="coffee-menu__img">
+                        <div class="coffee-menu__box--modal">
+                            
+                        </div>
+
+                        <div class="coffee-menu__box--modal-content">
+
+                            <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
+                            <h3 class="coffee-modal-name">Coffee Cup</h3>
+                        </div>
+
+                        <div class="menu-box-item">
+                            <div class="menu-box-item__coating"></div>
+                            <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="review" class="Js-section container__coffee--review">
+        <div class="grid wide">
+            <div class="row col-rever">
+                <div class="container-review__box-img col l-6 m-6 c-12">
+                    <img src="./assets/img/testimonial-img.png" alt="" class="container-review__img">
+                </div>
+
+                <div class="container-review__content col l-6 m-6 c-12">
+                    <div class="container-heading margin-0">
                         <div class="ctn-heading-box-img">
                             <img src="./assets/img/about-border.png" alt="Heading" class="ctn-heading-img">
+                    
+                        </div>
+
+                        <h1 class="ctn-heading-title">Coffee Lovers</h1>
                         
-                        </div>
-    
-                        <p class="ctn-heading-intro">Top quality coffee</p>
-    
-                        <h1 class="ctn-heading-title">Best Coffee in Town</h1>
-    
-                        <p class="ctn-heading-content">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.</p>
-    
-    
+                        <i class="container-review__icon fa-solid fa-quote-right"></i>
+
+                    <p class="ctn-heading-content ctn-heading-content__m-t maxWidth-100 margin-0">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.</p>
+                        
+                    <div class="container-review__user">
+                        <img src="./assets/img/review-1.jpg" alt="" class="container-review__user--img">
+                        <p class="container-review__user--name">Sara Williams</p>
                     </div>
 
-                    <div class="grid grid-row">  
-                        <div class="row sm-gutter cursor">
-                            <div class="col l-2 m-2 c-12 mt-10px">
-                                <div class="coffee-menu__box--img">
-                                    <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="Menu" class="coffee-menu__img">
-                                    
-                                    <div class="coffee-menu__box--modal">
-                                       
-                                    </div>
-
-                                    <div class="coffee-menu__box--modal-content">
-
-                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
-                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
-                                    </div>
-                               
-                                </div>
-
-                                <div class="menu-box-item">
-                                    <div class="menu-box-item__coating"></div>
-                                    <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
-
-                                </div>
-
-                            </div>
-
-                            <div class="col l-8 m-8 c-12 mt-10px">
-                                <div class="coffee-menu__box--img">
-                                    <img src="./assets/img-menu/gallery-img-2.jpg" alt="Menu" class="coffee-menu__img">
-                                    <div class="coffee-menu__box--modal">
-                                       
-                                    </div>
-
-                                    <div class="coffee-menu__box--modal-content c-hover">
-
-                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
-                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
-                                    </div>
-                                </div>
-
-                                <div class="menu-box-item">
-                                    <div class="menu-box-item__coating"></div>
-                                    <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
-
-                                </div>
-                            </div>
-
-                            <div class="col l-2 m-2 c-12 mt-10px">
-                                <div class="coffee-menu__box--img">
-                                    <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="Menu" class="coffee-menu__img">
-                                    <div class="coffee-menu__box--modal">
-                                       
-                                    </div>
-
-                                    <div class="coffee-menu__box--modal-content">
-
-                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
-                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
-                                    </div>
-
-                                    <div class="menu-box-item">
-                                        <div class="menu-box-item__coating"></div>
-                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
-    
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="row sm-gutter cursor">
-                            <div class="col l-3 m-3 c-12 mt-10px">
-                                <div class="coffee-menu__box--img">
-                                    <img src="./assets/img-menu/gallery-img-4.jpg" alt="Menu" class="coffee-menu__img">
-                                    
-                                    <div class="coffee-menu__box--modal"></div>
-
-                                    <div class="coffee-menu__box--modal-content">
-
-                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
-                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
-                                    </div>
-
-                                    <div class="menu-box-item">
-                                        <div class="menu-box-item__coating"></div>
-                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
-    
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col l-3 m-3 c-12 mt-10px">
-                                <div class="coffee-menu__box--img">
-                                    <img src="./assets/img-menu/gallery-img-5.jpg" alt="Menu" class="coffee-menu__img">
-                                    <div class="coffee-menu__box--modal">
-                                       
-                                    </div>
-
-                                    <div class="coffee-menu__box--modal-content">
-
-                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
-                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
-                                    </div>
-
-                                    <div class="menu-box-item">
-                                        <div class="menu-box-item__coating"></div>
-                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
-    
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col l-3 m-3 c-12 mt-10px">
-                                <div class="coffee-menu__box--img">
-                                    <img src="./assets/img-menu/gallery-img-6.jpg" alt="Menu" class="coffee-menu__img">
-                                    <div class="coffee-menu__box--modal">
-                                       
-                                    </div>
-
-                                    <div class="coffee-menu__box--modal-content">
-
-                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
-                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
-                                    </div>
-
-                                    <div class="menu-box-item">
-                                        <div class="menu-box-item__coating"></div>
-                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
-    
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col l-3 m-3 c-12 mt-10px">
-                                <div class="coffee-menu__box--img">
-                                    <img src="./assets/img-menu/gallery-img-7.jpg" alt="Menu" class="coffee-menu__img">
-                                    <div class="coffee-menu__box--modal">
-                                       
-                                    </div>
-
-                                    <div class="coffee-menu__box--modal-content">
-
-                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
-                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
-                                    </div>
-
-                                    <div class="menu-box-item">
-                                        <div class="menu-box-item__coating"></div>
-                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
-    
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                        <div class="row sm-gutter cursor">
-                            <div class="col l-3 m-3 c-12 mt-10px">
-                                <div class="coffee-menu__box--img">
-                                    <img src="./assets/img-menu/gallery-img-8.jpg" alt="Menu" class="coffee-menu__img">
-                                    <div class="coffee-menu__box--modal">
-                                       
-                                    </div>
-
-                                    <div class="coffee-menu__box--modal-content">
-
-                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
-                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
-                                    </div>
-
-                                    <div class="menu-box-item">
-                                        <div class="menu-box-item__coating"></div>
-                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
-    
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col l-3 m-3 c-12 mt-10px">
-                                <div class="coffee-menu__box--img">
-                                    <img src="./assets/img-menu/gallery-img-9.jpg" alt="Menu" class="coffee-menu__img">
-                                    <div class="coffee-menu__box--modal">
-                                       
-                                    </div>
-
-                                    <div class="coffee-menu__box--modal-content">
-
-                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
-                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
-                                    </div>
-
-                                    <div class="menu-box-item">
-                                        <div class="menu-box-item__coating"></div>
-                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
-    
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col l-3 m-3 c-12 mt-10px">
-                                <div class="coffee-menu__box--img">
-                                    <img src="./assets/img-menu/gallery-img-10.jpg" alt="Menu" class="coffee-menu__img">
-                                    <div class="coffee-menu__box--modal">
-                                       
-                                    </div>
-
-                                    <div class="coffee-menu__box--modal-content">
-
-                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
-                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
-                                    </div>
-
-                                    <div class="menu-box-item">
-                                        <div class="menu-box-item__coating"></div>
-                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
-    
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col l-3 m-3 c-12 mt-10px">
-                                <div class="coffee-menu__box--img">
-                                    <img src="./assets/img-menu/gallery-img-11.jpg" alt="Menu" class="coffee-menu__img">
-                                    <div class="coffee-menu__box--modal">
-                                       
-                                    </div>
-
-                                    <div class="coffee-menu__box--modal-content">
-
-                                        <img  class="coffee-modal-img" src="./assets/img/coffee.png" alt="coffee">
-                                        <h3 class="coffee-modal-name">Coffee Cup</h3>
-                                    </div>
-
-                                    <div class="menu-box-item">
-                                        <div class="menu-box-item__coating"></div>
-                                        <img src="./assets/img-menu/gallery-img-1 (1).jpg" alt="item1" class="menu-box-item__img">
-    
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-
                     </div>
+                </div>
+            </div>
+        </div>
 
-                    <div id="review" class="container__coffee--review">
-                        <div class="grid wide">
-                            <div class="row col-rever">
-                                <div class="container-review__box-img col l-6 m-6 c-12">
-                                    <img src="./assets/img/testimonial-img.png" alt="" class="container-review__img">
-                                </div>
-        
-                                <div class="container-review__content col l-6 m-6 c-12">
-        
-                                    <div class="container-heading margin-0">
-                                        <div class="ctn-heading-box-img">
-                                            <img src="./assets/img/about-border.png" alt="Heading" class="ctn-heading-img">
-                                    
-                                        </div>
-                
-                                        <h1 class="ctn-heading-title">Coffee Lovers</h1>
-                                        
-                                        <i class="container-review__icon fa-solid fa-quote-right"></i>
-        
-                                    <p class="ctn-heading-content ctn-heading-content__m-t maxWidth-100 margin-0">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.</p>
-                                        
-                                    <div class="container-review__user">
-                                        <img src="./assets/img/review-1.jpg" alt="" class="container-review__user--img">
-                                        <p class="container-review__user--name">Sara Williams</p>
-                                    </div>
-        
-                                    </div>
-                                </div>
-                            </div>
+
+    </section>
+    
+    <section id="blog" class="Js-section container__coffee--blog">
+        <div class="grid">
+            <div class="row">
+                <div class="container__blog-box-content">
+                    <div class="JS-blog">
+                        <div class="container-heading width-60-mg-auto">
+                            <p class="container__blog-time font-20-cl-white">Dec 14, 2020</p>
+                            <h1 class="ctn-heading-title color-white">Coffee Blogs</h1>
+                            <p class="ctn-heading-content maxWidth-100 margin-0 color-444444">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.</p>
+                            
                         </div>
-
-
+    
+                        <button href="" class="margin-button-blog  cursor navbar-item-link navbar-item-link-box">
+                            Read Blogs
+                            <i class="navbar-item-link-box-icon fa-solid fa-angle-right"></i>
+                        </button>
                     </div>
-                    
-                    <div id="blog" class="container__coffee--blog">
-                        <div class="grid">
-                            <div class="row">
-                                <div class="container__blog-box-content">
-                                    <div class="container-heading width-60-mg-auto">
-                                        <p class="container__blog-time font-20-cl-white">Dec 14, 2020</p>
-                                        <h1 class="ctn-heading-title color-white">Coffee Blogs</h1>
-                                        <p class="ctn-heading-content maxWidth-100 margin-0 color-444444">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.</p>
-                                        
-                                    </div>
-        
-                                    <button href="" class="margin-button-blog  cursor navbar-item-link navbar-item-link-box">
-                                        Read Blogs
-                                        <i class="navbar-item-link-box-icon fa-solid fa-angle-right"></i>
-                                    </button>
-        
-                                </div>
-        
-                                <div class="container__blog-box-img">
-                                    <img src="./assets/img/blog-img.jpg" alt="" class="container__blog--img">
-        
-                                </div>
-                            </div>
-                        </div>
-
-                    
-                    </div>
-
-                    <div class="container__coffee--place">
-                        <div class="grid wide">
-                            <div class="row col-rever">
-                                <div class="container-place__box-img col l-7 m-7 c-12">
-                                    <img src="./assets/img/standalone-img3.jpg" alt="" class="container-place__img">
-                                
-                                </div>
-        
-                                <div class="container-review__content container__place-info col l-5 m-5 c-12">
-        
-                                    <div class="container-heading margin-0 fix-place-user__info">
-                                        <div class="ctn-heading-box-img">
-                                            <img src="./assets/img/about-border.png" alt="Heading" class="ctn-heading-img">
-                                        </div>
-                
-                                        <h1 class="ctn-heading-title ml-0">Place your order</h1>
-                                        
-                                        <form action="">
-                                            <input class="place-user__info modal-order__user--info" type="text" name="" id="" placeholder="Your Name">
-                                            <input class="place-user__info modal-order__user--info" type="email" name="" id="" placeholder="Email">
-                                            <input class="place-user__info modal-order__user--info" type="text" name="" id="" placeholder="Contract">
-        
-                                            <textarea class="place-user__info--detail modal-order__detail" name="" id="" placeholder="Coffee Details"></textarea>
-        
-                                            <button  class="place-user__info--btn margin-button-blog  cursor navbar-item-link navbar-item-link-box ">
-                                                Send Message
-                                                <i class="place-user__info--btn-icon navbar-item-link-box-icon fa-solid fa-angle-right "></i>
-                                            </button>
-        
-                                        </form>
-                                    
-        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
                 </div>
 
-            <!-- footer  -->
-            <footer class="footer-coffee">
-                <div class="modal_box-social">
-                   
-                    <div class="slider-content__box-social footer-coffee__fix">
-                        <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
-                            <i class="box-social__icon fa-brands fa-facebook-f"></i>
-                        </a>
-
-                        <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
-                            <i class="box-social__icon fa-brands fa-twitter"></i>
-                        </a>
-
-                        <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
-                            <i class="box-social__icon fa-brands fa-google-plus-g"></i>
-                        </a>
-
-                        <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
-                            <i class="box-social__icon fa-brands fa-linkedin-in"></i>
-                        </a>
-
-                        <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
-                            <i class="box-social__icon fa-brands fa-instagram"></i>
-                        </a>
-
-                        <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
-                            <i class="box-social__icon fa-brands fa-pinterest-p"></i>
-                        </a>
-
-                    </div>
-                    
-                    <p class="modal-social__credit font-12px color-444444">© 2020 MegaOne. Made With Love by Themesindustry</p>
-
+                <div class="container__blog-box-img">
+                    <img src="./assets/img/blog-img.jpg" alt="" class="container__blog--img">
 
                 </div>
+            </div>
+        </div>
+
+    
+    </section>
+
+    <section id="place" class="container__coffee--place">
+        <div class="grid wide">
+            <div class="row col-rever">
+                <div class="container-place__box-img col l-7 m-7 c-12">
+                    <img src="./assets/img/standalone-img3.jpg" alt="" class="container-place__img">
+                
+                </div>
+
+                <div class="container-review__content container__place-info col l-5 m-5 c-12">
+
+                    <div class="container-heading margin-0 fix-place-user__info">
+                        <div class="ctn-heading-box-img">
+                            <img src="./assets/img/about-border.png" alt="Heading" class="ctn-heading-img">
+                        </div>
+
+                        <h1 class="ctn-heading-title ml-0">Place your order</h1>
+                        
+                        <form action="">
+                            <input class="place-user__info modal-order__user--info" type="text" name="" id="" placeholder="Your Name">
+                            <input class="place-user__info modal-order__user--info" type="email" name="" id="" placeholder="Email">
+                            <input class="place-user__info modal-order__user--info" type="text" name="" id="" placeholder="Contract">
+
+                            <textarea class="place-user__info--detail modal-order__detail" name="" id="" placeholder="Coffee Details"></textarea>
+
+                            <button  class="place-user__info--btn margin-button-blog  cursor navbar-item-link navbar-item-link-box ">
+                                Send Message
+                                <i class="place-user__info--btn-icon navbar-item-link-box-icon fa-solid fa-angle-right "></i>
+                            </button>
+
+                        </form>
+                    
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- footer  -->
+    <footer class="footer-coffee">
+        <div class="modal_box-social">
+            
+            <div class="slider-content__box-social footer-coffee__fix">
+                <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                    <i class="box-social__icon fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                    <i class="box-social__icon fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                    <i class="box-social__icon fa-brands fa-google-plus-g"></i>
+                </a>
+
+                <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                    <i class="box-social__icon fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                    <i class="box-social__icon fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="" class="slide-box-social__link slider-stt--social modal-stt--social">
+                    <i class="box-social__icon fa-brands fa-pinterest-p"></i>
+                </a>
+
+            </div>
+            
+            <p class="modal-social__credit font-12px color-444444">© 2020 MegaOne. Made With Love by Themesindustry</p>
+
+
+        </div>
 
 
 
-            </footer>
+    </footer>
 
-    </div>
-
-    <script>
-        const modalClick = document.querySelector('.js-modal-menu')
-        const modalHeader = document.querySelector('.js-modal-header')
-        const modalOut = document.querySelector('.js-modal-out')
-        const modalOrder = document.querySelector('.js-modal-check-order')
-        const modalOrdered = document.querySelector('.js-modal-order__checked')
-        const modalOrderout = document.querySelector('.js-modalCheckout')
-
-        const OpenOrderS = document.querySelectorAll('.js-open-modal-order')
-        const modalOpenorder = document.querySelector('.js-modal-order')
-        const modalOutorder = document.querySelector('.js_modal-order-out')
-
-        const modalOrderCtn = document.querySelector('.js-modal-order-container')
-
-        function openModal () {
-            modalHeader.animate([
-                {
-                    transform: 'translateY(100%)',
-                },
-                {
-                    transform: 'translateY(0)',
-
-                }
-            ],{
-                duration: 500,
-                fill: 'forwards'
-            })
-        }
-
-        function removeModal () {
-            modalHeader.animate([
-                {
-                    transform: 'translateY(0)',
-                },
-                {
-                    transform: 'translateY(100%)',
-
-                }
-            ],{
-                duration: 500,
-                fill: 'forwards'
-            })
-        }
-
-        modalClick.addEventListener('click',openModal)
-        modalOut.addEventListener('click',removeModal)
-
-
-        
-        function openModalOder () {
-            modalOpenorder.classList.add('open')
-            modalOpenorder.animate([
-                {
-                    opacity: 0
-                },
-                {
-                    opacity: 1
-                }
-            ],{
-                duration: 500,
-                fill: 'forwards'
-            })
-        }
-
-        for (const OpenOrder of OpenOrderS){
-            OpenOrder.addEventListener('click', openModalOder)
-        }
-        function removeModaloder () {
-            var opt = modalOpenorder.animate([
-                {
-                    opacity: 1
-                },
-                {
-                    opacity: 0
-                }
-            ],{
-                duration: 500,
-                fill: 'forwards'
-            })
-
-            opt.addEventListener('finish', function() {
-                modalOpenorder.classList.remove('open')
-            });
-
-        }
-
-
-        modalOutorder.addEventListener('click',removeModaloder)
-        modalOpenorder.addEventListener('click',removeModaloder)
-
-
-
-
-        function modalOrderopen () {
-            modalOrdered.classList.add('open')
-            modalOrderout.classList.add('open')
-
-        }
-        function removeModalOrder () {
-            modalOrdered.classList.remove('open')
-            modalOrderout.classList.remove('open')
-
-        }
-        modalOrder.addEventListener('click',modalOrderopen)
-        modalOrderout.addEventListener('click',removeModalOrder)
-
-        modalOrderCtn.addEventListener('click',function (event) {
-            event.stopPropagation()
-
-        })
-
-
-
-
-    </script>
+<script type="module" src="./javascript/main.js"></script>
 
 </body>
 </html>

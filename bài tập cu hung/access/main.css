@@ -1,0 +1,175 @@
+
+
+.main{
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 16px;
+}
+
+.university-info{
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.ui-box-img__uni{
+    position: relative;
+}
+
+.uf__img--uni{
+
+}
+
+.ui-member-box-img{
+    position: absolute;
+    bottom: -75px;
+    left: 16px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.ui-member__img{
+    height: 100%;
+}
+
+.university-info-box-icon{
+    text-align: right;
+    padding: 25px;
+    color: #3893f1e3;
+
+}
+
+.university-info__icon{
+
+}
+
+.ui-box-desc{
+    padding: 8px 16px;
+
+}
+
+.ui-desc{
+}
+
+.ui-status{
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 16px 16px 16px 32px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.status-list{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 32px;
+
+}
+
+.status-item{
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    min-width: 100px;
+    text-align: center;
+    border-right: none;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+
+
+.status-item:first-child{
+    border-top-left-radius: 4px;
+
+}
+
+.status-item:last-child{
+    border-right: 1px solid #ccc;
+    border-top-right-radius: 4px;
+
+}
+
+.ui-status-desc{
+
+}
+
+.status-desc-list{
+
+}
+
+.status-desc__item{
+
+}
+
+
+.box-info-vh{
+    padding: 16px 16px 32px;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    line-height: 26px;
+}
+
+.vh-info-list{
+    margin-bottom: 16px;
+}
+
+.vh-info-list .status-item{
+    font-size: 12px;
+    padding: 8px;
+    border-bottom: none;
+    position: relative;
+}
+
+.status-item::before{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: none;
+    z-index: 10;
+}
+
+.status-item.active::before{
+    display: block;
+}
+
+.box-info-all{
+
+}
+
+.info-p1{
+
+}
+
+.heading-info{
+    margin-left: -12px;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    padding: 2px 0;
+    margin-top: 16px;
+}
+
+.info-p1__desc{
+    padding: 0 8px;
+}
+
+.info{
+    min-height: 630px;
+    display: none !important;
+}
+
+.info.active{
+    color: #000 !important;
+}
+
+

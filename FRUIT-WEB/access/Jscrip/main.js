@@ -22,8 +22,13 @@ var aboutCtns = document.querySelectorAll('.about-container');
 var boxAboutCtn = document.querySelector('.about-box-container')
 var ArrayAboutCtns = Array.from(aboutCtns);
 var isSrollAbout = true;
-var timeAbout = 300;
+var timeAbout = 250;
 
+//footer-web
+
+var itemFooterWeb = document.querySelector('.footer-web')
+var footerItemUps = document.querySelectorAll('.contact-social__link:nth-child(odd)')
+var footerItemdowns = document.querySelectorAll('.contact-social__link:nth-child(even)')
 document.onscroll = function () {
     var heightScrollWeb = (window.scrollY || document.documentElement.scrollTop) + window.innerHeight;
     if (isScrollHeader && ((window.scrollY || document.documentElement.scrollTop) >= HeightHeader)) {
@@ -66,7 +71,6 @@ document.onscroll = function () {
 
     if (isSrollAbout && heightScrollWeb >= boxAboutCtn.offsetTop) {
         ArrayAboutCtns.forEach(function (service, index) {
-            console.log(service.offsetTop)
             service.animate([
                 {
                     opacity: 0,
@@ -87,6 +91,17 @@ document.onscroll = function () {
             isSrollAbout = false;
         });
     }
+
+    if (heightScrollWeb >= itemFooterWeb.offsetTop + 100){
+        for(var footerItemUp of footerItemUps) {
+            footerItemUp.style.animation = 'footerFameUp ease 0.8s'
+        }
+
+        for(var footerItemdown of footerItemdowns) {
+            footerItemdown.style.animation = 'footerFamedown ease 0.8s'
+        }
+    }   
+
 }
 
 
@@ -914,3 +929,100 @@ setTimeSlide = setInterval(() => {
     }
 }, 8000);
 
+
+
+// member-web 
+
+
+var members = document.querySelectorAll('.member-content');
+var arrayMembers = Array.from(members)
+var btnNextMember = document.querySelector('.JS-btn-member-next');
+var boxMember = document.querySelector('.member-box__content');
+var btnPreMember = document.querySelector('.JS-btn-member-pre');
+var heighSlideMember = arrayMembers[0].offsetWidth;
+var currIndex = 0;
+var pre = heighSlideMember;
+
+
+var isNextMember = false;
+var OpenedNextSlideMember = true
+var ispreMember = false;
+var OpenedpreSlideMember = true
+
+btnNextMember.onclick = function () {
+
+    currIndex++;
+    boxMember.style.transition = `transform ease 0.8s`
+    boxMember.style.transform = `translateX(-${currIndex * pre}px)`
+
+    if (currIndex === arrayMembers.length - 1) {
+        btnNextMember.classList.remove('active')
+    }
+    
+    if (currIndex > 0) {
+        btnPreMember.classList.add('active')
+        btnPreMember.style.animation = 'showBtnMember ease 0.8s'
+    }
+    
+    arrayBtnTap[currIndex].classList.add('click-tab')
+    arrayBtnTap[currIndex - 1].classList.remove('click-tab')
+
+
+}
+
+btnPreMember.onclick = function () {
+    currIndex--;
+    boxMember.style.transition = `transform ease 0.8s`
+    boxMember.style.transform = `translateX(${-currIndex * pre}px)`
+   
+    btnNextMember.classList.add('active')
+    btnNextMember.style.animation = 'showBtnMember ease 0.8s'
+
+    if (currIndex === 0) {
+        btnPreMember.classList.remove('active')
+    }
+
+    arrayBtnTap[currIndex].classList.add('click-tab')
+    arrayBtnTap[currIndex + 1].classList.remove('click-tab')
+}
+
+
+
+//tap member
+
+var btnTap = document.querySelectorAll('.tab-member')
+
+var arrayBtnTap = Array.from(btnTap)
+
+arrayBtnTap.forEach(function (value,index) {
+    value.onclick = function () {
+        boxMember.style.transition = `transform ease 0.8s`
+        boxMember.style.transform = `translateX(-${index * pre}px)`
+        if (currIndex < index) {
+            arrayBtnTap[index].classList.add('click-tab')
+            arrayBtnTap[currIndex].classList.remove('click-tab')
+
+            if (index === arrayMembers.length - 1) {
+                btnNextMember.classList.remove('active')
+            }
+            
+            if (index > 0) {
+                btnPreMember.classList.add('active')
+                btnPreMember.style.animation = 'showBtnMember ease 0.8s'
+            }
+            
+        } else {
+            arrayBtnTap[index].classList.add('click-tab')
+            arrayBtnTap[currIndex].classList.remove('click-tab')
+
+            btnNextMember.classList.add('active')
+            btnNextMember.style.animation = 'showBtnMember ease 0.8s'
+        
+            if (index === 0) {
+                btnPreMember.classList.remove('active')
+            }
+        }
+        
+        currIndex = index
+    }
+})

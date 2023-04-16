@@ -17,7 +17,9 @@
     letter-spacing: 0.5px;
 }
 
-
+.db-flex{
+    display: flex;
+}
 
 
 html{
@@ -30,6 +32,12 @@ html{
 a{
     text-decoration: none;
     color: #fff;
+}
+
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .display-block{
@@ -138,7 +146,7 @@ a{
     font-size: 15px !important;
     position: relative;
     top: 35px;
-    left: 18%;
+    left: 14%;
 }
 .display-block{
     display: block;

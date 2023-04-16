@@ -78,8 +78,16 @@
         bottom: -4%;
     }
 
-    .sale-container .heading-section {
+    .sale-container .heading-section{
         font-size: 40px;
+    }
+
+    .members-web .heading-section{
+        line-height: 40px;
+    }
+
+    .members-web .box-arrow-icon{
+        display: none !important;
     }
 }
 
