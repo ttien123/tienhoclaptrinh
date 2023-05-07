@@ -218,7 +218,7 @@ function scrollWeb() {
                 isBlogCoffee = false;
         };
 
-        if (isPlaceCoffee && (placeCoffee.offsetTop <= heightWeb + window.innerHeight)) {
+        if (isPlaceCoffee && (placeCoffee.offsetTop + 250 <= heightWeb + window.innerHeight)) {
             placewImg.animate([
                 {
                     opacity: 0,

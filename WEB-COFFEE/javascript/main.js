@@ -11,15 +11,30 @@ import openModalOrder from './openOrder.js'
 clickModalMenu()
 openModalOrder()
 
+var swiper = new Swiper('.swiper', {
+    effect: 'coverflow',
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
+    speed: 1500,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
 
-var number1 = document.querySelector('.number1')
-var i = 0;
-var sett = setInterval(() => {
-    i+=15
-    number1.innerHTML = i;
-},10);
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + ' cursor slider-stt">' + (index + 1) + '</span>';
+        },
+      },
 
-setTimeout(() => {
-    clearInterval(sett)
-    number1.innerHTML = 3780;
-}, 3000);
+});
+

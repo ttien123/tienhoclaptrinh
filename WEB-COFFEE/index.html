@@ -5,6 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>COFFEE</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 <link rel="stylesheet" href="./assets/css/main.css">
 <link rel="stylesheet" href="./assets/css/base.css">
@@ -37,10 +38,10 @@
                             Home
                         </a>
                     </li>
-                    <li class="navbar-item JS-click-trs">
-                        <a href="#coffee" class="navbar-item-link">
+                    <li class="navbar-item test JS-click-trs">
+                        <button class="navbar-item-link">
                             About Coffee
-                        </a>
+                        </button>
                     </li>
                     <li class="navbar-item">
                         <a href="#menu" class="navbar-item-link">
@@ -287,69 +288,136 @@
 
     </section>
 
+    
+    <!-- <div class="slider-content__stt col l-2 m-0 c-0">
+        <span class="cursor slider-stt slider-stt-open">1</span>
+        <span class="cursor slider-stt">2</span>
+        <span class="cursor slider-stt">3</span>
+    </div> -->
+
     <!-- slide -->
     <section id="slide" class="Js-section slider">
-        <div class="slider-img--box">
-        </div>
-        <img src="./assets/img/slider-1.jpg" alt="" class="slider-img">
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
 
-        <div class="slider-content">
-            <div class="row">
-                <div class="slider-content__stt col l-2 m-0 c-0">
-                    <span class="cursor slider-stt slider-stt-open">1</span>
-                    <span class="cursor slider-stt">2</span>
-                    <span class="cursor slider-stt">3</span>
-                </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slider-content slide-1">
+                    <div class="box-slide-img">
+                        <div class="slider-img--box"></div>
+                        <img src="./assets/img/slider-1.jpg" alt="" class="slider-img">
+                    </div>
+                    <div class="slide-absolut">
+                        <div class="row">
+                            <div class="grid wide">
+                                <div class="row">
+                                    <div class="slider-content__box col l-6 l-o-6 m-8 m-o-2 c-12">
+                                        <div class="slider-content__box-title">
+                                            <h1 class="slider-content__heading">
+                                                Best in Town 
+                                                <span class="slider-content__title-name">Coffee House</span>
+                
+                                            </h1>
+                                            <p class="slider-content-recommend">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.</p>
+                                            <a href="" class="slider-content__btn ">
+                                                LEARN MORE
+                                                <i class="slider-content__btn-icon  fa-solid fa-angle-right"></i>
+            
+                                            </a>
+                                        </div>
+                                    </div>
 
-                <div class="grid wide">
-                    <div class="slider-content__box col l-6 l-o-6 m-7 m-o-5 ">
-                        <div class="slider-content__box-title ">
-                            <h1 class="slider-content__heading">
-                                Best in Town 
-                                <span class="slider-content__title-name">Coffee House</span>
-
-                            </h1>
-                            <p class="slider-content-recommend">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.</p>
-                            <a href="" class="slider-content__btn ">
-                                LEARN MORE
-                                <i class="slider-content__btn-icon  fa-solid fa-angle-right"></i>
-
-                            </a>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
                 </div>
 
-                <div class="slider-content__box-social col l-1 m-0 c-0">
-                    <a href="" class="slide-box-social__link slider-stt--social">
-                        <i class="box-social__icon fa-brands fa-facebook-f"></i>
-                    </a>
-
-                    <a href="" class="slide-box-social__link slider-stt--social">
-                        <i class="box-social__icon fa-brands fa-twitter"></i>
-                    </a>
-
-                    <a href="" class="slide-box-social__link slider-stt--social">
-                        <i class="box-social__icon fa-brands fa-linkedin-in"></i>
-                    </a>
-
-                    <a href="" class="slide-box-social__link slider-stt--social">
-                        <i class="box-social__icon fa-brands fa-instagram"></i>
-                    </a>
-
+                <div class="swiper-slide slider-content slide-2">
+                    <div class="slider-img--box"></div>
+                    <img src="./assets/img/slider-2.jpg" alt="" class="slider-img">
+                    <div class="slide-absolut">
+                        <div class="row">
+                            <div class="grid wide">
+                                <div class="row">
+                                    <div class="slider-content__box col l-8 m-8 m-o-2 c-12">
+                                        <div class="slider-content__box-title ">
+                                            <h1 class="slider-content__heading">
+                                                Best in Town 
+                                                <span class="slider-content__title-name">Coffee House</span>
+                
+                                            </h1>
+                                            <p class="slider-content-recommend">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.</p>
+                                            <a href="" class="slider-content__btn ">
+                                                LEARN MORE
+                                                <i class="slider-content__btn-icon  fa-solid fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="swiper-slide slider-content slide-3">
+                    <div class="slider-img--box"></div>
+                    <img src="./assets/img/slider-3.jpg" alt="" class="slider-img">
+                    <div class="slide-absolut">
+                        <div class="row">
+                            <div class="grid wide">
+                                <div class="row">
+                                    <div class="slider-content__box col l-6 l-o-0 m-8 m-o-2 c-12">
+                                        <div class="slider-content__box-title ">
+                                            <h1 class="slider-content__heading">
+                                                Best in Town 
+                                                <span class="slider-content__title-name">Coffee House</span>
+                
+                                            </h1>
+                                            <p class="slider-content-recommend">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.</p>
+                                            <a href="" class="slider-content__btn ">
+                                                LEARN MORE
+                                                <i class="slider-content__btn-icon  fa-solid fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        
+        </div>
+
+        <div class="slider-content__box-social col l-1 m-0 c-0">
+            <a href="" class="slide-box-social__link slider-stt--social">
+                <i class="box-social__icon fa-brands fa-facebook-f"></i>
+            </a>
+    
+            <a href="" class="slide-box-social__link slider-stt--social">
+                <i class="box-social__icon fa-brands fa-twitter"></i>
+            </a>
+    
+            <a href="" class="slide-box-social__link slider-stt--social">
+                <i class="box-social__icon fa-brands fa-linkedin-in"></i>
+            </a>
+    
+            <a href="" class="slide-box-social__link slider-stt--social">
+                <i class="box-social__icon fa-brands fa-instagram"></i>
+            </a>
+    
         </div>
 
     </section>
+
+    
+    
 
     <!-- container -->
     <section id="coffee" class="Js-section container__coffee">
         <div class="container-heading">
             <div class="ctn-heading-box-img">
                 <img src="./assets/img/about-border.png" alt="Heading" class="ctn-heading-img">
-            
             </div>
             <p class="ctn-heading-intro">Top quality coffee</p>
             <h1 class="ctn-heading-title">Best Coffee in Town</h1>
@@ -912,7 +980,24 @@
 
     </footer>
 
-<script type="module" src="./javascript/main.js"></script>
 
+    <script>
+        var test = document.querySelector('.test');
+        test.addEventListener('click',scrollToSection)
+        function scrollToSection(){
+
+            $('html, body').animate({
+                scrollTop: ($('#coffee').offset().top - 200)
+            }, {
+                duration: 500,
+            });
+        }
+
+        
+    </script>
+
+<script type="module" src="./javascript/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 </html>

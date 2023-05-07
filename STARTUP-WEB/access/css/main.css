@@ -1,0 +1,36 @@
+.main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-log{
+   
+    position: relative;
+    width: max-content;
+}
+
+.box-log img {
+    width: 500px;
+
+}
+
+.img-box{
+    
+}
+
+.img-box-zoom{
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: scale(1.5);
+    opacity: 0;
+    pointer-events: none;
+    --zoom-X: 50%;
+    --zoom-y: 50%;
+    clip-path: circle(
+        100px at var(--zoom-X) var(--zoom-y)
+    );
+}
+

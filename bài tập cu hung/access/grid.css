@@ -620,7 +620,7 @@
 /* PC medium resolution > */
 @media (min-width: 1200px) {
     .wide{
-        max-width: 1140px;
+        max-width: 1340px;
     }
 
     .wide .row {

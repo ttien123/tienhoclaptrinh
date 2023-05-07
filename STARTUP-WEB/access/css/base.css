@@ -1,0 +1,57 @@
+
+:root{
+    --web-color: #79a207;
+    --web-font-color: #2d2d2d;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+    scroll-behavior: smooth;
+
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+    letter-spacing: .5px;
+}
+
+.font-monts{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* cac the  */
+
+ul{
+    list-style: none !important;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* img{
+    width: 100%;
+    display: block;
+} */

@@ -341,6 +341,10 @@
         display: block;
     }
 
+    .wide .l-o-0 {
+        margin-left: 0;
+    }
+
     .wide .l-1 {
         flex: 0 0 8.33333%;
         max-width: 8.33333%;
@@ -571,6 +575,10 @@
     .wide .l-12 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .wide .l-o-0 {
+        margin-left: 0;
     }
 
     .wide .l-o-1 {
