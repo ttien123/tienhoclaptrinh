@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply font-roboto;
+    }
+
+    a {
+        @apply no-underline inline-block text-black;
+    }
+
+    img {
+        @apply block w-full;
+    }
+
+    ul {
+        @apply list-none;
+    }
+    section {
+        @apply py-[120px];
+    }
+}
+
+@layer components {
+    .nav-hover {
+        @apply block w-0 group-hover:w-full h-[2px] mt-[3px] bg-white transition-all ease-linear duration-200;
+    }
+}

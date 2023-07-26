@@ -1,621 +1,700 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PETS-WEBSIDE</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./accsets/font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
-    <link rel="stylesheet" href="./accsets/font/themify-icons-font/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="./accsets/css/main.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./accsets/font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./accsets/font/themify-icons-font/themify-icons/themify-icons.css"
+    />
+    <!-- <link rel="stylesheet" href="./accsets/css/main.css">
     <link rel="stylesheet" href="./accsets/css/base.css">
     <link rel="stylesheet" href="./accsets/css/grid.css">
-    <link rel="stylesheet" href="./accsets/css/responsive.css">
-</head>
-<body>
-    <div class="main">
-        <header class="header-web">
-            <nav class="nav-web">
-                <div class="nav-web__container grid">
-                    <div class="nav-web__container--row row">
-                        <div class="nav-logo col l-1 m-10 c-10">
-                            <div class="nav-logo-box__img">
-                                <a href="">
-                                    <img src="./accsets/img/logo.png" alt="Logo" class="nav-logo-img">
-                                </a>
-                            </div>
-                        </div>
+    <link rel="stylesheet" href="./accsets/css/responsive.css"> -->
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="overflow-hidden">
+      <header>
+        <nav class="shadow-Header bg-primary fixed top-0 left-0 right-0 z-10">
+          <div class="h-[90px] px-[15px] py-2 w-full block">
+            <div class="font-montserrat my-auto mx-0 h-full grid grid-cols-12">
+              <div class="flex justify-center items-center col-span-1">
+                <a href="">
+                  <img
+                    src="./accsets/img/logo.png"
+                    alt="Logo"
+                    class="nav-logo-img"
+                  />
+                </a>
+              </div>
 
-                        <div class="nav-content col l-9 m-0 c-0">
-                            <ul class="nav-content__list">
-                                <li class="nav-content__items">
-                                    <a href="" class="nav-content__link">
-                                        Home
-                                        <span class="nav-content__link--legline"></span>
-                                    </a>
-                                </li>
+              <div class="col-span-9">
+                <ul class="text-center flex justify-center items-center h-full">
+                  <li class="inline-block my-0 mx-[5px]">
+                    <a
+                      href=""
+                      class="nav-content__link group text-[10px] text-white pt-[15px] px-[18px] pb-[10px]"
+                    >
+                      Home
+                      <span class="nav-hover"></span>
+                    </a>
+                  </li>
 
-                                <li class="nav-content__items">
-                                    <a href="" class="nav-content__link">
-                                        Pet Services
-                                        <span class="nav-content__link--legline"></span>
-                                    </a>
-                                </li>
+                  <li class="nav-content__items inline-block my-0 mx-[5px]">
+                    <a
+                      href=""
+                      class="nav-content__link group text-[50px] text-white pt-[15px] px-[18px] pb-[10px]"
+                    >
+                      Pet Services
+                      <span class="nav-hover"></span>
+                    </a>
+                  </li>
 
-                                <li class="nav-content__items">
-                                    <a href="" class="nav-content__link">
-                                        Gallery
-                                        <span class="nav-content__link--legline"></span>
-                                    </a>
-                                </li>
+                  <li class="nav-content__items inline-block my-0 mx-[5px]">
+                    <a
+                      href=""
+                      class="nav-content__link group text-[15px] text-white pt-[15px] px-[18px] pb-[10px]"
+                    >
+                      Gallery
+                      <span class="nav-hover"></span>
+                    </a>
+                  </li>
 
-                                <li class="nav-content__items">
-                                    <a href="" class="nav-content__link">
-                                        Our Rates
-                                        <span class="nav-content__link--legline"></span>
-                                    </a>
-                                </li>
+                  <li class="nav-content__items inline-block my-0 mx-[5px]">
+                    <a
+                      href=""
+                      class="nav-content__link group text-[15px] text-white pt-[15px] px-[18px] pb-[10px]"
+                    >
+                      Our Rates
+                      <span class="nav-hover"></span>
+                    </a>
+                  </li>
 
-                                <li class="nav-content__items">
-                                    <a href="" class="nav-content__link">
-                                        Reviews
-                                        <span class="nav-content__link--legline"></span>
-                                    </a>
-                                </li>
+                  <li class="nav-content__items inline-block my-0 mx-[5px]">
+                    <a
+                      href=""
+                      class="nav-content__link group text-[15px] text-white pt-[15px] px-[18px] pb-[10px]"
+                    >
+                      Reviews
+                      <span class="nav-hover"></span>
+                    </a>
+                  </li>
 
-                                <li class="nav-content__items">
-                                    <a href="" class="nav-content__link">
-                                        Contact
-                                        <span class="nav-content__link--legline"></span>
-                                    </a>
-                                </li>
+                  <li class="nav-content__items inline-block my-0 mx-[5px]">
+                    <a
+                      href=""
+                      class="nav-content__link group text-[15px] text-white pt-[15px] px-[18px] pb-[10px]"
+                    >
+                      Contact
+                      <span class="nav-hover"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
-                            </ul>
-                        </div>
+              <div class="nav-btn flex justify-center items-center col-span-2">
+                <a
+                  class="uppercase nav-btn__link text-[16px] hover:text-black hover:bg-white cursor-pointer font-medium text-white border-[1px] border-solid border-white py-[8px] px-[20px] rounded-[50px] transition-all ease-in-out duration-200s"
+                  >Get Started</a
+                >
+              </div>
 
-                        <div class="nav-btn col l-2 m-0 c-0">
-                            <a class="nav-btn__link">Get Started</a>
-                        </div>
+              <!-- <div class="nav-menu-res col-span-10">
+                <btn class="nav-menu__btn">
+                  <i class="nav-menu__btn--icon fa-sharp fa-solid fa-bars"></i>
+                </btn>
+              </div> -->
+            </div>
+          </div>
+        </nav>
+      </header>
 
-                        <div class="nav-menu-res col l-0 m-2 c-2">
-                            <btn class="nav-menu__btn">
-                                <i class="nav-menu__btn--icon fa-sharp fa-solid fa-bars"></i>
-                            </btn>
-                        </div>
+      <section class="slider-web py-[150px] px-0 bg-primary text-white">
+        <div class="slider-web__container relative w-full block">
+          <div>
+            <div class="slider-header text-center text-red-600">
+              <h1 class="slider-header__heading">
+                Pet Care &
+                <span>Veterinary Services</span>
+              </h1>
 
+              <p class="slider-header__dec">
+                Donec quis nunc mollis, tincidunt mi ve tincidunt mi vel.
+              </p>
+            </div>
+
+            <div class="slider-web__img col l-12 m-12 c-12">
+              <img
+                src="./accsets/img/banner-image.jpg"
+                alt="slider"
+                class="slider-web__img--img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-web">
+        <div class="grid wide">
+          <div class="row mb-96px mb-mobi-60px">
+            <div class="title-content col l-6 m-5 c-12">
+              <p class="title-heading mb-24px">Lorem ipsum dolor sit amet</p>
+              <h2 class="title-heading__dec">
+                We offer all the best quality services for your pets.
+              </h2>
+            </div>
+
+            <div class="service-web__content col l-6 m-7 c-12">
+              <p class="service-web__dec">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                sodales lobortis vehicula. Aliquam sodales turpis a neque
+                sagittis, condimentum imperdiet risus luctus. Praesent cursus
+                non risus in tempor. Phasellus eu purus sed arcu posuere
+                consequat euismod ac augue. Morbi venenatis dictum consequat.
+                Phasellus eu purus sed arcu posuere consequat euismod ac augue.
+                Morbi venenatis dictum consequat.
+              </p>
+              <p class="service-web__dec">
+                Morbi venenatis dictum consequat. Phasellus eu purus sed arcu
+                posuere consequat euismod ac augue. Morbi venenatis dictum
+                consequat.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-blog">
+            <div class="row">
+              <div class="service-blog__content col l-3 m-6 c-12">
+                <a href="" class="service-blog__content--link">
+                  <div class="service-blog__content--box">
+                    <div class="service-blog__background">
+                      <img
+                        src="./accsets/img/service/briefcase-9.png"
+                        alt="img"
+                        class="service-blog__background--icon"
+                      />
                     </div>
-                </div>
-            </nav>
-        </header>
 
-        <section class="slider-web">
-            <div class="slider-web__container grid wide">
+                    <div class="service-blog__img">
+                      <i class="service-blog__img--icon ti-bag"></i>
+                    </div>
+
+                    <p>Per Services</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="service-blog__content col l-3 m-6 c-12">
+                <a href="" class="service-blog__content--link">
+                  <div class="service-blog__content--box">
+                    <div class="service-blog__background">
+                      <img
+                        src="./accsets/img/service/briefcase-9.png"
+                        alt="img"
+                        class="service-blog__background--icon"
+                      />
+                    </div>
+
+                    <div class="service-blog__img">
+                      <i class="service-blog__img--icon ti-bag"></i>
+                    </div>
+
+                    <p>Per Services</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="service-blog__content col l-3 m-6 c-12">
+                <a href="" class="service-blog__content--link">
+                  <div class="service-blog__content--box">
+                    <div class="service-blog__background">
+                      <img
+                        src="./accsets/img/service/briefcase-9.png"
+                        alt="img"
+                        class="service-blog__background--icon"
+                      />
+                    </div>
+
+                    <div class="service-blog__img">
+                      <i class="service-blog__img--icon ti-bag"></i>
+                    </div>
+
+                    <p>Per Services</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="service-blog__content col l-3 m-6 c-12">
+                <a href="" class="service-blog__content--link">
+                  <div class="service-blog__content--box">
+                    <div class="service-blog__background">
+                      <img
+                        src="./accsets/img/service/briefcase-9.png"
+                        alt="img"
+                        class="service-blog__background--icon"
+                      />
+                    </div>
+
+                    <div class="service-blog__img">
+                      <i class="service-blog__img--icon ti-bag"></i>
+                    </div>
+
+                    <p>Per Services</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo-web">
+        <div class="grid">
+          <div class="row">
+            <div class="demo-start col l-6 m-6 c-6">
+              <div class="demo-start__box col l-6 m-6 c-12">
+                <h2 class="demo-start__heading">2010</h2>
+
+                <p class="demo-start__dec">Since We Started</p>
+              </div>
+            </div>
+
+            <div class="demo-start col l-6 m-6 c-6">
+              <div class="demo-start__box bgr-blue col l-6 m-6 c-12">
+                <h2 class="demo-start__heading">395</h2>
+
+                <p class="demo-start__dec">Pets & Anima</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Gallery-web">
+        <div class="grid">
+          <div class="row">
+            <div class="title-content text-center mg-auto col l-8 m-8 c-8">
+              <p class="title-heading">Lorem ipsum dolor sit amet</p>
+              <h2 class="title-heading__dec">Our Pets Gallery</h2>
+              <p class="title-heading title-new mg-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                sodales lobortis vehicula. Aliquam sodales turpis a neque
+                sagittis, condimentum imperdiet risus luctus. Praesent cursus
+                non risus in tempor.
+              </p>
+            </div>
+          </div>
+
+          <div class="row mg-0 pt-120">
+            <div class="pet-list l-6">
+              <div class="pet-width-full hover-img img-relative l-12 m-12 c-12">
+                <img
+                  src="./accsets/img/gel/work-1.jpg"
+                  alt="img"
+                  class="pet-width-full__img"
+                />
+                <div class="caption-img">
+                  <div class="caption-box-icon">
+                    <a href="" class="caption-link">
+                      <i class="caption-icon fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+
+                  <div class="caption-body">
+                    <p class="caption-body-first">Animal | Images</p>
+                    <div class="caption-body-second">Dog Image</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pet-50-width l-12">
                 <div class="row">
-                    <div class="slider-header col l-12 m-12 c-12">
-                        <h1 class="slider-header__heading">
-                            Pet Care &
-                            <span>Veterinary Services</span>
-                        </h1>
-        
-                        <p class="slider-header__dec">Donec quis nunc mollis, tincidunt mi ve tincidunt mi vel.</p>
+                  <div
+                    class="pet-50-width__box hover-img img-relative l-6 m-12 c-12"
+                  >
+                    <img
+                      src="./accsets/img/gel/work-4.jpg"
+                      alt="img"
+                      class="pet-50-width__img"
+                    />
+                    <div class="caption-img">
+                      <div class="caption-box-icon">
+                        <a href="" class="caption-link">
+                          <i class="caption-icon fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+
+                      <div class="caption-body">
+                        <p class="caption-body-first">Animal | Images</p>
+                        <div class="caption-body-second">Dog Image</div>
+                      </div>
                     </div>
-        
-                    <div class="slider-web__img col l-12 m-12 c-12">
-                        <img src="./accsets/img/banner-image.jpg" alt="slider" class="slider-web__img--img">
+                  </div>
+
+                  <div
+                    class="pet-50-width__box hover-img img-relative l-6 m-12 c-12"
+                  >
+                    <img
+                      src="./accsets/img/gel/work-5.jpg"
+                      alt="img"
+                      class="pet-50-width__img"
+                    />
+                    <div class="caption-img">
+                      <div class="caption-box-icon">
+                        <a href="" class="caption-link">
+                          <i class="caption-icon fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+
+                      <div class="caption-body">
+                        <p class="caption-body-first">Animal | Images</p>
+                        <div class="caption-body-second">Dog Animal</div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
 
-        </section>
-
-        <section class="service-web">
-            <div class="grid wide">
-                <div class="row mb-96px mb-mobi-60px">
-                    <div class="title-content col l-6 m-5 c-12">
-                        <p class="title-heading mb-24px">Lorem ipsum dolor sit amet</p>
-                        <h2 class="title-heading__dec">We offer all the best quality services for your pets.</h2>
-
-                    </div>
-
-                    <div class="service-web__content col l-6 m-7 c-12">
-                        <p class="service-web__dec">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales lobortis vehicula. Aliquam sodales turpis a neque sagittis, condimentum imperdiet risus luctus. Praesent cursus non risus in tempor. Phasellus eu purus sed arcu posuere consequat euismod ac augue. Morbi venenatis dictum consequat. Phasellus eu purus sed arcu posuere consequat euismod ac augue. Morbi venenatis dictum consequat.</p>
-                        <p class="service-web__dec">Morbi venenatis dictum consequat. Phasellus eu purus sed arcu posuere consequat euismod ac augue. Morbi venenatis dictum consequat.</p>
-                    </div>
-                </div>
-
-                <div class="service-blog">
-                    <div class="row">
-                        <div class="service-blog__content col l-3 m-6 c-12">
-                            <a href="" class="service-blog__content--link">
-                                <div class="service-blog__content--box">
-                                    <div class="service-blog__background">
-                                        <img src="./accsets/img/service/briefcase-9.png" alt="img" class="service-blog__background--icon">
-                                    </div>
-    
-                                    <div class="service-blog__img">
-                                        <i class="service-blog__img--icon ti-bag"></i>
-                                    </div>
-    
-                                    <p>Per Services</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="service-blog__content col l-3 m-6 c-12">
-                            <a href="" class="service-blog__content--link">
-                                <div class="service-blog__content--box">
-                                    <div class="service-blog__background">
-                                        <img src="./accsets/img/service/briefcase-9.png" alt="img" class="service-blog__background--icon">
-                                    </div>
-    
-                                    <div class="service-blog__img">
-                                        <i class="service-blog__img--icon ti-bag"></i>
-                                    </div>
-    
-                                    <p>Per Services</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="service-blog__content col l-3 m-6 c-12">
-                            <a href="" class="service-blog__content--link">
-                                <div class="service-blog__content--box">
-                                    <div class="service-blog__background">
-                                        <img src="./accsets/img/service/briefcase-9.png" alt="img" class="service-blog__background--icon">
-                                    </div>
-    
-                                    <div class="service-blog__img">
-                                        <i class="service-blog__img--icon ti-bag"></i>
-                                    </div>
-    
-                                    <p>Per Services</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="service-blog__content col l-3 m-6 c-12">
-                            <a href="" class="service-blog__content--link">
-                                <div class="service-blog__content--box">
-                                    <div class="service-blog__background">
-                                        <img src="./accsets/img/service/briefcase-9.png" alt="img" class="service-blog__background--icon">
-                                    </div>
-    
-                                    <div class="service-blog__img">
-                                        <i class="service-blog__img--icon ti-bag"></i>
-                                    </div>
-    
-                                    <p>Per Services</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="demo-web">
-            <div class="grid">
+            <div class="pet-list l-6">
+              <div class="pet-50-width l-12">
                 <div class="row">
-                    <div class="demo-start col l-6 m-6 c-6">
-                        <div class="demo-start__box col l-6 m-6 c-12">
-                            <h2 class="demo-start__heading">
-                                2010
-                            </h2>
-    
-                            <p class="demo-start__dec">Since We Started</p>
-                        </div>
-                    </div>
+                  <div
+                    class="pet-50-width__box hover-img img-relative l-6 m-12 c-12"
+                  >
+                    <img
+                      src="./accsets/img/gel/work-2.jpg"
+                      alt="img"
+                      class="pet-50-width__img"
+                    />
+                    <div class="caption-img">
+                      <div class="caption-box-icon">
+                        <a href="" class="caption-link">
+                          <i class="caption-icon fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
 
-                    <div class="demo-start col l-6 m-6 c-6">
-                        <div class="demo-start__box bgr-blue col l-6 m-6 c-12">
-                            <h2 class="demo-start__heading">
-                                395
-                            </h2>
-    
-                            <p class="demo-start__dec">Pets & Anima</p>
-                        </div>
+                      <div class="caption-body">
+                        <p class="caption-body-first">Animal | Images</p>
+                        <div class="caption-body-second">rabbit Image</div>
+                      </div>
                     </div>
+                  </div>
 
+                  <div
+                    class="pet-50-width__box hover-img img-relative l-6 m-12 c-12"
+                  >
+                    <img
+                      src="./accsets/img/gel/work-3.jpg"
+                      alt="img"
+                      class="pet-50-width__img"
+                    />
+                    <div class="caption-img">
+                      <div class="caption-box-icon">
+                        <a href="" class="caption-link">
+                          <i class="caption-icon fa-solid fa-arrow-right"></i>
+                        </a>
+                      </div>
+
+                      <div class="caption-body">
+                        <p class="caption-body-first">Animal | Images</p>
+                        <div class="caption-body-second">Pet Image</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </section>
+              </div>
 
-        <section class="Gallery-web">
-            <div class="grid">
+              <div class="pet-width-full hover-img img-relative l-12 m-12 c-12">
+                <img
+                  src="./accsets/img/gel/work-6.jpg"
+                  alt="img"
+                  class="pet-width-full__img"
+                />
+                <div class="caption-img">
+                  <div class="caption-box-icon">
+                    <a href="" class="caption-link">
+                      <i class="caption-icon fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+
+                  <div class="caption-body">
+                    <p class="caption-body-first">Animal | Images</p>
+                    <div class="caption-body-second">Cat Image</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-wev">
+        <div class="grid wide">
+          <div class="row">
+            <div class="title-content text-center mg-auto col l-10 m-10 c-10">
+              <p class="title-heading">Lorem ipsum dolor sit amet</p>
+              <h2 class="title-heading__dec">Affordable Rates</h2>
+              <p class="title-heading title-new mg-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                sodales lobortis vehicula. Aliquam sodales turpis a neque
+                sagittis, condimentum imperdiet risus luctus. Praesent cursus
+                non risus in tempor.
+              </p>
+            </div>
+          </div>
+
+          <div class="row pt-120">
+            <div class="pricing-card col l-3 m-6 c-12">
+              <div class="pricing-box">
+                <div class="pricing-header">
+                  <div class="pricing-overlay"></div>
+                  <h4 class="pricing-card__heading">
+                    4.99
+                    <span>Monthly Billing</span>
+                  </h4>
+                </div>
+
+                <div class="pricing-card__des">
+                  <div class="pricing-overlay-blue"></div>
+                  <ul class="pricing-list">
+                    <li class="pricing-items">Full Services</li>
+
+                    <li class="pricing-items">Pet Only Services</li>
+
+                    <li class="pricing-items">Veterinary</li>
+
+                    <li class="pricing-items">4 Free Checkups</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing-card col l-3 m-6 c-12">
+              <div class="pricing-box">
+                <div class="pricing-header">
+                  <div class="pricing-overlay"></div>
+                  <h4 class="pricing-card__heading">
+                    11.95
+                    <span>Quarterly Billing</span>
+                  </h4>
+                </div>
+
+                <div class="pricing-card__des">
+                  <div class="pricing-overlay-blue"></div>
+                  <ul class="pricing-list">
+                    <li class="pricing-items">Full Services</li>
+
+                    <li class="pricing-items">Pet Only Services</li>
+
+                    <li class="pricing-items">Veterinary</li>
+
+                    <li class="pricing-items">4 Free Checkups</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing-card col l-3 m-6 c-12">
+              <div class="pricing-box">
+                <div class="pricing-header">
+                  <div class="pricing-overlay"></div>
+                  <h4 class="pricing-card__heading">
+                    25.99
+                    <span>Biannual Billing</span>
+                  </h4>
+                </div>
+
+                <div class="pricing-card__des">
+                  <div class="pricing-overlay-blue"></div>
+                  <ul class="pricing-list">
+                    <li class="pricing-items">Full Services</li>
+
+                    <li class="pricing-items">Pet Only Services</li>
+
+                    <li class="pricing-items">Veterinary</li>
+
+                    <li class="pricing-items">4 Free Checkups</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing-card col l-3 m-6 c-12">
+              <div class="pricing-box">
+                <div class="pricing-header">
+                  <div class="pricing-overlay"></div>
+                  <h4 class="pricing-card__heading">
+                    45.95
+                    <span>Yearly Billing</span>
+                  </h4>
+                </div>
+
+                <div class="pricing-card__des">
+                  <div class="pricing-overlay-blue"></div>
+                  <ul class="pricing-list">
+                    <li class="pricing-items">Full Services</li>
+
+                    <li class="pricing-items">Pet Only Services</li>
+
+                    <li class="pricing-items">Veterinary</li>
+
+                    <li class="pricing-items">4 Free Checkups</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="review-web">
+        <div class="grid wide">
+          <div class="row">
+            <div class="review-form col l-7 m-12 c-12">
+              <div class="title-content text-center mg-auto col l-12 m-12 c-12">
+                <h2 class="title-heading__dec">Let’s Get In Touch</h2>
+              </div>
+
+              <form action="" class="form-content">
                 <div class="row">
-                    <div class="title-content text-center mg-auto col l-8 m-8 c-8">
-                        <p class="title-heading">Lorem ipsum dolor sit amet</p>
-                        <h2 class="title-heading__dec">Our Pets Gallery</h2>
-                        <p class="title-heading title-new mg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales lobortis vehicula. Aliquam sodales turpis a neque sagittis, condimentum imperdiet risus luctus. Praesent cursus non risus in tempor.</p>
-                    </div>
+                  <div class="input-box col l-6 m-6 c-12">
+                    <input
+                      type="text"
+                      class="input-name input"
+                      placeholder="Your Name"
+                    />
+                  </div>
+
+                  <div class="input-box col l-6 m-6 c-12">
+                    <input
+                      type="email"
+                      class="input-email input"
+                      placeholder="Email Address*"
+                    />
+                  </div>
+
+                  <div class="input-box col l-12 m-12 c-12">
+                    <input
+                      type="text"
+                      class="input-name input"
+                      placeholder="Your Message"
+                    />
+                  </div>
                 </div>
 
-                <div class="row mg-0 pt-120">
-                    <div class="pet-list l-6">
-                        <div class="pet-width-full hover-img img-relative l-12 m-12 c-12">
-                            <img src="./accsets/img/gel/work-1.jpg" alt="img" class="pet-width-full__img">
-                            <div class="caption-img">
-                                <div class="caption-box-icon">
-                                    <a href="" class="caption-link">
-                                        <i class="caption-icon fa-solid fa-arrow-right"></i>
-                                    </a>
-                                </div>
-
-                                <div class="caption-body">
-                                    <p class="caption-body-first">Animal | Images</p>
-                                    <div class="caption-body-second">Dog Image</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="pet-50-width l-12">
-                            <div class="row">
-                                <div class="pet-50-width__box hover-img img-relative l-6 m-12 c-12">
-                                    <img src="./accsets/img/gel/work-4.jpg" alt="img" class="pet-50-width__img"> 
-                                    <div class="caption-img">
-                                        <div class="caption-box-icon">
-                                            <a href="" class="caption-link">
-                                                <i class="caption-icon fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-        
-                                        <div class="caption-body">
-                                            <p class="caption-body-first">Animal | Images</p>
-                                            <div class="caption-body-second">Dog Image</div>
-                                        </div>
-                                    </div>                                 
-                                </div>
-
-                                <div class="pet-50-width__box hover-img img-relative l-6 m-12 c-12">
-                                    <img src="./accsets/img/gel/work-5.jpg" alt="img" class="pet-50-width__img">
-                                    <div class="caption-img">
-                                        <div class="caption-box-icon">
-                                            <a href="" class="caption-link">
-                                                <i class="caption-icon fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-        
-                                        <div class="caption-body">
-                                            <p class="caption-body-first">Animal | Images</p>
-                                            <div class="caption-body-second">Dog Animal</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="pet-list l-6">
-                        <div class="pet-50-width l-12">
-                            <div class="row">
-                                <div class="pet-50-width__box hover-img img-relative l-6 m-12 c-12">
-                                    <img src="./accsets/img/gel/work-2.jpg" alt="img" class="pet-50-width__img"> 
-                                    <div class="caption-img">
-                                        <div class="caption-box-icon">
-                                            <a href="" class="caption-link">
-                                                <i class="caption-icon fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-        
-                                        <div class="caption-body">
-                                            <p class="caption-body-first">Animal | Images</p>
-                                            <div class="caption-body-second">rabbit Image</div>
-                                        </div>
-                                    </div>                                 
-                                </div>
-
-                                <div class="pet-50-width__box hover-img img-relative l-6 m-12 c-12">
-                                    <img src="./accsets/img/gel/work-3.jpg" alt="img" class="pet-50-width__img">
-                                    <div class="caption-img">
-                                        <div class="caption-box-icon">
-                                            <a href="" class="caption-link">
-                                                <i class="caption-icon fa-solid fa-arrow-right"></i>
-                                            </a>
-                                        </div>
-        
-                                        <div class="caption-body">
-                                            <p class="caption-body-first">Animal | Images</p>
-                                            <div class="caption-body-second">Pet Image</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="pet-width-full hover-img img-relative  l-12 m-12 c-12">
-                            <img src="./accsets/img/gel/work-6.jpg" alt="img" class="pet-width-full__img">
-                            <div class="caption-img">
-                                <div class="caption-box-icon">
-                                    <a href="" class="caption-link">
-                                        <i class="caption-icon fa-solid fa-arrow-right"></i>
-                                    </a>
-                                </div>
-
-                                <div class="caption-body">
-                                    <p class="caption-body-first">Animal | Images</p>
-                                    <div class="caption-body-second">Cat Image</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
+                <button class="review-button">Send Message</button>
+              </form>
             </div>
-        </section>
 
-        <section class="pricing-wev">
-            <div class="grid wide">
+            <div class="review-contact col l-5 m-12 c-12">
+              <div class="review-contact__box">
+                <p class="review-des">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered .
+                </p>
                 <div class="row">
-                    <div class="title-content text-center mg-auto col l-10 m-10 c-10">
-                        <p class="title-heading">Lorem ipsum dolor sit amet</p>
-                        <h2 class="title-heading__dec">Affordable Rates</h2>
-                        <p class="title-heading title-new mg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales lobortis vehicula. Aliquam sodales turpis a neque sagittis, condimentum imperdiet risus luctus. Praesent cursus non risus in tempor.</p>
-                    </div>
+                  <div class="contact-box-icon col l-2 m-12 c-12">
+                    <i
+                      class="contact-icon fa-sharp fa-solid fa-location-dot"
+                    ></i>
+                  </div>
+
+                  <p class="contact-des col l-10 m-12 c-12">
+                    123 Park Avenue, New York, United States
+                  </p>
                 </div>
 
-                <div class="row pt-120">
-                    <div class="pricing-card col l-3 m-6 c-12">
-                        <div class="pricing-box">
-                            <div class="pricing-header">
-                                <div class="pricing-overlay"></div>
-                                <h4 class="pricing-card__heading">
-                                    4.99
-                                    <span>Monthly Billing</span>
-                                </h4>
-                            </div>
-    
-                            <div class="pricing-card__des">
-                                <div class="pricing-overlay-blue"></div>
-                                <ul class="pricing-list">
-                                    <li class="pricing-items">
-                                        Full Services
-                                    </li>
-    
-                                    <li class="pricing-items">
-                                        Pet Only Services
-                                    </li>
-    
-                                    <li class="pricing-items">
-                                        Veterinary
-                                    </li>
-    
-                                    <li class="pricing-items">
-                                        4 Free Checkups
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pricing-card col l-3 m-6 c-12">
-                        <div class="pricing-box">
-                            <div class="pricing-header">
-                                <div class="pricing-overlay"></div>
-                                <h4 class="pricing-card__heading">
-                                    11.95
-                                    <span>Quarterly Billing</span>
-                                </h4>
-                            </div>
-    
-                            <div class="pricing-card__des">
-                                <div class="pricing-overlay-blue"></div>
-                                <ul class="pricing-list">
-                                    <li class="pricing-items">
-                                        Full Services
-                                    </li>
-    
-                                    <li class="pricing-items">
-                                        Pet Only Services
-                                    </li>
-    
-                                    <li class="pricing-items">
-                                        Veterinary
-                                    </li>
-    
-                                    <li class="pricing-items">
-                                        4 Free Checkups
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pricing-card col l-3 m-6 c-12">
-                        <div class="pricing-box">
-                            <div class="pricing-header">
-                                <div class="pricing-overlay"></div>
-                                <h4 class="pricing-card__heading">
-                                    25.99
-                                    <span>Biannual Billing</span>
-                                </h4>
-                            </div>
-    
-                            <div class="pricing-card__des">
-                                <div class="pricing-overlay-blue"></div>
-                                <ul class="pricing-list">
-                                    <li class="pricing-items">
-                                        Full Services
-                                    </li>
-    
-                                    <li class="pricing-items">
-                                        Pet Only Services
-                                    </li>
-    
-                                    <li class="pricing-items">
-                                        Veterinary
-                                    </li>
-    
-                                    <li class="pricing-items">
-                                        4 Free Checkups
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pricing-card col l-3 m-6 c-12">
-                        <div class="pricing-box">
-                            <div class="pricing-header">
-                                <div class="pricing-overlay"></div>
-                                <h4 class="pricing-card__heading">
-                                    45.95
-                                    <span>Yearly Billing</span>
-                                </h4>
-                            </div>
-    
-                            <div class="pricing-card__des">
-                                <div class="pricing-overlay-blue"></div>
-                                <ul class="pricing-list">
-                                    <li class="pricing-items">
-                                        Full Services
-                                    </li>
-    
-                                    <li class="pricing-items">
-                                        Pet Only Services
-                                    </li>
-    
-                                    <li class="pricing-items">
-                                        Veterinary
-                                    </li>
-    
-                                    <li class="pricing-items">
-                                        4 Free Checkups
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="review-web">
-            <div class="grid wide">
                 <div class="row">
-                    <div class="review-form col l-7 m-12 c-12">
-                        <div class="title-content text-center mg-auto col l-12 m-12 c-12">
-                            <h2 class="title-heading__dec">Let’s Get In Touch</h2>
-                        </div>
+                  <div class="contact-box-icon col l-2 m-12 c-12">
+                    <i
+                      class="contact-icon fa-sharp fa-solid fa-phone-volume"
+                    ></i>
+                  </div>
 
-                        <form action="" class="form-content">
-                            <div class="row">
-                                <div class="input-box col l-6 m-6 c-12">
-                                    <input type="text" class="input-name input" placeholder="Your Name">
-                                </div>
-
-                                <div class="input-box col l-6 m-6 c-12">
-                                    <input type="email" class="input-email input" placeholder="Email Address*">
-                                </div>
-
-                                <div class="input-box col l-12 m-12 c-12">
-                                    <input type="text" class="input-name input" placeholder="Your Message">
-                                </div>
-
-                            </div>
-
-                            <button class="review-button">
-                                Send Message
-                            </button>
-                        </form>
-
-                    </div>
-
-                    <div class="review-contact col l-5 m-12 c-12">
-                        <div class="review-contact__box">
-                            <p class="review-des">There are many variations of passages of Lorem Ipsum available, but the majority have suffered .</p>
-                            <div class="row">
-                                <div class="contact-box-icon col l-2 m-12 c-12">
-                                    <i class="contact-icon fa-sharp fa-solid fa-location-dot"></i>                        
-                                </div>
-    
-                                <p class="contact-des col l-10 m-12 c-12">123 Park Avenue, New York, United States</p>
-                                
-                            </div>
-    
-                            <div class="row">
-                                <div class="contact-box-icon col l-2 m-12 c-12">
-                                    <i class="contact-icon  fa-sharp fa-solid fa-phone-volume"></i>
-                                </div>
-    
-                                <p class="contact-des col l-5 m-6 c-6">+1 631 1234 5678</p>
-                                <p class="contact-des col l-5 m-6 c-6">+1 631 1234 5678</p>
-                                
-                            </div>
-    
-                            <div class="row">
-                                <div class="contact-box-icon col l-2 m-12 c-12">
-                                    <i class="contact-icon  fa-regular fa-paper-plane"></i>       
-                                </div>
-    
-                                <p class="contact-des col l-10 m-12 c-12">email@website.com</p>
-                                
-                            </div>
-                        </div>
-                    
-                    </div>
-
+                  <p class="contact-des col l-5 m-6 c-6">+1 631 1234 5678</p>
+                  <p class="contact-des col l-5 m-6 c-6">+1 631 1234 5678</p>
                 </div>
-            </div>
-        </section>
 
-        <footer class="footer-web">
-            <div class="grid wide">
                 <div class="row">
-                    <div class="footer-social col l-6 m-12 c-12 text-center-t-m">
-                        <ul class="social-list">
-                            <li class="social-list__item">
-                                <a href="" class="social-list__link">
-                                    <i class="social-icon fa-brands fa-facebook-f"></i>
-                                </a>
-                            </li>
+                  <div class="contact-box-icon col l-2 m-12 c-12">
+                    <i class="contact-icon fa-regular fa-paper-plane"></i>
+                  </div>
 
-                            <li class="social-list__item">
-                                <a href="" class="social-list__link">
-                                    <i class="social-icon fa-brands fa-twitter"></i>
-                                </a>
-                            </li>
-
-                            <li class="social-list__item">
-                                <a href="" class="social-list__link">
-                                    <i class="social-icon fa-brands fa-google-plus-g"></i>
-                                </a>
-                            </li>
-
-                            <li class="social-list__item">
-                                <a href="" class="social-list__link">
-                                    <i class="social-icon fa-brands fa-linkedin-in"></i>
-                                </a>
-                            </li>
-
-                            <li class="social-list__item">
-                                <a href="" class="social-list__link">
-                                    <i class="social-icon fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-
-                            <li class="social-list__item">
-                                <a href="" class="social-list__link">
-                                    <i class="social-icon fa-regular fa-envelope"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-copyright col l-6 m-12 c-12 text-center-t-m">
-                        <p>© 2023 MegaOne. Made With Love By themesindustry</p>
-                    </div>
+                  <p class="contact-des col l-10 m-12 c-12">
+                    email@website.com
+                  </p>
                 </div>
+              </div>
             </div>
-        </footer>
+          </div>
+        </div>
+      </section>
 
+      <footer class="footer-web">
+        <div class="grid wide">
+          <div class="row">
+            <div class="footer-social col l-6 m-12 c-12 text-center-t-m">
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a href="" class="social-list__link">
+                    <i class="social-icon fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+
+                <li class="social-list__item">
+                  <a href="" class="social-list__link">
+                    <i class="social-icon fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+
+                <li class="social-list__item">
+                  <a href="" class="social-list__link">
+                    <i class="social-icon fa-brands fa-google-plus-g"></i>
+                  </a>
+                </li>
+
+                <li class="social-list__item">
+                  <a href="" class="social-list__link">
+                    <i class="social-icon fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+
+                <li class="social-list__item">
+                  <a href="" class="social-list__link">
+                    <i class="social-icon fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+
+                <li class="social-list__item">
+                  <a href="" class="social-list__link">
+                    <i class="social-icon fa-regular fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-copyright col l-6 m-12 c-12 text-center-t-m">
+              <p>© 2023 MegaOne. Made With Love By themesindustry</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
